@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESCHATON Volume 2 — A Palavra que Nao Passara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+    --sepia:#2a1a0a;
+    --sepia-medio:#3d2510;
+    --vermelho:#8b1a1a;
+    --vermelho-vivo:#c0392b;
+    --ouro:#c9a84c;
+    --ouro-claro:#e8d5a0;
+    --pergaminho:#f5ead8;
+    --pergaminho-escuro:#e8d5b8;
+    --cinza:#8a8a7a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sepia);font-family:'EB Garamond',Georgia,serif;min-height:100vh;overflow-x:hidden;}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 25% 50%,rgba(139,26,26,0.2) 0%,transparent 50%),radial-gradient(ellipse at 75% 30%,rgba(201,168,76,0.1) 0%,transparent 45%),linear-gradient(180deg,#1a0d05 0%,#2a1a0a 50%,#1a0d05 100%);z-index:0;}
+
+/* Textura de pergaminho simulada */
+.hero-textura{position:absolute;inset:0;z-index:1;opacity:0.04;background-image:repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(201,168,76,0.8) 28px,rgba(201,168,76,0.8) 29px),repeating-linear-gradient(90deg,transparent,transparent 40px,rgba(201,168,76,0.3) 40px,rgba(201,168,76,0.3) 41px);}
+
+.hero-content{position:relative;z-index:2;max-width:680px;}
+
+.vol-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(201,168,76,0.3);padding:6px 18px;margin-bottom:24px;animation:fadeUp 1s ease both;}
+.vol-badge-num{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);letter-spacing:3px;}
+.vol-badge-sep{width:1px;height:14px;background:rgba(201,168,76,0.4);}
+.vol-badge-txt{font-family:'Oswald',sans-serif;font-size:8pt;color:#888;letter-spacing:2px;text-transform:uppercase;}
+
+.hero-titulo{font-family:'Cinzel',serif;font-size:clamp(36pt,9vw,64pt);font-weight:900;color:#fff;letter-spacing:6px;text-transform:uppercase;line-height:1;animation:fadeUp 1s ease 0.2s both;}
+.hero-vol{font-family:'Oswald',sans-serif;font-size:10pt;color:var(--vermelho-vivo);letter-spacing:4px;text-transform:uppercase;margin-top:6px;animation:fadeUp 1s ease 0.3s both;}
+
+.hero-divisor{display:flex;align-items:center;gap:14px;margin:24px auto;width:300px;animation:fadeUp 1s ease 0.4s both;}
+.hero-divisor::before,.hero-divisor::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--ouro),transparent);}
+.hero-divisor-ico{color:var(--ouro);font-size:12pt;}
+
+.hero-sub{font-family:'EB Garamond',serif;font-style:italic;font-size:14pt;color:rgba(232,213,160,0.8);line-height:1.6;max-width:460px;margin:0 auto 32px;animation:fadeUp 1s ease 0.5s both;}
+.hero-ref{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cinza);letter-spacing:2px;text-transform:uppercase;animation:fadeUp 1s ease 0.6s both;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* GRID */
+.licoes-section{padding:70px 24px;max-width:1080px;margin:0 auto;}
+.section-header{text-align:center;margin-bottom:48px;}
+.section-header h2{font-family:'Cinzel',serif;font-size:20pt;color:var(--ouro);letter-spacing:4px;text-transform:uppercase;}
+.section-header p{font-family:'EB Garamond',serif;font-style:italic;color:var(--cinza);font-size:12pt;margin-top:8px;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px;}
+
+.card{background:rgba(61,37,16,0.6);border:1px solid rgba(201,168,76,0.12);border-radius:3px;overflow:hidden;text-decoration:none;display:block;transition:all 0.3s ease;position:relative;}
+.card:hover{border-color:rgba(201,168,76,0.4);transform:translateY(-4px);box-shadow:0 10px 36px rgba(0,0,0,0.4);}
+
+.card-topo{height:80px;position:relative;display:flex;align-items:flex-end;padding:12px;overflow:hidden;}
+.card-num{font-family:'Cinzel',serif;font-size:44pt;font-weight:900;color:rgba(255,255,255,0.06);position:absolute;top:-6px;right:8px;line-height:1;user-select:none;}
+.card-num-txt{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:var(--ouro);font-weight:600;text-transform:uppercase;position:relative;z-index:1;}
+.card-ref{font-family:'EB Garamond',serif;font-style:italic;font-size:8pt;color:rgba(201,168,76,0.5);position:relative;z-index:1;margin-top:2px;}
+
+.card-corpo{padding:14px 16px 16px;border-top:2px solid;}
+.card-titulo{font-family:'Cinzel',serif;font-size:12pt;color:#fff;line-height:1.2;margin-bottom:6px;}
+.card-sub{font-family:'EB Garamond',serif;font-style:italic;font-size:9.5pt;color:var(--cinza);line-height:1.4;}
+.card-acoes{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-top:1px solid rgba(255,255,255,0.05);}
+.card-pags{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;text-transform:uppercase;}
+.card-btn{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1.5px;text-transform:uppercase;color:var(--ouro);background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.25);padding:4px 10px;border-radius:2px;transition:all 0.2s;}
+.card:hover .card-btn{background:var(--ouro);color:#111;}
+
+/* Cores por lição — tons sépia/vermelho/terracota variados */
+.t01{background:linear-gradient(135deg,#1a0a0a,#2a1010);border-color:#8b2020;}
+.t02{background:linear-gradient(135deg,#1a1008,#2a1808);border-color:#8b5020;}
+.t03{background:linear-gradient(135deg,#0a1a0a,#102810);border-color:#208b20;}
+.t04{background:linear-gradient(135deg,#080a1a,#101228);border-color:#204080;}
+.t05{background:linear-gradient(135deg,#1a0a14,#280a20);border-color:#6b2060;}
+.t06{background:linear-gradient(135deg,#1a0808,#280a08);border-color:#9b2010;}
+.t07{background:linear-gradient(135deg,#0a0818,#100a28);border-color:#4020a0;}
+.t08{background:linear-gradient(135deg,#18100a,#281808);border-color:#905020;}
+.t09{background:linear-gradient(135deg,#0a1410,#0a2018);border-color:#206050;}
+.t10{background:linear-gradient(135deg,#180808,#280808);border-color:#a02020;}
+.t11{background:linear-gradient(135deg,#100a18,#180a28);border-color:#5030a0;}
+.t12{background:linear-gradient(135deg,#0a1018,#101828);border-color:#305080;}
+.t13{background:linear-gradient(135deg,#181408,#281e08);border-color:#907020;}
+.cb01{border-color:#8b2020;}.cb02{border-color:#8b5020;}.cb03{border-color:#208b20;}
+.cb04{border-color:#204080;}.cb05{border-color:#6b2060;}.cb06{border-color:#9b2010;}
+.cb07{border-color:#4020a0;}.cb08{border-color:#905020;}.cb09{border-color:#206050;}
+.cb10{border-color:#a02020;}.cb11{border-color:#5030a0;}.cb12{border-color:#305080;}
+.cb13{border-color:#907020;}
+
+/* RODAPE */
+.rodape{text-align:center;padding:36px 24px 52px;border-top:1px solid rgba(201,168,76,0.1);}
+.rodape p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#555;}
+.rodape strong{font-family:'Cinzel',serif;color:var(--ouro);font-style:normal;letter-spacing:2px;}
+
+/* Link Vol.1 */
+.link-vol1{display:inline-block;margin-top:16px;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cinza);border:1px solid rgba(201,168,76,0.2);padding:7px 18px;border-radius:2px;text-decoration:none;transition:all 0.2s;}
+.link-vol1:hover{color:var(--ouro);border-color:rgba(201,168,76,0.5);}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-textura"></div>
+    <div class="hero-content">
+        <div class="vol-badge">
+            <span class="vol-badge-num">VOL. II</span>
+            <span class="vol-badge-sep"></span>
+            <span class="vol-badge-txt">Estudos Escatologicos</span>
+        </div>
+        <h1 class="hero-titulo">ESCHATON</h1>
+        <div class="hero-vol">A Palavra que Nao Passara</div>
+        <div class="hero-divisor"><span class="hero-divisor-ico">&#10022;</span></div>
+        <p class="hero-sub">"O ceu e a terra passarao, mas as minhas palavras nao passarao."</p>
+        <div class="hero-ref">Mateus 24:35 &middot; Escola Biblica Dominical &middot; Jovens Adultos</div>
+    </div>
+</section>
+
+<!-- GRID -->
+<section class="licoes-section">
+    <div class="section-header">
+        <h2>Sumario das Licoes</h2>
+        <p>Temas escatologicos direto das passagens-chave das Escrituras</p>
+    </div>
+    <div class="grid">
+
+        <a href="licao-01.html" class="card">
+            <div class="card-topo t01">
+                <div class="card-num">01</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 01</div>
+                    <div class="card-ref">Joel 2:1-11 &middot; 2 Pedro 3:10</div>
+                </div>
+            </div>
+            <div class="card-corpo cb01">
+                <div class="card-titulo">O Dia do Senhor</div>
+                <div class="card-sub">O grande e terrivel dia que os profetas anunciaram atraves dos seculos</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-02.html" class="card">
+            <div class="card-topo t02">
+                <div class="card-num">02</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 02</div>
+                    <div class="card-ref">2 Ts 2:1-12 &middot; 1 Tm 4:1-3</div>
+                </div>
+            </div>
+            <div class="card-corpo cb02">
+                <div class="card-titulo">A Apostasia dos Ultimos Tempos</div>
+                <div class="card-sub">O abandono da fe e o homem do pecado como sinais do fim</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-03.html" class="card">
+            <div class="card-topo t03">
+                <div class="card-num">03</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 03</div>
+                    <div class="card-ref">Apocalipse 7:1-8 &middot; 14:1-5</div>
+                </div>
+            </div>
+            <div class="card-corpo cb03">
+                <div class="card-titulo">Os 144.000</div>
+                <div class="card-sub">Quem sao os selados de Deus e o que sua presenca revela sobre o plano divino</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-04.html" class="card">
+            <div class="card-topo t04">
+                <div class="card-num">04</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 04</div>
+                    <div class="card-ref">Apocalipse 8-9</div>
+                </div>
+            </div>
+            <div class="card-corpo cb04">
+                <div class="card-titulo">As Sete Trombetas</div>
+                <div class="card-sub">Os julgamentos progressivos que anunciam o fim da era presente</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-05.html" class="card">
+            <div class="card-topo t05">
+                <div class="card-num">05</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 05</div>
+                    <div class="card-ref">Apocalipse 11:1-14</div>
+                </div>
+            </div>
+            <div class="card-corpo cb05">
+                <div class="card-titulo">As Duas Testemunhas</div>
+                <div class="card-sub">A missao profetica da Igreja no periodo de tribulacao</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-06.html" class="card">
+            <div class="card-topo t06">
+                <div class="card-num">06</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 06</div>
+                    <div class="card-ref">Apocalipse 12-13</div>
+                </div>
+            </div>
+            <div class="card-corpo cb06">
+                <div class="card-titulo">A Mulher, o Dragao e a Besta</div>
+                <div class="card-sub">O grande conflito cosmico entre o povo de Deus e as forcas do mal</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-07.html" class="card">
+            <div class="card-topo t07">
+                <div class="card-num">07</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 07</div>
+                    <div class="card-ref">Apocalipse 15-16</div>
+                </div>
+            </div>
+            <div class="card-corpo cb07">
+                <div class="card-titulo">As Sete Tacas da Ira</div>
+                <div class="card-sub">O derramamento final da ira de Deus sobre a humanidade rebelde</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-08.html" class="card">
+            <div class="card-topo t08">
+                <div class="card-num">08</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 08</div>
+                    <div class="card-ref">Apocalipse 17-18</div>
+                </div>
+            </div>
+            <div class="card-corpo cb08">
+                <div class="card-titulo">A Queda da Babilonia</div>
+                <div class="card-sub">O julgamento do sistema mundial de corrupcao, idolatria e opressao</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-09.html" class="card">
+            <div class="card-topo t09">
+                <div class="card-num">09</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 09</div>
+                    <div class="card-ref">Apocalipse 19:1-10</div>
+                </div>
+            </div>
+            <div class="card-corpo cb09">
+                <div class="card-titulo">A Ceia das Bodas do Cordeiro</div>
+                <div class="card-sub">O banquete eterno entre Cristo e sua Igreja na consumacao da historia</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-10.html" class="card">
+            <div class="card-topo t10">
+                <div class="card-num">10</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 10</div>
+                    <div class="card-ref">Ap 19:11-21 &middot; Zacarias 14</div>
+                </div>
+            </div>
+            <div class="card-corpo cb10">
+                <div class="card-titulo">A Batalha Final</div>
+                <div class="card-sub">O Rei dos reis na sua vinda gloriosa para destruir os inimigos de Deus</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-11.html" class="card">
+            <div class="card-topo t11">
+                <div class="card-num">11</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 11</div>
+                    <div class="card-ref">Daniel 2, 7 e 12</div>
+                </div>
+            </div>
+            <div class="card-corpo cb11">
+                <div class="card-titulo">O Livro de Daniel e o Fim</div>
+                <div class="card-sub">As grandes visoes profeticas de Daniel e sua estrutura escatologica</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-12.html" class="card">
+            <div class="card-topo t12">
+                <div class="card-num">12</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 12</div>
+                    <div class="card-ref">Jr 31:31-34 &middot; Ez 36 &middot; Rm 11</div>
+                </div>
+            </div>
+            <div class="card-corpo cb12">
+                <div class="card-titulo">A Nova Alianca e a Esperanca de Israel</div>
+                <div class="card-sub">As promessas pactais que sustentam a esperanca do povo de Deus</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+        <a href="licao-13.html" class="card">
+            <div class="card-topo t13">
+                <div class="card-num">13</div>
+                <div style="position:relative;z-index:1;">
+                    <div class="card-num-txt">Licao 13 &middot; Final</div>
+                    <div class="card-ref">1 Co 16:22 &middot; Apocalipse 22:17-21</div>
+                </div>
+            </div>
+            <div class="card-corpo cb13">
+                <div class="card-titulo">Maranata — A Igreja que Espera</div>
+                <div class="card-sub">A oracao mais antiga da Igreja e a postura de quem vive na expectativa do Senhor</div>
+            </div>
+            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+        </a>
+
+    </div>
+</section>
+
+<footer class="rodape">
+    <p><strong>ESCHATON &middot; VOL. II</strong> &middot; A Palavra que Nao Passara &middot; Escola Biblica Dominical</p>
+    <p style="margin-top:6px;">Estudos Escatologicos Tematicos &middot; Jovens Adultos &middot; 13 Licoes</p>
+    <a href="../eschaton/index.html" class="link-vol1">&#8592; Acessar Volume 1</a>
+</footer>
+
+</body>
+</html>

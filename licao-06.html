@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton Vol.2 · Licao 06 — A Mulher, o Dragao e a Besta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#9b2010;--grad1:#1a0808;--grad2:#280a08;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--pergaminho:#f8f2e8;--creme:#f0e8d8;--cc:#ddd8cc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#120506;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#080202,#120506);border-bottom:1px solid rgba(155,32,16,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#555;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--pergaminho);box-shadow:0 6px 30px rgba(0,0,0,0.6);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 22% 60%,rgba(155,32,16,0.55) 0%,transparent 55%),radial-gradient(ellipse at 78% 20%,rgba(201,168,76,0.15) 0%,transparent 45%),radial-gradient(ellipse at 55% 85%,rgba(80,10,5,0.4) 0%,transparent 50%);}
+.cgrd{position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 24px,rgba(201,168,76,1) 24px,rgba(201,168,76,1) 25px);}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#280808,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:60%;background:linear-gradient(160deg,#0d0202,var(--cor) 50%,#ff8060);opacity:0.38;}
+.clh{position:absolute;top:57%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.75;}
+.cvol{position:absolute;top:14mm;right:12mm;z-index:4;text-align:right;}
+.cvol-num{font-family:'Cinzel',serif;font-size:8pt;color:var(--ouro);letter-spacing:3px;opacity:0.7;}
+.cvol-linha{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0 0 auto;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.ctit{font-family:'Cinzel',serif;font-size:18pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:10px;}
+.cref{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:rgba(201,168,76,0.6);text-transform:uppercase;margin-bottom:10px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--pergaminho);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--cor),var(--ouro) 60%,transparent);}
+.int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(155,32,16,0.15);}
+.int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(155,32,16,0.055) 23px,rgba(155,32,16,0.055) 24px);z-index:0;}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#5a1a10;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.texto-biblico{background:#fff;border:1px solid rgba(155,32,16,0.2);border-left:4px solid var(--cor);padding:12px 14px;margin:12px 0;position:relative;z-index:1;}
+.texto-biblico-ref{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.texto-biblico-ref::after{content:'';flex:1;height:1px;background:rgba(155,32,16,0.2);}
+.texto-biblico p{font-family:'EB Garamond',serif;font-style:italic;font-size:10.5pt;color:#2a0808;line-height:1.7;margin-bottom:4px;text-align:left;}
+.texto-biblico .ref-final{font-size:9pt;font-style:normal;color:var(--ouro);font-family:'Oswald',sans-serif;letter-spacing:1px;display:block;text-align:right;margin-top:4px;}
+.bloco-ctx{background:rgba(155,32,16,0.05);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-ctx-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.bloco-teo{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-teo-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;}
+.bloco-apl{background:linear-gradient(135deg,rgba(155,32,16,0.05),rgba(201,168,76,0.06));border:1px solid rgba(155,32,16,0.2);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-apl-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.memorizar{background:var(--creme);border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:10px 12px;margin:10px 0;text-align:center;position:relative;z-index:1;}
+.memorizar-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;}
+.memorizar p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#2a0808;text-align:center;line-height:1.6;}
+.obj{background:var(--creme);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#8594;';position:absolute;left:0;color:var(--cor);font-size:9pt;}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.q{margin-bottom:14px;position:relative;z-index:1;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid rgba(155,32,16,0.2);height:20px;margin-top:3px;}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#aaa;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;position:relative;z-index:1;}
+.lin{border-bottom:1px solid rgba(155,32,16,0.2);height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(155,32,16,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(155,32,16,0.08);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm,.int-linhas{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="painel">
+    <div class="marca">ESCHATON VOL. II<span>Licao 06 &middot; A Mulher, o Dragao e a Besta</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">06</div>
+    <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
+    <div class="ccon">
+        <div class="cser">Eschaton &middot; A Palavra que Nao Passara</div>
+        <div class="cref">Apocalipse 12:1 — 13:18</div>
+        <div class="ctit">A Mulher, o Dragao e a Besta</div>
+        <div class="cver">
+            "E houve no ceu uma grande batalha: Miguel e os seus anjos batalhavam contra o dragao... E foi lancado fora o grande dragao, a antiga serpente, chamada o Diabo e Satanas, o qual engana todo o mundo."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Apocalipse 12:7-9</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 TEXTO BIBLICO -->
+<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. II</span><span class="pht">A Mulher, o Dragao e a Besta</span></div>
+    <h2>A Passagem-Base</h2>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 12:1-5, 7-9</div>
+        <p>"E apareceu no ceu um grande sinal: uma mulher vestida do sol, tendo a lua debaixo dos seus pes e uma coroa de doze estrelas sobre a sua cabeca. E estava gravida, e clamava, com dores de parto, angustiada para dar a luz."</p>
+        <p>"E apareceu outro sinal no ceu, e eis um grande dragao vermelho, que tinha sete cabecas e dez chifres, e sobre as suas cabecas sete diademas... E ela deu a luz um filho homem, que havia de reger todas as nacoes com vara de ferro."</p>
+        <p>"E houve no ceu uma grande batalha: Miguel e os seus anjos batalhavam contra o dragao... E foi lancado fora o grande dragao, a antiga serpente, chamada o Diabo e Satanas, o qual engana todo o mundo."</p>
+        <span class="ref-final">Apocalipse 12:1-5, 7-9</span>
+    </div>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 12:11</div>
+        <p>"E eles o venceram pelo sangue do Cordeiro e pela palavra do seu testemunho; e nao amaram as suas vidas ate a morte."</p>
+        <span class="ref-final">Apocalipse 12:11</span>
+    </div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Identificar os tres personagens centrais: a Mulher, o Dragao e a Besta</li>
+            <li>Compreender a guerra cosmica de Apocalipse 12 como pano de fundo da historia crista</li>
+            <li>Examinar a "queda de Satanas" e suas implicacoes para o cristao no presente</li>
+            <li>Aplicar a formula da vitoria de Apocalipse 12:11 ao testemunho cristao hoje</li>
+        </ul>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 CONTEXTO ORIGINAL -->
+<div class="lbl">Pagina 3 &middot; Contexto Original</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. II</span><span class="pht">A Mulher, o Dragao e a Besta</span></div>
+    <h2>Contexto Original</h2>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">O Grande Conflito Cosmico</div>
+        <p>Apocalipse 12-13 e o coração teologico do livro — a revelacao do conflito real por tras de toda a historia humana. Joao recebe uma visao do drama cosmico que explica por que a Igreja sofre: ha uma guerra espiritual de dimensoes universais, e o cristao esta no centro dela. Nao por acidente, mas por designio — o dragao persegue a mulher e sua descendencia precisamente porque o Filho dela destruiu seu poder.</p>
+    </div>
+    <h3>A Mulher — Quem e Ela?</h3>
+    <p>A mulher "vestida do sol, com a lua debaixo dos pes e coroa de doze estrelas" ecoa o sonho de Jose em Genesis 37:9 — sol, lua e estrelas representando a familia de Israel. A mulher e o povo de Deus em sua totalidade: o Israel do AT que da a luz o Messias, e a Igreja do NT que e sua continuacao. Ela nao e Maria individualmente — e a comunidade de fe atraves dos seculos da qual o Messias nasceu.</p>
+    <h3>O Dragao — A Antiga Serpente</h3>
+    <p>Joao nao deixa duvida: o dragao vermelho com sete cabecas e dez chifres "e a antiga serpente, chamada o Diabo e Satanas" (Ap 12:9). A conexao com Genesis 3 e explicita — o mesmo inimigo que tentou destruir a humanidade no jardim do Eden agora tenta destruir o povo de Deus na historia. Suas sete cabecas simbolizam poder politico universal; suas dez chifres, autoridade militar; seus sete diademas, pretensao ao dominio legitimo que pertence so a Deus.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">A Besta do Mar — Apocalipse 13</div>
+        <p>A besta que sobe do mar (Ap 13:1) recebe seu poder do dragao — e o agente terreno do poder de Satanas. Para os leitores do seculo I, ela representava o Imperio Romano, com Neron como figura tipica. Mas e tambem o padrao de todo sistema politico que exige adoracao absoluta e persegue o povo de Deus. A segunda besta (Ap 13:11) — o falso profeta — e o poder religioso a servico do poder politico.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 EXEGESE -->
+<div class="lbl">Pagina 4 &middot; Exegese Versiculo a Versiculo</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. II</span><span class="pht">A Mulher, o Dragao e a Besta</span></div>
+    <h2>Exegese da Passagem</h2>
+    <h3>"Um filho homem que havia de reger com vara de ferro" — 12:5</h3>
+    <p>A citacao de Salmo 2:9 identifica o filho da mulher como o Messias — Cristo. O dragao tenta devorar o filho antes que nasa (ecoando a matanca dos inocentes por Herodes em Mt 2:16), mas fracassa: o filho e "arrebatado para Deus e para o seu trono" (v.5) — referencia direta a ressurreicao e ascensao de Cristo. Em um versículo, Joao resume toda a encarnacao, paixao e exaltacao de Jesus.</p>
+    <h3>"Houve no ceu uma grande batalha" — 12:7-9</h3>
+    <p>A guerra no ceu nao e futura — e o presente. O verbo grego esta no aoristo, indicando um evento que ja ocorreu: a derrota de Satanas foi consumada na cruz e ressurreicao de Cristo (cf. Jo 12:31 — "agora o principe deste mundo sera lancado fora"). Satanas foi "lancado" — expulso de sua posicao de acusador diante de Deus (cf. Jo 1:6-12; Zc 3:1-2). Ele ainda age na terra, mas seu poder foi fundamentalmente quebrado.</p>
+    <h3>"Ai da terra e do mar" — 12:12</h3>
+    <p>Expulso do ceu, Satanas desce com "grande ira, sabendo que tem pouco tempo." Sua furia intensificada e sinal de seu desespero, nao de seu poder. O cristao que compreende isso nao teme o diabo como um poder soberano — teme a Deus, e enfrenta o diabo como um inimigo ja derrotado que faz barulho.</p>
+    <h3>"Venceram pelo sangue do Cordeiro" — 12:11</h3>
+    <p>A formula da vitoria crista tem tres elementos indissociaveis: o sangue do Cordeiro (fundamento objetivo da vitoria — a cruz), a palavra do testemunho (a proclamacao fiel do evangelho) e o nao amar a vida ate a morte (a disposicao ao martírio). A vitoria nao e magica — e a participacao ativa na vitoria de Cristo por meio da fe, do testemunho e da disposicao ao sacrificio.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 TEOLOGIA -->
+<div class="lbl">Pagina 5 &middot; Teologia da Passagem</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. II</span><span class="pht">A Mulher, o Dragao e a Besta</span></div>
+    <h2>Teologia da Passagem</h2>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
+        <p>Deus e o Senhor da historia cosmica — incluindo a guerra espiritual. O dragao age, mas dentro de limites estabelecidos por Deus: ele nao pode devorar o filho (v.5), e perseguido por "asas de aguia" dadas a mulher (v.14 — eco do Exodo, Ex 19:4), e a agua que vomita e absorvida pela terra (v.16). Em cada ponto de aparente vitoria do inimigo, a soberania de Deus preserva seu povo. O cristao nao esta em um combate de resultados incertos — esta em uma guerra cujo resultado ja foi decidido na cruz.</p>
+    </div>
+    <h3>A Queda de Satanas e Suas Implicacoes</h3>
+    <p>A expulsao de Satanas do ceu (Ap 12:9) nao e um evento futuro — e o resultado da obra redentora de Cristo (Jo 12:31; Cl 2:15; Lc 10:18). Isso tem implicacoes praticas imediatas: Satanas nao pode mais acusar os irmaos "diante de Deus" (Ap 12:10) — esse escritorio foi fechado pela justificacao em Cristo. O cristao comparece diante de Deus nao como reu, mas como filho.</p>
+    <h3>A Trindade Invertida de Apocalipse 13</h3>
+    <p>Apocalipse 13 apresenta uma parodia diabolica da Trindade: o dragao (falso pai), a besta do mar (falso filho — recebe o poder do dragao, assim como o Filho recebe do Pai) e a besta da terra/falso profeta (falso espirito — faz a humanidade adorar a besta, assim como o Espirito glorifica Cristo). Toda oposicao ao evangelho e essencialmente uma imitacao deformada da obra de Deus.</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">A Resistencia Crista e Possivel</div>
+        <p>"E foi dada autoridade a besta sobre toda tribo, povo, lingua e nacao" (Ap 13:7) — parece total. Mas Apocalipse 13:8 ressalva: "todos os que habitam na terra a adorarao, cujos nomes nao estao escritos no livro da vida." Os que tem seus nomes no Livro nao adoram a besta. A graca que protege e a mesma que sustenta o testemunho fiel.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao Direta</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. II</span><span class="pht">A Mulher, o Dragao e a Besta</span></div>
+    <h2>Aplicacao Direta</h2>
+    <p class="cap">Apocalipse 12:11 e a formula mais concisa de vitoria crista em toda a Biblia: "Venceram pelo sangue do Cordeiro e pela palavra do seu testemunho; e nao amaram as suas vidas ate a morte." Tres elementos, nenhum opcional. O sangue do Cordeiro sem o testemunho e fideísmo quietista. O testemunho sem o sangue do Cordeiro e ativismo humano. Os dois sem a disposicao ao custo sao conveniencia mascarada de fe.</p>
+    <div class="bloco-apl">
+        <div class="bloco-apl-titulo">Para esta semana</div>
+        <p>Primeiro: Satanas "acusava os irmaos diante de Deus de dia e de noite" (Ap 12:10) — e esse escritorio foi fechado pela justificacao em Cristo. Ha acusacoes que voce carrega sobre si mesmo que nao vem de Deus, mas do "acusador dos irmaos"? Como a verdade da justificacao responde a essas acusacoes especificamente? Segundo: a besta recebe adoracao universal de "toda tribo, povo, lingua e nacao." Quais sistemas de valores, lealdades ou poderes em seu contexto exigem uma lealdade que compete com Cristo? Terceiro: "nao amaram as suas vidas ate a morte" — disposicao ao custo. Ha algo que voce nao esta disposto a perder por causa do testemunho de Cristo?</p>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>Para Refletir</h3>
+    <p>Joao escreve para cristaos que viviam sob o Imperio Romano — um sistema que exigia adoracao ao imperador como condicao de participacao social e economica. A marca da besta (Ap 13:16-17) privava de comprar e vender quem nao se curvasse. Como essa pressao de conformidade social e economica se manifesta hoje para o cristao que recusa comprometer seu testemunho?</p>
+    <div class="memorizar">
+        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
+        <p>"E eles o venceram pelo sangue do Cordeiro e pela palavra do seu testemunho; e nao amaram as suas vidas ate a morte."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 12:11</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 06 &middot; Vol. II</span><span class="pht">A Mulher, o Dragao e a Besta</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">A mulher de Apocalipse 12 e identificada com Israel do AT e a Igreja do NT — o povo de Deus em sua continuidade. Como essa interpretacao afeta a compreensao da relacao entre Israel e Igreja ao longo da historia da salvacao?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">Joao 12:31 diz que a expulsao do principe deste mundo ocorreu na cruz — nao no futuro. Como a derrota ja consumada de Satanas muda a postura do cristao na guerra espiritual presente? O que muda quando voce enfrenta um inimigo ja derrotado?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">A formula de vitoria de Apocalipse 12:11 tem tres elementos: sangue do Cordeiro, palavra do testemunho e nao amar a vida ate a morte. Qual desses tres elementos e mais fraco em sua vida crista atual? O que precisaria mudar?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">A besta exigia adoracao universal e controlava quem podia comprar e vender (Ap 13:16-17). Quais formas contemporaneas de pressao economica, social ou cultural funcionam de forma similar — exigindo conformidade em troca de participacao e aceitacao?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>

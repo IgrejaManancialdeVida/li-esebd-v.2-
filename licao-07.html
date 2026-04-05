@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton Vol.2 · Licao 07 — As Sete Tacas da Ira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#4020a0;--grad1:#080818;--grad2:#100a28;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--pergaminho:#f8f2e8;--creme:#f0e8d8;--cc:#ddd8cc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#060510;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#030208,#060510);border-bottom:1px solid rgba(64,32,160,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#555;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--pergaminho);box-shadow:0 6px 30px rgba(0,0,0,0.6);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 22% 60%,rgba(64,32,160,0.5) 0%,transparent 55%),radial-gradient(ellipse at 78% 20%,rgba(201,168,76,0.15) 0%,transparent 45%),radial-gradient(ellipse at 50% 88%,rgba(30,10,80,0.4) 0%,transparent 50%);}
+.cgrd{position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 24px,rgba(201,168,76,1) 24px,rgba(201,168,76,1) 25px);}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#100828,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:58%;background:linear-gradient(160deg,#030208,var(--cor) 50%,#c090ff);opacity:0.38;}
+.clh{position:absolute;top:55%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.7;}
+.cvol{position:absolute;top:14mm;right:12mm;z-index:4;text-align:right;}
+.cvol-num{font-family:'Cinzel',serif;font-size:8pt;color:var(--ouro);letter-spacing:3px;opacity:0.7;}
+.cvol-linha{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0 0 auto;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.ctit{font-family:'Cinzel',serif;font-size:21pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:10px;}
+.cref{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:rgba(201,168,76,0.6);text-transform:uppercase;margin-bottom:10px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--pergaminho);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--cor),var(--ouro) 60%,transparent);}
+.int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(64,32,160,0.15);}
+.int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(64,32,160,0.055) 23px,rgba(64,32,160,0.055) 24px);z-index:0;}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#2a1060;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.texto-biblico{background:#fff;border:1px solid rgba(64,32,160,0.2);border-left:4px solid var(--cor);padding:12px 14px;margin:12px 0;position:relative;z-index:1;}
+.texto-biblico-ref{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.texto-biblico-ref::after{content:'';flex:1;height:1px;background:rgba(64,32,160,0.2);}
+.texto-biblico p{font-family:'EB Garamond',serif;font-style:italic;font-size:10.5pt;color:#180830;line-height:1.7;margin-bottom:4px;text-align:left;}
+.texto-biblico .ref-final{font-size:9pt;font-style:normal;color:var(--ouro);font-family:'Oswald',sans-serif;letter-spacing:1px;display:block;text-align:right;margin-top:4px;}
+.bloco-ctx{background:rgba(64,32,160,0.05);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-ctx-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.bloco-teo{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-teo-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;}
+.bloco-apl{background:linear-gradient(135deg,rgba(64,32,160,0.05),rgba(201,168,76,0.06));border:1px solid rgba(64,32,160,0.2);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-apl-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.memorizar{background:var(--creme);border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:10px 12px;margin:10px 0;text-align:center;position:relative;z-index:1;}
+.memorizar-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;}
+.memorizar p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#180830;text-align:center;line-height:1.6;}
+.obj{background:var(--creme);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#8594;';position:absolute;left:0;color:var(--cor);font-size:9pt;}
+.tabela-tacas{width:100%;border-collapse:collapse;margin:10px 0;position:relative;z-index:1;font-size:9pt;}
+.tabela-tacas th{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);background:rgba(64,32,160,0.07);padding:5px 7px;border-bottom:2px solid var(--cor);text-align:left;}
+.tabela-tacas td{font-family:'EB Garamond',serif;font-size:9.5pt;color:var(--ct);padding:4px 7px;border-bottom:1px solid rgba(64,32,160,0.1);vertical-align:top;line-height:1.4;}
+.tabela-tacas tr:last-child td{border-bottom:none;}
+.tabela-tacas td:first-child{font-family:'Oswald',sans-serif;font-weight:600;color:var(--cor);white-space:nowrap;}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.q{margin-bottom:14px;position:relative;z-index:1;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid rgba(64,32,160,0.2);height:20px;margin-top:3px;}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#aaa;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;position:relative;z-index:1;}
+.lin{border-bottom:1px solid rgba(64,32,160,0.2);height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(64,32,160,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(64,32,160,0.08);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm,.int-linhas{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="painel">
+    <div class="marca">ESCHATON VOL. II<span>Licao 07 &middot; As Sete Tacas da Ira</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">07</div>
+    <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
+    <div class="ccon">
+        <div class="cser">Eschaton &middot; A Palavra que Nao Passara</div>
+        <div class="cref">Apocalipse 15:1 — 16:21</div>
+        <div class="ctit">As Sete Tacas da Ira</div>
+        <div class="cver">
+            "E ouvi o anjo das aguas dizer: Justo es tu, que es e que eras, o Santo, porque julgaste assim. Porque eles derramaram o sangue dos santos e dos profetas, e tambem lhes deste a beber sangue, pois o merecem."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Apocalipse 16:5-6</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 TEXTO BIBLICO -->
+<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
+    <h2>A Passagem-Base</h2>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 15:1, 7-8</div>
+        <p>"E vi outro sinal no ceu, grande e maravilhoso: sete anjos com sete pragas, as ultimas; porque com elas se consumou a ira de Deus."</p>
+        <p>"E um dos quatro seres viventes deu aos sete anjos sete tacas de ouro, cheias da ira de Deus, que vive pelos seculos dos seculos. E o templo ficou cheio de fumaca pela gloria de Deus e pelo seu poder; e ninguem podia entrar no templo ate que se cumprissem as sete pragas dos sete anjos."</p>
+        <span class="ref-final">Apocalipse 15:1, 7-8</span>
+    </div>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 16:9-11</div>
+        <p>"E os homens se queimaram com o grande calor, e blasfemaram o nome de Deus, que tem poder sobre estas pragas; e nao se arrependeram para lhe dar gloria. E o quinto anjo derramou a sua taca sobre o trono da besta, e o seu reino se tornou cheio de trevas; e os homens mordiam as suas linguas de dor. E blasfemaram o Deus do ceu por causa das suas dores e das suas chagas; e nao se arrependeram das suas obras."</p>
+        <span class="ref-final">Apocalipse 16:9-11</span>
+    </div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Compreender as tacas como "ultimas pragas" — a ira de Deus consumada, sem reducao</li>
+            <li>Examinar os paralelos com as pragas do Egito e seu significado teologico</li>
+            <li>Analisar a resposta de blasfemia e nao-arrependimento como revelacao da depravacao</li>
+            <li>Compreender a justeza do julgamento de Deus afirmada pelos anjos e pelo altar</li>
+        </ul>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 CONTEXTO ORIGINAL -->
+<div class="lbl">Pagina 3 &middot; Contexto Original</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
+    <h2>Contexto Original</h2>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">As Tacas e a Sequencia dos Julgamentos</div>
+        <p>As sete tacas sao a terceira e ultima serie de julgamentos no Apocalipse, apos os sete selos e as sete trombetas. A diferenca crucial e descrita no proprio texto: as tacas sao as pragas "ultimas, porque com elas se consumou a ira de Deus" (Ap 15:1). Enquanto as trombetas afetavam "um terco" da criacao — julgamento parcial com espaco para arrependimento — as tacas sao derramadas "sobre a terra" sem reducao. E o julgamento definitivo, sem mitigacao.</p>
+    </div>
+    <h3>O Cantico de Moises — Ap 15:3-4</h3>
+    <p>Antes das tacas, os vencedores sobre a besta cantam o "cantico de Moises" (Ap 15:3) — o mesmo cantico entoado por Israel apos a travessia do Mar Vermelho (Ex 15). O paralelo e deliberado: assim como Farao e seus exercitos foram destruidos nas aguas enquanto Israel assistia em seguranca na outra margem, os julgamentos das tacas caem sobre os inimigos do povo de Deus enquanto ele observa da margem da vitoria. O Exodo continua sendo o modelo narrativo mestre de toda a acao redentora e judicial de Deus.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">O Templo Cheio de Fumaca — Ap 15:8</div>
+        <p>Ninguem pode entrar no templo celestial ate o fim das sete tacas — ecoando a consagracao do tabernacle em Exodo 40:34-35 e do Templo de Salomao em 1 Reis 8:10-11, quando a gloria de Deus era tao intensa que os sacerdotes nao conseguiam entrar. A ira das tacas nao e capricho — e a gloria de Deus agindo em justica plena, insuprimivel e irresistivel.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 EXEGESE -->
+<div class="lbl">Pagina 4 &middot; As Sete Tacas</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
+    <h2>As Sete Tacas — Panorama</h2>
+    <table class="tabela-tacas">
+        <tr>
+            <th>Taca</th>
+            <th>Julgamento</th>
+            <th>Paralelo AT</th>
+        </tr>
+        <tr>
+            <td>1&#170;</td>
+            <td>Chagas malignas sobre os que tem a marca da besta</td>
+            <td>6&#170; praga do Egito (Ex 9:8-12)</td>
+        </tr>
+        <tr>
+            <td>2&#170;</td>
+            <td>O mar vira sangue — tudo o que vive no mar morre</td>
+            <td>1&#170; praga do Egito (Ex 7:20-21)</td>
+        </tr>
+        <tr>
+            <td>3&#170;</td>
+            <td>Rios e fontes viram sangue — "pois o merecem"</td>
+            <td>1&#170; praga do Egito (Ex 7:20-21)</td>
+        </tr>
+        <tr>
+            <td>4&#170;</td>
+            <td>Sol queima com fogo — homens blasfemam, nao se arrependem</td>
+            <td>Inversao da 9&#170; praga (trevas)</td>
+        </tr>
+        <tr>
+            <td>5&#170;</td>
+            <td>Trevas sobre o trono da besta — dor, blasfemia, nao-arrependimento</td>
+            <td>9&#170; praga do Egito (Ex 10:21-22)</td>
+        </tr>
+        <tr>
+            <td>6&#170;</td>
+            <td>Eufrates seca — tres espiritos imundos convocam para Armagedom</td>
+            <td>Travessia do Mar Vermelho</td>
+        </tr>
+        <tr>
+            <td>7&#170;</td>
+            <td>"Esta feito!" — terremoto, granizo, Babilonia dividida em tres</td>
+            <td>Sinai (Ex 19:16-19)</td>
+        </tr>
+    </table>
+    <h3>A Resposta Invariavel: Blasfemia</h3>
+    <p>Tres vezes em Apocalipse 16 os homens respondem aos julgamentos das tacas com blasfemia e recusa ao arrependimento (vv.9, 11, 21). Essa repeticao e teologicamente significativa: o julgamento final nao converte — apenas revela o que o coracao ja escolheu. A dureza que era parcial nas trombetas e agora total nas tacas. Nao ha mais espaco para arrependimento nessa fase — o tempo da misericordia se encerrou.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 TEOLOGIA -->
+<div class="lbl">Pagina 5 &middot; Teologia da Passagem</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
+    <h2>Teologia da Passagem</h2>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
+        <p>As tacas revelam que a ira de Deus e santa, justa e proporcional — nao arbitraria ou passional. O anjo das aguas proclama: "Justo es tu... porque julgaste assim. Porque eles derramaram o sangue dos santos... e lhes deste sangue a beber, pois o merecem" (Ap 16:5-6). Ha uma correspondencia precisa entre o crime e o castigo. O altar confirma: "Sim, Senhor Deus Todo-Poderoso, verdadeiros e justos sao os teus julgamentos" (Ap 16:7). O universo inteiro afirma a justeza do julgamento de Deus.</p>
+    </div>
+    <h3>A Ira de Deus no NT — Nao e Emocao</h3>
+    <p>A "ira de Deus" (<em>orge Theou</em>) no NT nao e uma emocao explosiva e passional — e a oposicao firme, santa e consistente de Deus a tudo o que destrui e corrompe sua boa criacao. Paulo descreve em Romanos 1:18-32 a ira de Deus como um processo de "entregar" — Deus retira sua graca restritiva e permite que o pecado alcance suas consequencias naturais. As tacas sao a manifestacao plena e final desse processo de entrega.</p>
+    <h3>Armagedom — Ap 16:16</h3>
+    <p>A sexta taca prepara o terreno para "Armagedom" — transliteracao de <em>Har Megiddo</em>, o Monte de Megido, local de batalhas decisivas na historia de Israel (Jz 5:19; 2 Rs 23:29). No Apocalipse, Armagedom nao e necessariamente uma batalha geografica literal no vale de Jezreel — e o simbolo da confrontacao final entre o poder de Deus e as forcas reunidas do mal. O desfecho e descrito em Apocalipse 19:11-21.</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">"Esta Feito!" — Ap 16:17</div>
+        <p>A setima taca vem acompanhada de uma voz do trono: "Esta feito!" — o mesmo grito de vitoria de Jo 19:30 na cruz. O julgamento final e a consumacao do que Cristo ja pagou no Calvario. Cruz e consumacao sao o mesmo evento visto de angulos distintos da historia.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao Direta</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
+    <h2>Aplicacao Direta</h2>
+    <p class="cap">As tacas sao descritas como cheias da ira de Deus que vive "pelos seculos dos seculos" (Ap 15:7). Essa ira nao e a raiva passageira de um ser temperamental — e a reacao eterna e santa de um Deus que e amor perfeito diante de tudo o que destroi o que ele ama. Entender a ira de Deus e entender o amor de Deus — os dois sao inseparaveis.</p>
+    <div class="bloco-apl">
+        <div class="bloco-apl-titulo">Para esta semana</div>
+        <p>Primeiro: os vencedores cantam o "cantico de Moises" antes das tacas — adoracao precede e sustenta o cristao atraves do julgamento. Como sua pratica de adoracao o prepara para enfrentar a hostilidade do mundo, e nao apenas para celebrar nos momentos bons? Segundo: a resposta dos homens as tacas e blasfemia e nao-arrependimento. Reflita: ha areas em sua propria vida onde voce tem respondido as "tacas menores" — dificuldades, perdas, fracassos — com ressentimento contra Deus em vez de arrependimento e confianca? Terceiro: o anjo afirma que o julgamento e justo porque os condenados "derramaram o sangue dos santos." Como a certeza de que Deus e o Vingador dos oprimidos libera voce da necessidade de buscar justica pelas proprias maos?</p>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>Para Refletir</h3>
+    <p>A setima taca proclama "Esta feito!" — o mesmo grito da cruz (Jo 19:30). A justica divina e uma so historia com dois capitulos: o Calvario e a consumacao. Para o cristao, o julgamento ja foi executado em Cristo — por isso ele esta do lado dos vencedores que cantam o cantico de Moises, nao do lado dos que enfrentam as tacas. Como essa verdade transforma sua gratidao pela obra de Cristo?</p>
+    <div class="memorizar">
+        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
+        <p>"Grandes e maravilhosas sao as tuas obras, Senhor Deus Todo-Poderoso; justos e verdadeiros sao os teus caminhos, o Rei dos santos."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 15:3</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">As trombetas afetavam "um terco" da criacao; as tacas sao derramadas sem reducao. O que essa progressao revela sobre as fases do julgamento de Deus na historia — e como o "espaco para arrependimento" das trombetas difere da "consumacao" das tacas?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">O anjo proclama que o julgamento e justo porque os condenados "derramaram o sangue dos santos" (Ap 16:6). Como essa correspondencia entre crime e castigo reflete o principio biblico de justicia retributiva — e como isso consola os perseguidos de todos os seculos?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">Tres vezes os homens blasfemam e recusam o arrependimento diante das tacas (Ap 16:9,11,21). O que isso ensina sobre a natureza do julgamento final — ele endurece ou revela o coracao que ja estava endurecido? Como Romanos 1:24-28 ilumina essa dinamica?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">A setima taca proclama "Esta feito!" ecoando Jo 19:30 na cruz. Como a cruz e o julgamento final sao o mesmo evento visto de angulos distintos — e o que isso revela sobre a relacao entre a graca que voce recebeu e a justica que os condenados enfrentarao?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM','TD','TH'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul,table'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>

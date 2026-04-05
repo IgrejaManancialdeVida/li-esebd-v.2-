@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton Vol.2 · Licao 04 — As Sete Trombetas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#204080;--grad1:#080818;--grad2:#101228;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--pergaminho:#f8f2e8;--creme:#f0e8d8;--cc:#ddd8cc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#060810;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#040408,#060810);border-bottom:1px solid rgba(32,64,128,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#555;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--pergaminho);box-shadow:0 6px 30px rgba(0,0,0,0.6);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 22% 60%,rgba(32,64,128,0.5) 0%,transparent 55%),radial-gradient(ellipse at 78% 20%,rgba(201,168,76,0.15) 0%,transparent 45%),radial-gradient(ellipse at 55% 85%,rgba(10,20,60,0.4) 0%,transparent 50%);}
+.cgrd{position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 24px,rgba(201,168,76,1) 24px,rgba(201,168,76,1) 25px);}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#081028,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:58%;background:linear-gradient(160deg,#020408,var(--cor) 50%,#80b0ff);opacity:0.35;}
+.clh{position:absolute;top:55%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.7;}
+.cvol{position:absolute;top:14mm;right:12mm;z-index:4;text-align:right;}
+.cvol-num{font-family:'Cinzel',serif;font-size:8pt;color:var(--ouro);letter-spacing:3px;opacity:0.7;}
+.cvol-linha{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0 0 auto;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.ctit{font-family:'Cinzel',serif;font-size:22pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:10px;}
+.cref{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:rgba(201,168,76,0.6);text-transform:uppercase;margin-bottom:10px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--pergaminho);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--cor),var(--ouro) 60%,transparent);}
+.int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(32,64,128,0.15);}
+.int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(32,64,128,0.055) 23px,rgba(32,64,128,0.055) 24px);z-index:0;}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#1a2a5a;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.texto-biblico{background:#fff;border:1px solid rgba(32,64,128,0.2);border-left:4px solid var(--cor);padding:12px 14px;margin:12px 0;position:relative;z-index:1;}
+.texto-biblico-ref{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.texto-biblico-ref::after{content:'';flex:1;height:1px;background:rgba(32,64,128,0.2);}
+.texto-biblico p{font-family:'EB Garamond',serif;font-style:italic;font-size:10.5pt;color:#1a2040;line-height:1.7;margin-bottom:4px;text-align:left;}
+.texto-biblico .ref-final{font-size:9pt;font-style:normal;color:var(--ouro);font-family:'Oswald',sans-serif;letter-spacing:1px;display:block;text-align:right;margin-top:4px;}
+.bloco-ctx{background:rgba(32,64,128,0.05);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-ctx-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.bloco-teo{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-teo-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;}
+.bloco-apl{background:linear-gradient(135deg,rgba(32,64,128,0.05),rgba(201,168,76,0.06));border:1px solid rgba(32,64,128,0.2);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-apl-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.memorizar{background:var(--creme);border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:10px 12px;margin:10px 0;text-align:center;position:relative;z-index:1;}
+.memorizar-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;}
+.memorizar p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#1a2040;text-align:center;line-height:1.6;}
+.obj{background:var(--creme);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#8594;';position:absolute;left:0;color:var(--cor);font-size:9pt;}
+/* Tabela das trombetas */
+.tabela-trombetas{width:100%;border-collapse:collapse;margin:10px 0;position:relative;z-index:1;font-size:9pt;}
+.tabela-trombetas th{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);background:rgba(32,64,128,0.08);padding:5px 7px;border-bottom:2px solid var(--cor);text-align:left;}
+.tabela-trombetas td{font-family:'EB Garamond',serif;font-size:9.5pt;color:var(--ct);padding:4px 7px;border-bottom:1px solid rgba(32,64,128,0.1);vertical-align:top;line-height:1.4;}
+.tabela-trombetas tr:last-child td{border-bottom:none;}
+.tabela-trombetas td:first-child{font-family:'Oswald',sans-serif;font-weight:600;color:var(--cor);white-space:nowrap;}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.q{margin-bottom:14px;position:relative;z-index:1;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid rgba(32,64,128,0.2);height:20px;margin-top:3px;}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#aaa;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;position:relative;z-index:1;}
+.lin{border-bottom:1px solid rgba(32,64,128,0.2);height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(32,64,128,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(32,64,128,0.08);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm,.int-linhas{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="painel">
+    <div class="marca">ESCHATON VOL. II<span>Licao 04 &middot; As Sete Trombetas</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">04</div>
+    <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
+    <div class="ccon">
+        <div class="cser">Eschaton &middot; A Palavra que Nao Passara</div>
+        <div class="cref">Apocalipse 8:1 — 9:21 &middot; 11:15-19</div>
+        <div class="ctit">As Sete Trombetas</div>
+        <div class="cver">
+            "E o setimo anjo tocou a trombeta, e houve no ceu grandes vozes que diziam: Os reinos do mundo vieram a ser de nosso Senhor e do seu Cristo, e ele reinara pelos seculos dos seculos."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Apocalipse 11:15</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 TEXTO BIBLICO -->
+<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 04 &middot; Vol. II</span><span class="pht">As Sete Trombetas</span></div>
+    <h2>A Passagem-Base</h2>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 8:1-2, 6-7</div>
+        <p>"E quando abriu o setimo selo, fez-se silencio no ceu quase por meia hora. E vi os sete anjos que estavam em pe diante de Deus, e foram-lhes dadas sete trombetas."</p>
+        <p>"E os sete anjos que tinham as sete trombetas se prepararam para as tocar. E o primeiro tocou a trombeta, e houve saraiva e fogo misturados com sangue, e foram lancados sobre a terra; e a terceira parte da terra se queimou, e a terceira parte das arvores se queimou, e toda a erva verde se queimou."</p>
+        <span class="ref-final">Apocalipse 8:1-2, 6-7</span>
+    </div>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 9:20-21</div>
+        <p>"E os outros homens que nao foram mortos com estas pragas nao se arrependeram das obras de suas maos, para nao adorarem os demonios, e os idolos de ouro, e de prata, e de cobre, e de pedra, e de madeira... nem se arrependeram dos seus homicidios, nem das suas feiticarias, nem da sua fornicacao, nem dos seus furtos."</p>
+        <span class="ref-final">Apocalipse 9:20-21</span>
+    </div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Compreender a estrutura e o progresso das sete trombetas em Apocalipse 8-9</li>
+            <li>Identificar os paralelos das trombetas com as pragas do Egito no Exodo</li>
+            <li>Examinar o proposito redentor e judicial das trombetas no plano de Deus</li>
+            <li>Refletir sobre a dureza do coracao humano diante dos julgamentos divinos</li>
+        </ul>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 CONTEXTO ORIGINAL -->
+<div class="lbl">Pagina 3 &middot; Contexto Original</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 04 &middot; Vol. II</span><span class="pht">As Sete Trombetas</span></div>
+    <h2>Contexto Original</h2>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">A Estrutura do Apocalipse</div>
+        <p>O Apocalipse nao e uma linha do tempo sequencial — e uma serie de visoes em espiral, cada uma recapitulando e aprofundando a mesma realidade de angulos distintos. Os sete selos (Ap 6-8), as sete trombetas (Ap 8-11) e as sete tacas (Ap 15-16) nao sao tres periodos consecutivos, mas tres representacoes progressivamente intensas do mesmo periodo de julgamento. Cada serie vai do inicio ao fim da historia, com crescente enfase na ira de Deus.</p>
+    </div>
+    <h3>O Silencio de Meia Hora — Ap 8:1</h3>
+    <p>Antes das trombetas, ha silencio no ceu "quase por meia hora." No contexto do Apocalipse, onde o ceu ressoa constantemente com adoracao (Ap 4-5), esse silencio e aterrador — a pausa antes da tempestade. E tambem o silencio da oracao: as trombetas sao precedidas pelas oracoes dos santos subindo como incenso diante de Deus (Ap 8:3-4). Os julgamentos que se seguem sao, em parte, a resposta de Deus as oracoes do seu povo sofredor.</p>
+    <h3>O Paralelo com o Exodo</h3>
+    <p>As trombetas ecoam deliberadamente as dez pragas do Egito — grandizo e fogo (Ex 9:23), aguas em sangue (Ex 7:20), trevas (Ex 10:21), gafanhotos (Ex 10:12). Assim como Deus julgou o Egito para libertar Israel, ele julga a humanidade rebelde para libertar seu povo. O Apocalipse apresenta a historia como um novo e maior Exodo cosmico.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">A Funcao das Trombetas no Mundo Antigo</div>
+        <p>Trombetas no mundo biblico tinham tres funcoes: anunciar guerra, convocar o povo e proclamar eventos reais. As trombetas do Apocalipse fazem as tres coisas simultaneamente — anunciam o julgamento de Deus, convocam ao arrependimento e proclamam a soberania do Rei sobre a historia.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 EXEGESE -->
+<div class="lbl">Pagina 4 &middot; Exegese — As Sete Trombetas</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 04 &middot; Vol. II</span><span class="pht">As Sete Trombetas</span></div>
+    <h2>As Sete Trombetas</h2>
+    <table class="tabela-trombetas">
+        <tr>
+            <th>Trombeta</th>
+            <th>Julgamento</th>
+            <th>Escala</th>
+        </tr>
+        <tr>
+            <td>1&#170;</td>
+            <td>Saraiva, fogo e sangue sobre a terra — 1/3 da vegetacao destruida</td>
+            <td>Terra</td>
+        </tr>
+        <tr>
+            <td>2&#170;</td>
+            <td>Grande montanha ardente no mar — 1/3 do mar em sangue</td>
+            <td>Mar</td>
+        </tr>
+        <tr>
+            <td>3&#170;</td>
+            <td>Estrela "Absinto" cai nos rios — 1/3 das aguas envenenadas</td>
+            <td>Rios</td>
+        </tr>
+        <tr>
+            <td>4&#170;</td>
+            <td>1/3 do sol, lua e estrelas obscurecidos — trevas parciais</td>
+            <td>Ceus</td>
+        </tr>
+        <tr>
+            <td>5&#170;</td>
+            <td>Estrela cai, abre o poco do abismo — gafanhotos demoniacos por 5 meses</td>
+            <td>Humanidade</td>
+        </tr>
+        <tr>
+            <td>6&#170;</td>
+            <td>Quatro anjos soltos — exercito de 200 milhoes mata 1/3 da humanidade</td>
+            <td>Humanidade</td>
+        </tr>
+        <tr>
+            <td>7&#170;</td>
+            <td>"Os reinos do mundo vieram a ser de nosso Senhor" — consumacao</td>
+            <td>Historia</td>
+        </tr>
+    </table>
+    <h3>A Progressao: Um Terco para Tudo</h3>
+    <p>As primeiras quatro trombetas afetam um terco da criacao — terra, mar, rios, ceus. O numero parcial e deliberado: o julgamento e real mas ainda nao completo, ainda ha espaco para o arrependimento. As trombetas 5 e 6 intensificam e atingem diretamente a humanidade. A 7&#170; nao descreve mais um julgamento parcial, mas a proclamacao da soberania total de Deus — o fim chegou.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 TEOLOGIA -->
+<div class="lbl">Pagina 5 &middot; Teologia da Passagem</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 04 &middot; Vol. II</span><span class="pht">As Sete Trombetas</span></div>
+    <h2>Teologia da Passagem</h2>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
+        <p>Deus julga em escalada progressiva — nao catastrofe imediata, mas advertencias crescentes. O "um terco" das primeiras trombetas revela um Deus que age em misericordia mesmo no julgamento, preservando dois tercos para que o remanescente tenha oportunidade de se arrepender. Cada trombeta e ao mesmo tempo ira e convite. O Deus das trombetas nao quer a morte do impio — quer que ele se converta e viva (Ez 18:23).</p>
+    </div>
+    <h3>A Dureza do Coracao — Ap 9:20-21</h3>
+    <p>O versículo mais assombroso de toda a secao das trombetas e Apocalipse 9:20-21: depois de julgamentos que mataram um terco da humanidade, os sobreviventes "nao se arrependeram." A lista e especifica: idolatria, homicidio, feiticaria, fornicacao, furto. A dureza do coracao humano diante do julgamento divino e tao profunda que apenas a graca soberana pode operar o arrependimento. Esse texto e um dos mais fortes argumentos da Biblia a favor da doutrina da depravacao total.</p>
+    <h3>A Setima Trombeta: A Consumacao</h3>
+    <p>A setima trombeta (Ap 11:15-19) nao e mais um julgamento — e a proclamacao cosmica da vitoria de Deus: "os reinos do mundo vieram a ser de nosso Senhor e do seu Cristo." Os vinte e quatro anciaos adoram. O templo celestial e aberto. A arca da alianca aparece. A historia chegou ao seu destino. Tudo o que as trombetas anteriores prepararam culmina nessa declaracao de soberania absoluta.</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O Novo Exodo Cosmico</div>
+        <p>Assim como as pragas do Egito demonstraram que o Deus de Israel e soberano sobre os deuses do Egito, as trombetas do Apocalipse demonstram que o Deus de Jesus Cristo e soberano sobre todos os sistemas e poderes que escravizam a humanidade. O objetivo e libertacao — um novo e definitivo Exodo para o povo de Deus.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao Direta</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 04 &middot; Vol. II</span><span class="pht">As Sete Trombetas</span></div>
+    <h2>Aplicacao Direta</h2>
+    <p class="cap">Apocalipse 9:20-21 e um espelho perturbador: mesmo diante de julgamentos devastadores, os sobreviventes nao se arrependem. Isso nao e apenas uma descricao do futuro — e um diagrama do coracao humano em todos os tempos. A capacidade de endurecer o coracao diante da evidencia do julgamento de Deus e uma realidade do presente, nao apenas do Apocalipse.</p>
+    <div class="bloco-apl">
+        <div class="bloco-apl-titulo">Para esta semana</div>
+        <p>Primeiro: as trombetas sao precedidas pelas "oracoes dos santos" que sobem como incenso (Ap 8:3-4). Os julgamentos de Deus na historia sao, em parte, resposta as oracoes do povo sofredor. Como isso muda sua compreensao da oracao intercessora? Sua oracao esta ligada ao movimento de Deus na historia? Segundo: a setima trombeta proclama "os reinos do mundo vieram a ser de nosso Senhor" (Ap 11:15). Se Cristo ja e o Rei soberano sobre todos os reinos, como isso afeta sua postura diante das crises politicas e sociais do Brasil hoje? Terceiro: o silencio de meia hora antes das trombetas (Ap 8:1) sugere que Deus age apos ouvir. Reserve um tempo de silencio genuino em sua devocional desta semana — antes de falar, ouva.</p>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>Para Refletir</h3>
+    <p>Ha crises em sua vida — perdas, fracassos, dificuldades — que Deus pode estar usando como "trombetas pessoais" para chamar sua atencao para algo que precisa mudar? O padrao do Apocalipse e claro: Deus age em escalada progressiva antes de agir em finalidade. O que ele esta dizendo a voce atraves das circunstancias atuais?</p>
+    <div class="memorizar">
+        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
+        <p>"Os reinos do mundo vieram a ser de nosso Senhor e do seu Cristo, e ele reinara pelos seculos dos seculos."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 11:15</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 04 &middot; Vol. II</span><span class="pht">As Sete Trombetas</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">As trombetas afetam apenas "um terco" da criacao nas primeiras quatro. O que esse numero parcial revela sobre o carater de Deus no julgamento — e como isso contrasta com a imagem popular de um Deus vingativo e arbitrario?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">As trombetas ecoam deliberadamente as pragas do Egito. O que esse paralelo com o Exodo revela sobre o proposito dos julgamentos do Apocalipse — e como a libertacao do povo de Deus e o objetivo final de cada julgamento?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">Apocalipse 9:20-21 descreve sobreviventes que, mesmo apos julgamentos devastadores, "nao se arrependeram." O que isso ensina sobre a natureza do coracao humano e sobre a necessidade da graca soberana de Deus para que qualquer arrependimento genuino ocorra?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">A setima trombeta proclama a soberania de Cristo sobre todos os reinos (Ap 11:15). Como essa certeza escatologica — de que Cristo ja e o vencedor — deve moldar sua postura diante das noticias de guerras, corrupcao e crise global que voce consome diariamente?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM','TD','TH'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul,table'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>

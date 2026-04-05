@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton Vol.2 · Licao 08 — A Queda da Babilonia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#905020;--grad1:#181008;--grad2:#281808;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--pergaminho:#f8f2e8;--creme:#f0e8d8;--cc:#ddd8cc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#100a04;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#080402,#100a04);border-bottom:1px solid rgba(144,80,32,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#555;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--pergaminho);box-shadow:0 6px 30px rgba(0,0,0,0.6);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 22% 60%,rgba(144,80,32,0.5) 0%,transparent 55%),radial-gradient(ellipse at 78% 20%,rgba(201,168,76,0.18) 0%,transparent 45%),radial-gradient(ellipse at 50% 85%,rgba(80,35,5,0.4) 0%,transparent 50%);}
+.cgrd{position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 24px,rgba(201,168,76,1) 24px,rgba(201,168,76,1) 25px);}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#281008,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:58%;background:linear-gradient(160deg,#0d0602,var(--cor) 50%,#ffb060);opacity:0.4;}
+.clh{position:absolute;top:55%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.75;}
+.cvol{position:absolute;top:14mm;right:12mm;z-index:4;text-align:right;}
+.cvol-num{font-family:'Cinzel',serif;font-size:8pt;color:var(--ouro);letter-spacing:3px;opacity:0.7;}
+.cvol-linha{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0 0 auto;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.ctit{font-family:'Cinzel',serif;font-size:22pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:10px;}
+.cref{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:rgba(201,168,76,0.6);text-transform:uppercase;margin-bottom:10px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--pergaminho);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--cor),var(--ouro) 60%,transparent);}
+.int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(144,80,32,0.15);}
+.int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(144,80,32,0.055) 23px,rgba(144,80,32,0.055) 24px);z-index:0;}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#4a2808;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.texto-biblico{background:#fff;border:1px solid rgba(144,80,32,0.2);border-left:4px solid var(--cor);padding:12px 14px;margin:12px 0;position:relative;z-index:1;}
+.texto-biblico-ref{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.texto-biblico-ref::after{content:'';flex:1;height:1px;background:rgba(144,80,32,0.2);}
+.texto-biblico p{font-family:'EB Garamond',serif;font-style:italic;font-size:10.5pt;color:#2a1505;line-height:1.7;margin-bottom:4px;text-align:left;}
+.texto-biblico .ref-final{font-size:9pt;font-style:normal;color:var(--ouro);font-family:'Oswald',sans-serif;letter-spacing:1px;display:block;text-align:right;margin-top:4px;}
+.bloco-ctx{background:rgba(144,80,32,0.05);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-ctx-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.bloco-teo{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-teo-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;}
+.bloco-apl{background:linear-gradient(135deg,rgba(144,80,32,0.06),rgba(201,168,76,0.06));border:1px solid rgba(144,80,32,0.2);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-apl-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.memorizar{background:var(--creme);border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:10px 12px;margin:10px 0;text-align:center;position:relative;z-index:1;}
+.memorizar-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;}
+.memorizar p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#2a1505;text-align:center;line-height:1.6;}
+.obj{background:var(--creme);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#8594;';position:absolute;left:0;color:var(--cor);font-size:9pt;}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.q{margin-bottom:14px;position:relative;z-index:1;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid rgba(144,80,32,0.2);height:20px;margin-top:3px;}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#aaa;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;position:relative;z-index:1;}
+.lin{border-bottom:1px solid rgba(144,80,32,0.2);height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(144,80,32,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(144,80,32,0.08);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm,.int-linhas{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="painel">
+    <div class="marca">ESCHATON VOL. II<span>Licao 08 &middot; A Queda da Babilonia</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">08</div>
+    <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
+    <div class="ccon">
+        <div class="cser">Eschaton &middot; A Palavra que Nao Passara</div>
+        <div class="cref">Apocalipse 17:1 — 18:24</div>
+        <div class="ctit">A Queda da Babilonia</div>
+        <div class="cver">
+            "Caiu, caiu a grande Babilonia, e se tornou morada de demonios, e guarita de todo espirito imundo... porque todas as nacoes beberam do vinho da ira da sua fornicacao."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Apocalipse 18:2-3</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 TEXTO BIBLICO -->
+<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. II</span><span class="pht">A Queda da Babilonia</span></div>
+    <h2>A Passagem-Base</h2>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 18:2-5</div>
+        <p>"Caiu, caiu a grande Babilonia, e se tornou morada de demonios, e guarita de todo espirito imundo, e guarita de toda ave imunda e aborrecivel. Porque todas as nacoes beberam do vinho da ira da sua fornicacao, e os reis da terra se prostituiram com ela, e os mercadores da terra se enriqueceram com a abundancia das suas delícias."</p>
+        <p>"E ouvi outra voz do ceu, que dizia: Saí dela, povo meu, para que nao sejais participantes dos seus pecados, e para que nao recebais das suas pragas. Porque os seus pecados amontoaram-se ate ao ceu, e Deus se lembrou das suas iniquidades."</p>
+        <span class="ref-final">Apocalipse 18:2-5</span>
+    </div>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 18:9-10</div>
+        <p>"E os reis da terra, que com ela se prostituiram e viveram em delícias, chorarao e lamentarao sobre ela, quando virem o fumo do seu incendio. Estando de longe por causa do medo do seu tormento, dizendo: Ai! ai! a grande cidade de Babilonia, a forte cidade! Pois em uma hora veio o teu julgamento."</p>
+        <span class="ref-final">Apocalipse 18:9-10</span>
+    </div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Identificar Babilonia como simbolo do sistema mundial de corrupcao e idolatria</li>
+            <li>Examinar as tres vozes de Apocalipse 18 — julgamento, saida e lamento</li>
+            <li>Compreender o chamado "saí dela, povo meu" como separacao crista do mundo</li>
+            <li>Aplicar a critica profetica ao consumismo, ao poder e a corrupcao no presente</li>
+        </ul>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 CONTEXTO ORIGINAL -->
+<div class="lbl">Pagina 3 &middot; Contexto Original</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. II</span><span class="pht">A Queda da Babilonia</span></div>
+    <h2>Contexto Original</h2>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Babilonia — Uma Cidade Real e um Simbolo</div>
+        <p>Babilonia foi a maior potencia do mundo antigo no seculo VI a.C. — destruiu Jerusalem, incendiou o Templo e levou Israel ao cativeiro. Para os judeus, o nome evocava opressao, idolatria e arrogancia imperial. No Apocalipse, "Babilonia" e um codinome para Roma — a potencia que dominava o mundo de Joao e perseguia os cristaos. Mas e tambem um simbolo atemporal de todo sistema humano que se ergue contra Deus, explora os fracos e seduz as nacoes com prosperidade falsa.</p>
+    </div>
+    <h3>Isaias 47 e Jeremias 50-51 — O Pano de Fundo</h3>
+    <p>Joao constroi sua visao da queda de Babilonia a partir de dois grandes poemas profeticos: o lamento sobre a queda de Babilonia historica em Isaias 47 e os oráculos de Jeremias 50-51. A linguagem e quase identica — o que confirma que Joao entende seu texto como o cumprimento escatologico dessas profecias veterotestamentarias. A "grande prostituta" de Apocalipse 17 ecoa o vocabulario de Jeremias sobre Babilonia como sedutora das nacoes.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Os Tres Grupos de Lamentadores — Ap 18</div>
+        <p>Quando Babilonia cai, tres grupos lamentam sua queda "de longe" — por medo do tormento. Os <strong>reis da terra</strong> (Ap 18:9-10) que se prostituiram com ela; os <strong>mercadores</strong> (Ap 18:11-17) que enriqueceram com seu comercio; e os <strong>marinheiros</strong> (Ap 18:17-19) que lucraram com seu transporte. Cada grupo lamenta a perda do proprio lucro, nao a morte de pessoas — a critica economica de Joao e demolidora.</p>
+    </div>
+    <h3>"Saí Dela, Povo Meu" — O Chamado do Exodo</h3>
+    <p>A voz de Ap 18:4 ecoa o chamado profético de Isaias 48:20 e Jeremias 51:45 para que Israel saisse da Babilonia historica. Para a Igreja, o chamado nao e geografico — e uma separacao de valores, lealdades e sistemas que competem com o senhorio de Cristo.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 EXEGESE -->
+<div class="lbl">Pagina 4 &middot; Exegese Versiculo a Versiculo</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. II</span><span class="pht">A Queda da Babilonia</span></div>
+    <h2>Exegese da Passagem</h2>
+    <h3>"A Grande Prostituta" — Ap 17:1</h3>
+    <p>A imagem da prostituta — usada pelos profetas para descrever Israel infiel (Os 1-3; Ez 16; Jr 3) — e aqui aplicada ao sistema mundial que seduz as nacoes com promessas de prosperidade e prazer. A prostituta nao e apenas um poder politico — e um sistema de valores que faz as nacoes "beberem do vinho da ira da sua fornicacao" (Ap 18:3). O vinho e sedutor; a ira e o que fica depois que a sedução passa.</p>
+    <h3>"Caiu, caiu" — Ap 18:2</h3>
+    <p>O duplo "caiu" ecoa Isaias 21:9 — o anuncio da queda da Babilonia historica. No Apocalipse, a queda e anunciada no tempo passado antes de acontecer — a certeza profetica e tao absoluta que o evento futuro pode ser descrito como ja consumado. Deus ja decretou a queda de todo sistema que se ope a ele; a historia apenas aguarda a execucao do decreto.</p>
+    <h3>"Em uma hora" — Ap 18:10,17,19</h3>
+    <p>A expressao "em uma hora" aparece tres vezes no lamento dos que perderam tudo com a queda de Babilonia. O que parecia eterno e solido — o Imperio Romano, o sistema economico global, a prosperidade das nacoes — desmorona em um instante. Isso e advertencia: nada construido sobre a areia do sistema mundial e permanente.</p>
+    <h3>A Lista de Mercadorias — Ap 18:12-13</h3>
+    <p>A lista de mercadorias perdidas na queda de Babilonia e reveladora: ouro, prata, pedras preciosas, roupas finas, madeiras raras, marfim, bronze, ferro, marmore, especiarias, vinho, azeite, trigo, gado — e por ultimo, "corpos e almas de homens" (Ap 18:13). O sistema de Babilonia escraviza pessoas como mercadoria. A critica de Joao ao comercio escravagista de Roma e explicita e demolidora.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 TEOLOGIA -->
+<div class="lbl">Pagina 5 &middot; Teologia da Passagem</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. II</span><span class="pht">A Queda da Babilonia</span></div>
+    <h2>Teologia da Passagem</h2>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
+        <p>Deus e o Senhor da economia e da politica — nao apenas da religiao. Sua critica ao sistema de Babilonia e economica, politica e social: ela "enriqueceu os mercadores" (Ap 18:3), "escravizou corpos e almas" (Ap 18:13) e "embriagou as nacoes" (Ap 18:3). O Deus do Apocalipse nao e um Deus privatizado que cuida apenas da "espiritualidade" — e o Senhor de toda a realidade que julga sistemas economicos e politicos com a mesma seriedade com que julga pecados individuais.</p>
+    </div>
+    <h3>Duas Respostas Distintas — Ap 18 e 19</h3>
+    <p>Diante da queda de Babilonia, dois grupos reagem de forma oposta. Os reis, mercadores e marinheiros choram e lamentam (Ap 18:9-19) — perderam seus lucros. O ceu, os apostolos e os profetas sao convocados a regozijar-se (Ap 18:20) — a justica foi feita. O mesmo evento e tragedia para os que investiram no sistema errado e aleluia para os que mantiveram sua lealdade ao Cordeiro.</p>
+    <h3>Babilonia Como Realidade Presente</h3>
+    <p>Para os leitores de Joao, Babilonia era Roma — concreta, presente e opressiva. Para cada geracao de cristaos, Babilonia assume a forma do sistema dominante que exige lealdade, seduz com prosperidade e persegue os fieis. O criterio para identificar Babilonia em cada epoca: qual sistema promete vida plena fora de Deus? Qual poder exige adoracao? Qual economia escraviza os vulneraveis?</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O Cantico do Aleluia — Ap 19:1-3</div>
+        <p>Imediatamente apos a queda de Babilonia, o ceu ecoa com "Aleluia!" — a unica vez que essa palavra aparece no NT. A adoracao e a resposta adequada ao julgamento justo de Deus. Nao e grito de vinganca — e celebracao da santidade de Deus e da libertacao dos seus servos.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao Direta</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. II</span><span class="pht">A Queda da Babilonia</span></div>
+    <h2>Aplicacao Direta</h2>
+    <p class="cap">"Saí dela, povo meu" (Ap 18:4) — esse chamado nao e monasticismo geografico. O cristao nao abandona o mundo; ele recusa a logica do mundo. A diferenca e entre habitacao e participacao: habitar o mundo e uma necessidade; participar de seus valores, lealdades e sistemas de idolatria e o que deve ser evitado. Essa distincao exige discernimento constante e coragem pratica.</p>
+    <div class="bloco-apl">
+        <div class="bloco-apl-titulo">Para esta semana</div>
+        <p>Primeiro: a lista de mercadorias de Ap 18:12-13 termina com "corpos e almas de homens" — o sistema de Babilonia escraviza pessoas. Examine sua propria participacao em sistemas economicos: sua forma de consumir, investir e trabalhar explora ou dignifica os vulneraveis? Segundo: os mercadores lamentam "em uma hora" — a rapidez da queda do que parecia eterno. Quais certezas materiais ou profissionais voce esta tratando como permanentes, quando sao temporarias? Terceiro: o ceu e convocado a regozijar-se com a queda de Babilonia — justica foi feita. Ha injusticas em sua vida ou comunidade que voce precisa confiar ao Senhor, em vez de tentar resolver pelos proprios meios?</p>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>Para Refletir</h3>
+    <p>Joao descreve Babilonia como sedutora que faz as nacoes "beberem do vinho da sua fornicacao" — o vinho e atraente; a ira e o que vem depois. Quais "vinhos" da cultura contemporanea sao atrativos para voce — formas de sucesso, prazer ou status que competem com o senhorio de Cristo — e que consequencias esses vinhos carregam que raramente sao mostradas?</p>
+    <div class="memorizar">
+        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
+        <p>"Saí dela, povo meu, para que nao sejais participantes dos seus pecados, e para que nao recebais das suas pragas."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 18:4</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 08 &middot; Vol. II</span><span class="pht">A Queda da Babilonia</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">Babilonia representa Roma para os leitores do seculo I, mas tambem todo sistema que se ergue contra Deus e escraviza os vulneraveis. Qual sistema contemporaneo — economico, politico ou cultural — voce reconhece como manifestacao do espirito de Babilonia? Quais sao seus criterios de identificacao?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">Os mercadores lamentam a queda de Babilonia porque perderam seus lucros — eles nao choram por pessoas, mas por mercadorias. A lista termina com "corpos e almas de homens." Como essa critica economica de Joao dialoga com as estruturas de exploracao presentes no Brasil contemporaneo?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">"Saí dela, povo meu" e um chamado de separacao de valores, nao de isolamento geografico. Como o cristao pratica essa separacao enquanto permanece no mundo — em seus relacionamentos, no trabalho, nas redes sociais e no consumo?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">O ceu e convocado a regozijar-se com a queda de Babilonia (Ap 18:20), e o resultado e o "Aleluia!" de Ap 19:1. Como a certeza do julgamento justo de Deus sobre todos os sistemas de injustica pode sustentar a fe do cristao que vive em meio a corrupcao e impunidade hoje?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>
