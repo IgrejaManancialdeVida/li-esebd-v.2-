@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton Vol.2 · Licao 10 — A Batalha Final</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#a02020;--grad1:#200808;--grad2:#280808;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--pergaminho:#f8f2e8;--creme:#f0e8d8;--cc:#ddd8cc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#120404;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#080202,#120404);border-bottom:1px solid rgba(160,32,32,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#555;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--pergaminho);box-shadow:0 6px 30px rgba(0,0,0,0.6);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 22% 60%,rgba(160,32,32,0.55) 0%,transparent 55%),radial-gradient(ellipse at 78% 20%,rgba(201,168,76,0.18) 0%,transparent 45%),radial-gradient(ellipse at 55% 85%,rgba(80,10,10,0.5) 0%,transparent 50%);}
+.cgrd{position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 24px,rgba(201,168,76,1) 24px,rgba(201,168,76,1) 25px);}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#280808,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:60%;background:linear-gradient(160deg,#0d0202,var(--cor) 50%,#ff9060);opacity:0.42;}
+.clh{position:absolute;top:57%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.8;}
+.cvol{position:absolute;top:14mm;right:12mm;z-index:4;text-align:right;}
+.cvol-num{font-family:'Cinzel',serif;font-size:8pt;color:var(--ouro);letter-spacing:3px;opacity:0.7;}
+.cvol-linha{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0 0 auto;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.ctit{font-family:'Cinzel',serif;font-size:22pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:10px;}
+.cref{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:rgba(201,168,76,0.6);text-transform:uppercase;margin-bottom:10px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--pergaminho);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--cor),var(--ouro) 60%,transparent);}
+.int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(160,32,32,0.15);}
+.int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(160,32,32,0.055) 23px,rgba(160,32,32,0.055) 24px);z-index:0;}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#5a1010;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.texto-biblico{background:#fff;border:1px solid rgba(160,32,32,0.2);border-left:4px solid var(--cor);padding:12px 14px;margin:12px 0;position:relative;z-index:1;}
+.texto-biblico-ref{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.texto-biblico-ref::after{content:'';flex:1;height:1px;background:rgba(160,32,32,0.2);}
+.texto-biblico p{font-family:'EB Garamond',serif;font-style:italic;font-size:10.5pt;color:#2a0808;line-height:1.7;margin-bottom:4px;text-align:left;}
+.texto-biblico .ref-final{font-size:9pt;font-style:normal;color:var(--ouro);font-family:'Oswald',sans-serif;letter-spacing:1px;display:block;text-align:right;margin-top:4px;}
+.bloco-ctx{background:rgba(160,32,32,0.05);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-ctx-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.bloco-teo{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-teo-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;}
+.bloco-apl{background:linear-gradient(135deg,rgba(160,32,32,0.05),rgba(201,168,76,0.06));border:1px solid rgba(160,32,32,0.2);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-apl-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.memorizar{background:var(--creme);border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:10px 12px;margin:10px 0;text-align:center;position:relative;z-index:1;}
+.memorizar-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;}
+.memorizar p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#2a0808;text-align:center;line-height:1.6;}
+.obj{background:var(--creme);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#8594;';position:absolute;left:0;color:var(--cor);font-size:9pt;}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.q{margin-bottom:14px;position:relative;z-index:1;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid rgba(160,32,32,0.2);height:20px;margin-top:3px;}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#aaa;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;position:relative;z-index:1;}
+.lin{border-bottom:1px solid rgba(160,32,32,0.2);height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(160,32,32,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(160,32,32,0.08);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm,.int-linhas{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="painel">
+    <div class="marca">ESCHATON VOL. II<span>Licao 10 &middot; A Batalha Final</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">10</div>
+    <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
+    <div class="ccon">
+        <div class="cser">Eschaton &middot; A Palavra que Nao Passara</div>
+        <div class="cref">Apocalipse 19:11-21 &middot; Zacarias 14:1-9</div>
+        <div class="ctit">A Batalha Final</div>
+        <div class="cver">
+            "E vi o ceu aberto, e eis um cavalo branco; e o que estava assentado sobre ele chama-se Fiel e Verdadeiro, e julga e peleja com justica... E no seu manto e na sua coxa tem escrito este nome: REI DOS REIS E SENHOR DOS SENHORES."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Apocalipse 19:11,16</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 TEXTO BIBLICO -->
+<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 10 &middot; Vol. II</span><span class="pht">A Batalha Final</span></div>
+    <h2>A Passagem-Base</h2>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Apocalipse 19:11-16</div>
+        <p>"E vi o ceu aberto, e eis um cavalo branco; e o que estava assentado sobre ele chama-se Fiel e Verdadeiro, e julga e peleja com justica. E os seus olhos eram como chama de fogo, e na sua cabeca havia muitos diademas; e tinha um nome escrito que ninguem sabia, senao ele mesmo."</p>
+        <p>"E estava vestido de um manto tinto de sangue, e o seu nome e chamado: O Verbo de Deus. E os exercitos que estao no ceu o seguiam em cavalos brancos, vestidos de linho fino, branco e puro."</p>
+        <p>"E da sua boca sai uma aguda espada, para com ela ferir as nacoes; e ele mesmo as apascentara com vara de ferro; e ele mesmo pisa o lagar do vinho do furor da ira do Deus Todo-Poderoso. E no seu manto e na sua coxa tem escrito este nome: REI DOS REIS E SENHOR DOS SENHORES."</p>
+        <span class="ref-final">Apocalipse 19:11-16</span>
+    </div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Examinar a descricao do Cavaleiro do Cavalo Branco e seus titulos em Ap 19:11-16</li>
+            <li>Compreender a "espada da boca" como Palavra de Deus que julga e vence</li>
+            <li>Analisar o paralelo com Zacarias 14 e o Dia do Senhor sobre os inimigos</li>
+            <li>Aplicar a certeza da vitoria de Cristo ao engajamento corajoso do cristao hoje</li>
+        </ul>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 CONTEXTO ORIGINAL -->
+<div class="lbl">Pagina 3 &middot; Contexto Original</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 10 &middot; Vol. II</span><span class="pht">A Batalha Final</span></div>
+    <h2>Contexto Original</h2>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">O Cavaleiro do Cavalo Branco — Quem e Ele?</div>
+        <p>O cavaleiro do cavalo branco de Apocalipse 19:11 nao deve ser confundido com o cavaleiro do primeiro selo em Apocalipse 6:2, que muitos identificam como o Anticristo. Os dois textos sao radicalmente distintos em contexto e descricao. O cavaleiro de Ap 19 e identificado por quatro titulos cumulativos: "Fiel e Verdadeiro" (v.11), "O Verbo de Deus" (v.13 — o mesmo titulo de Joao 1:1), um nome oculto (v.12) e "Rei dos Reis e Senhor dos Senhores" (v.16). Nao ha duvida: este e Jesus Cristo em sua Parusia gloriosa.</p>
+    </div>
+    <h3>Zacarias 14 — O Paralelo Profético</h3>
+    <p>Zacarias 14 e o pano de fundo veterotestamentario mais direto de Apocalipse 19:11-21. O profeta descreve o Dia do Senhor sobre Jerusalem: as nacoes se renem contra a cidade, o Senhor mesmo vai combater, seus pes tocam o Monte das Oliveiras (Zc 14:4), e "o Senhor sera Rei sobre toda a terra" (Zc 14:9). Joao reinterpreta essa visao a luz da revelacao completa em Cristo — o Senhor que vem e o proprio Jesus, o Noivo que acabou de celebrar as bodas (Ap 19:6-9).</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">O "Exercito" do Ceu — Ap 19:14</div>
+        <p>Os exercitos que seguem o Cavaleiro "vestidos de linho fino, branco e puro" sao os mesmos que a noiva usou no casamento (Ap 19:8). Eles nao portam armas — pois a batalha sera ganha pela espada da boca de Cristo, nao por combate humano. A Igreja nao vence pela forca propria; ela participa da vitoria de Cristo vestida de sua santidade.</p>
+    </div>
+    <h3>A Cena do Grande Banquete — Ap 19:17-18</h3>
+    <p>Antes da batalha, um anjo convoca as aves para o "grande banquete de Deus" — uma ironica inversao da Ceia das Bodas. Enquanto os redimidos celebram o banquete do Cordeiro, os inimigos se tornam o banquete das aves. A imagem ecoa Ezequiel 39:17-20 e a batalha de Gogue e Magogue. A inversao e deliberada e perturbadora.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 EXEGESE -->
+<div class="lbl">Pagina 4 &middot; Exegese Versiculo a Versiculo</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 10 &middot; Vol. II</span><span class="pht">A Batalha Final</span></div>
+    <h2>Exegese da Passagem</h2>
+    <h3>"Fiel e Verdadeiro" — Ap 19:11</h3>
+    <p>O primeiro titulo do Cavaleiro — "Fiel e Verdadeiro" — e uma declaracao de carater, nao apenas de funcao. Ele julga "com justica" porque e intrinsecamente fiel ao que prometeu e verdadeiro no que diz. O contraste com a besta e Babilonia — que enganam, seduzem e mentem — e total. O mundo final e governado por Quem e a Verdade em pessoa (Jo 14:6).</p>
+    <h3>"Da sua boca sai uma aguda espada" — Ap 19:15</h3>
+    <p>A arma de Cristo nao e uma espada literal — e a Palavra de Deus. A mesma imagem aparece em Isaias 11:4 ("ferira a terra com a vara de sua boca"), Hebreus 4:12 ("a palavra de Deus e viva e eficaz, e mais afiada do que qualquer espada de dois gumes") e Efesios 6:17 ("a espada do Espirito, que e a palavra de Deus"). Cristo vence seus inimigos com a proclamacao da Palavra — nao com violencia militar. Isso define como a Igreja deve combater: com o evangelho, nao com o poder politico.</p>
+    <h3>"Manto tinto de sangue" — Ap 19:13</h3>
+    <p>O manto tinto de sangue e debatido: e o sangue de Cristo derramado na cruz, ou o sangue dos inimigos pisados no lagar da ira (eco de Is 63:1-6)? A linguagem de Isaias 63 apoia a segunda leitura — o guerreiro que "pisou o lagar sozinho" e cujas vestes foram tingidas pelo sangue dos inimigos. Mas em Joao, o Cordeiro ja foi imolado — o sangue da cruz permeia toda a visao.</p>
+    <h3>"Rei dos Reis e Senhor dos Senhores" — Ap 19:16</h3>
+    <p>O titulo final esta escrito no manto E na coxa — visivel a todos enquanto o Cavaleiro avanca. Toda autoridade humana — reis, presidentes, imperadores, parlamentos — e subautoridade sob esse titulo. Nao ha poder legitimo que nao derive e nao responda ao Rei dos Reis. A historia inteira corre para esse reconhecimento universal.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 TEOLOGIA -->
+<div class="lbl">Pagina 5 &middot; Teologia da Passagem</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 10 &middot; Vol. II</span><span class="pht">A Batalha Final</span></div>
+    <h2>Teologia da Passagem</h2>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
+        <p>O Deus que se revelou como Cordeiro imolado (Ap 5:6) e o mesmo que avanca como Rei dos Reis (Ap 19:16). Nao e uma contradicao — e a plenitude do mesmo carater. O Cordeiro que foi morto por amor e o Rei que vem em justica sao o mesmo Jesus. O amor que o levou a cruz e a mesma santidade que o leva ao campo de batalha. Quem entende a cruz entende por que o julgamento final e necessario e justo.</p>
+    </div>
+    <h3>A "Batalha" que Nao e uma Batalha</h3>
+    <p>Apocalipse 19:19-21 descreve o confronto entre o Cavaleiro e os inimigos reunidos — mas nao descreve uma batalha real. Nao ha estrategia, manobra ou combate. A besta e o falso profeta sao simplesmente "lancados vivos no lago de fogo" (v.20). O restante dos inimigos e morto "pela espada do que estava assentado sobre o cavalo, a espada que saiu de sua boca" (v.21). A Palavra fala — e e feito. Nao ha resistencia possivel ao poder de Deus quando ele age em finalidade.</p>
+    <h3>Armagedom — Nao uma Batalha Geografica</h3>
+    <p>Armagedom (Ap 16:16) — a "batalha" para a qual os reis da terra sao convocados — nao e descrita como uma guerra terrena com exercitos e estrategia militar. E a confrontacao final entre o poder de Cristo e todas as forcas que se opuseram a ele ao longo da historia. A questao nao e geografica — e teologica: quem e o soberano da historia? A resposta de Apocalipse 19 e inequivoca: o Verbo de Deus, o Fiel e Verdadeiro, o Rei dos Reis.</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O Fim do Anticristo e do Falso Profeta</div>
+        <p>A besta e o falso profeta — os dois agentes do dragao — sao lancados no lago de fogo (Ap 19:20). Satanas sera preso por mil anos (Ap 20:1-3) e depois lancado no mesmo lago (Ap 20:10). A trindade invertida tem o mesmo destino final: destruicao eterna. O plano do inimigo nao prospera — nem agora, nem nunca.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao Direta</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 10 &middot; Vol. II</span><span class="pht">A Batalha Final</span></div>
+    <h2>Aplicacao Direta</h2>
+    <p class="cap">O exercito do ceu que segue o Cavaleiro usa o mesmo linho fino da noiva — nao carrega armas. Cristo vence pela espada de sua boca — a Palavra. Isso define o armamento da Igreja em todas as eras: "as armas da nossa milicia nao sao carnais, mas poderosas em Deus" (2 Co 10:4). A Igreja que busca o poder politico como sua arma principal trocou a espada da boca pelo poder da coercao — e perdeu sua arma mais eficaz.</p>
+    <div class="bloco-apl">
+        <div class="bloco-apl-titulo">Para esta semana</div>
+        <p>Primeiro: o Cavaleiro se chama "Fiel e Verdadeiro" — e julga "com justica." Em que areas da sua vida voce precisa confiar no julgamento justo de Cristo, em vez de tomar a justica nas proprias maos? Segundo: Cristo vence pela "espada de sua boca" — a Palavra de Deus proclamada. Como isso deve moldar sua estrategia de influencia no mundo: pela Palavra fielmente proclamada, ou por outros meios de poder? Terceiro: os exercitos do ceu seguem vestidos de linho — a santidade da noiva. O cristao que quer participar da vitoria de Cristo precisa primeiro participar da santidade de Cristo. O que em sua vida precisa ser purificado para que voce seja parte desse exercito?</p>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>Para Refletir</h3>
+    <p>Apocalipse 19:16 inscreve no manto do Cavaleiro: "REI DOS REIS E SENHOR DOS SENHORES" — em maiusculas, visivel a todos. Toda autoridade humana e contingente e temporaria; esse titulo e eterno e absoluto. Como essa certeza — de que Cristo ja e o Soberano de toda a historia — muda sua ansiedade diante das crises politicas, sociais e geopoliticas do mundo hoje?</p>
+    <div class="memorizar">
+        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
+        <p>"E no seu manto e na sua coxa tem escrito este nome: REI DOS REIS E SENHOR DOS SENHORES."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 19:16</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 10 &middot; Vol. II</span><span class="pht">A Batalha Final</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">O Cavaleiro do Cavalo Branco de Apocalipse 19 recebe quatro titulos. Qual e a importancia teologica de cada um: "Fiel e Verdadeiro", "O Verbo de Deus", o nome oculto e "Rei dos Reis e Senhor dos Senhores"? O que cada titulo revela sobre o carater de Cristo?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">A arma de Cristo na batalha final e "a espada que sai de sua boca" — a Palavra de Deus. Como esse detalhe define a estrategia de vitoria da Igreja no presente — e o que acontece quando a Igreja troca essa arma por poder politico ou coercao?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">Os exercitos do ceu seguem o Cavaleiro vestidos do mesmo linho fino da noiva — sem armas proprias. O que isso revela sobre a natureza da participacao do povo de Deus na vitoria final de Cristo? O que distingue "seguir Cristo" de "lutar por Cristo" nos proprios termos?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">O titulo "Rei dos Reis e Senhor dos Senhores" e inscrito no manto — visivel a todos. Como a soberania absoluta e ja presente de Cristo sobre todos os reinos deve moldar a postura do cristao diante das autoridades politicas — nem subversao irresponsavel nem lealdade idolatrica?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>
