@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton Vol.2 · Licao 12 — A Nova Alianca e a Esperanca de Israel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#305080;--grad1:#0a1018;--grad2:#101828;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--pergaminho:#f8f2e8;--creme:#f0e8d8;--cc:#ddd8cc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#060c10;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#030608,#060c10);border-bottom:1px solid rgba(48,80,128,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:7.5pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#555;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--pergaminho);box-shadow:0 6px 30px rgba(0,0,0,0.6);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 22% 60%,rgba(48,80,128,0.45) 0%,transparent 55%),radial-gradient(ellipse at 78% 20%,rgba(201,168,76,0.18) 0%,transparent 45%);}
+.cgrd{position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 24px,rgba(201,168,76,1) 24px,rgba(201,168,76,1) 25px);}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#101828,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:58%;background:linear-gradient(160deg,#040810,var(--cor) 50%,#90c0ff);opacity:0.38;}
+.clh{position:absolute;top:55%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.7;}
+.cvol{position:absolute;top:14mm;right:12mm;z-index:4;text-align:right;}
+.cvol-num{font-family:'Cinzel',serif;font-size:8pt;color:var(--ouro);letter-spacing:3px;opacity:0.7;}
+.cvol-linha{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0 0 auto;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.ctit{font-family:'Cinzel',serif;font-size:17pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:10px;}
+.cref{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:rgba(201,168,76,0.6);text-transform:uppercase;margin-bottom:10px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--pergaminho);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--cor),var(--ouro) 60%,transparent);}
+.int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(48,80,128,0.15);}
+.int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(48,80,128,0.055) 23px,rgba(48,80,128,0.055) 24px);z-index:0;}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#182840;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.texto-biblico{background:#fff;border:1px solid rgba(48,80,128,0.2);border-left:4px solid var(--cor);padding:12px 14px;margin:12px 0;position:relative;z-index:1;}
+.texto-biblico-ref{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.texto-biblico-ref::after{content:'';flex:1;height:1px;background:rgba(48,80,128,0.2);}
+.texto-biblico p{font-family:'EB Garamond',serif;font-style:italic;font-size:10.5pt;color:#101828;line-height:1.7;margin-bottom:4px;text-align:left;}
+.texto-biblico .ref-final{font-size:9pt;font-style:normal;color:var(--ouro);font-family:'Oswald',sans-serif;letter-spacing:1px;display:block;text-align:right;margin-top:4px;}
+.bloco-ctx{background:rgba(48,80,128,0.05);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-ctx-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.bloco-teo{background:rgba(201,168,76,0.08);border-left:3px solid var(--ouro);padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-teo-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:6px;}
+.bloco-apl{background:linear-gradient(135deg,rgba(48,80,128,0.06),rgba(201,168,76,0.07));border:1px solid rgba(48,80,128,0.2);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.bloco-apl-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.memorizar{background:var(--creme);border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:10px 12px;margin:10px 0;text-align:center;position:relative;z-index:1;}
+.memorizar-titulo{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:6px;}
+.memorizar p{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:#101828;text-align:center;line-height:1.6;}
+.obj{background:var(--creme);border-radius:2px;padding:10px 12px;margin:10px 0;position:relative;z-index:1;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#8594;';position:absolute;left:0;color:var(--cor);font-size:9pt;}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.q{margin-bottom:14px;position:relative;z-index:1;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid rgba(48,80,128,0.2);height:20px;margin-top:3px;}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#aaa;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;position:relative;z-index:1;}
+.lin{border-bottom:1px solid rgba(48,80,128,0.2);height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(48,80,128,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(48,80,128,0.08);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm,.int-linhas{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="painel">
+    <div class="marca">ESCHATON VOL. II<span>Licao 12 &middot; A Nova Alianca e a Esperanca de Israel</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">12</div>
+    <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
+    <div class="ccon">
+        <div class="cser">Eschaton &middot; A Palavra que Nao Passara</div>
+        <div class="cref">Jeremias 31:31-34 &middot; Ezequiel 36:24-28 &middot; Romanos 11:25-27</div>
+        <div class="ctit">A Nova Alianca e a Esperanca de Israel</div>
+        <div class="cver">
+            "Eis que vem dias, diz o Senhor, em que farei uma nova alianca com a casa de Israel e com a casa de Juda... Porei a minha lei no seu interior, e a escreverei no seu coracao; e eu serei o seu Deus, e eles serao o meu povo."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Jeremias 31:31,33</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 TEXTO BIBLICO -->
+<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
+    <h2>A Passagem-Base</h2>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Jeremias 31:31-34</div>
+        <p>"Eis que vem dias, diz o Senhor, em que farei uma nova alianca com a casa de Israel e com a casa de Juda; nao segundo a alianca que fiz com seus pais, no dia em que os tomei pela mao para os tirar da terra do Egito... Porei a minha lei no seu interior, e a escreverei no seu coracao; e eu serei o seu Deus, e eles serao o meu povo. E nao ensinara mais cada um ao seu proximo... pois todos me conhecerao, desde o menor deles ate o maior... porque perdoarei a sua iniquidade e dos seus pecados nao me lembrarei mais."</p>
+        <span class="ref-final">Jeremias 31:31-34</span>
+    </div>
+    <div class="texto-biblico">
+        <div class="texto-biblico-ref">Romanos 11:25-26</div>
+        <p>"Porque nao quero, irmaos, que ignoreis este misterio, para que nao presumais de vos mesmos: que o endurecimento veio em parte sobre Israel, ate que a plenitude dos gentios haja entrado. E assim todo o Israel sera salvo, como esta escrito: Vira de Siao o Libertador, e desviara de Jaco as impiedades."</p>
+        <span class="ref-final">Romanos 11:25-26</span>
+    </div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Examinar Jeremias 31:31-34 como promessa central da Nova Alianca</li>
+            <li>Comparar a Nova Alianca com as aliancas anteriores — continuidade e superacao</li>
+            <li>Analisar Romanos 11:25-27 como texto-chave sobre o futuro de Israel</li>
+            <li>Compreender como a Nova Alianca e cumprida em Cristo e aplicada pela Igreja</li>
+        </ul>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 CONTEXTO ORIGINAL -->
+<div class="lbl">Pagina 3 &middot; Contexto Original</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
+    <h2>Contexto Original</h2>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Jeremias — A Profecia na Vespera do Exilio</div>
+        <p>Jeremias proferiu as palavras de Jeremias 31 por volta de 587 a.C. — exatamente quando Babilonia destruia Jerusalem e o Templo era incendiado. No momento de maior catastrofe nacional, Deus promete uma alianca nova e superior. O contexto e crucial: a Nova Alianca nao e uma renegociacao da antiga; e sua superacao radical. A alianca mosaica foi quebrada por Israel continuamente — a nova sera inquebravel porque escrita no coracao, nao em pedra.</p>
+    </div>
+    <h3>As Aliancas de Deus — Uma Estrutura</h3>
+    <p>A Biblia apresenta uma serie de aliancas progressivas: com Noe (Gn 9), com Abraao (Gn 15 e 17), com Moises/Israel (Ex 19-24), com Davi (2 Sm 7) e a Nova Alianca de Jeremias 31. Cada alianca nao cancela as anteriores, mas as cumpre e supera. A Nova Alianca e a consumacao de todas — o ponto para o qual todas as outras apontavam. Jesus a institui na Ultima Ceia: "Este calice e a nova alianca no meu sangue" (Lc 22:20).</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Ezequiel 36 — O Espirito que Capacita</div>
+        <p>Ezequiel 36:24-28 e o paralelo de Jeremias 31 — mas adiciona o elemento do Espirito Santo: "porei o meu Espirito dentro de vos, e farei que andeis nos meus estatutos" (Ez 36:27). O que Jeremias descreve como lei escrita no coracao, Ezequiel descreve como obra do Espirito. A Nova Alianca e trinitaria em sua estrutura: fundada pelo Pai, estabelecida pelo Filho, aplicada pelo Espirito.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 EXEGESE -->
+<div class="lbl">Pagina 4 &middot; Exegese Versiculo a Versiculo</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
+    <h2>Exegese da Passagem</h2>
+    <h3>"Nao segundo a alianca que fiz com seus pais" — Jr 31:32</h3>
+    <p>A Nova Alianca e explicitamente distinta da Mosaica — "nao segundo." A alianca do Sinai era condicional: "se ouvirdes... serei vosso Deus." Israel a quebrou repetidamente (Jr 31:32b). A Nova Alianca e de estrutura radicalmente diferente: e Deus quem age unilateralmente — "porei", "escreverei", "serei", "perdoarei." A iniciativa e a capacitacao sao inteiramente divinas.</p>
+    <h3>"Porei a minha lei no seu interior" — Jr 31:33</h3>
+    <p>A lei do Sinai estava em tabuas de pedra — externa ao homem, incapaz de transformar o coracao. A lei da Nova Alianca sera "no interior" — o mesmo vocabulario de Ezequiel 36:27 sobre o Espirito. Paulo desenvolve esse contraste em 2 Corintios 3:3: a Igreja e "carta de Cristo... escrita nao com tinta, mas com o Espirito do Deus vivo; nao em tabuas de pedra, mas em tabuas de carne, nos coracoes."</p>
+    <h3>"Todos me conhecerao" — Jr 31:34</h3>
+    <p>Na Nova Alianca, o conhecimento de Deus nao depende de mediacao sacerdotal — "nao ensinara mais cada um ao seu proximo." Cada membro do povo tera acesso direto e pessoal a Deus. Isso e cumprido no sacerdocio universal dos crentes (1 Pe 2:9) e no acesso direto ao Pai pelo Filho (Ef 2:18). O Templo e os sacerdotes eram necessarios na alianca antiga — na nova, "o Senhor Deus Todo-Poderoso e o Cordeiro sao o seu templo" (Ap 21:22).</p>
+    <h3>"Dos seus pecados nao me lembrarei mais" — Jr 31:34</h3>
+    <p>O fundamento da Nova Alianca e o perdao total e definitivo. Hebreus 8-10 cita Jeremias 31 tres vezes para demonstrar que Cristo e o mediador da Nova e Melhor Alianca — cujo sangue oferece o que os sacrificios animais nunca puderam: purificacao permanente da consciencia (Hb 9:14) e remissao definitiva dos pecados (Hb 10:17-18).</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 TEOLOGIA -->
+<div class="lbl">Pagina 5 &middot; Teologia da Passagem</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
+    <h2>Teologia da Passagem</h2>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
+        <p>Deus e o Deus das aliancas — ele se compromete com seu povo de forma juridica e pessoal, assumindo obrigacoes voluntarias. A Nova Alianca revela um Deus que nao desiste de seu povo mesmo quando o povo o abandona: a resposta ao fracasso repetido de Israel nao e abandono, mas uma alianca nova e inquebravel, cujas condicoes Deus mesmo cumpre. O perdao definitivo — "dos seus pecados nao me lembrarei mais" — revela um Deus cuja misericordia supera infinitamente sua memoria das transgressoes.</p>
+    </div>
+    <h3>Romanos 11 — O Misterio do Futuro de Israel</h3>
+    <p>Paulo revela em Romanos 11:25-27 um "misterio" — algo antes oculto, agora revelado. Dois elementos: (1) o endurecimento de Israel e parcial e temporario — "ate que a plenitude dos gentios haja entrado"; (2) "e assim todo o Israel sera salvo." A sequencia e missionaria: a missao entre os gentios e o mecanismo pelo qual Deus provoca ciume em Israel (Rm 11:11) e precipita sua conversao futura.</p>
+    <h3>O Que Significa "Todo o Israel"?</h3>
+    <p>A expressao "todo o Israel" e debatida. Para o dispensacionalismo, e a nacao judaica convertida em massa na Tribulacao. Para a teologia da alianca, pode ser o Israel de Deus em sua totalidade — judeus e gentios unidos em Cristo (Gl 6:16) — ou a conversao de um grande numero de judeus etnicos ao evangelho ao longo da historia, sem necessariamente um evento nacional especifico e futuro. O que Paulo garante: Deus nao rejeitou seu povo (Rm 11:1-2).</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">A Nova Alianca e a Ceia do Senhor</div>
+        <p>Cada vez que a Igreja celebra a Ceia do Senhor — "Este calice e a nova alianca no meu sangue" (Lc 22:20; 1 Co 11:25) — ela proclama o cumprimento de Jeremias 31 em Cristo. A Ceia nao e um rito religioso arbitrario; e a celebracao do coracão da Nova Alianca: perda de pecados, comunhao com Deus, antecipacao da Ceia das Bodas.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao Direta</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
+    <h2>Aplicacao Direta</h2>
+    <p class="cap">A Nova Alianca tem quatro promessas para o crente: lei no coracao (transformacao interna), conhecimento direto de Deus (acesso pessoal), perdao definitivo (nenhuma condenacao restante) e identidade de povo (pertencimento eterno). Essas nao sao aspiracoes futuras — sao realidades presentes de quem esta em Cristo. A pergunta nao e "quando terei isso?" mas "estou vivendo a luz do que ja tenho?"</p>
+    <div class="bloco-apl">
+        <div class="bloco-apl-titulo">Para esta semana</div>
+        <p>Primeiro: Jeremias 31:34 promete que Deus "nao se lembrara mais" dos seus pecados. Ha alguma culpa ou vergonha do passado que voce carrega como se Deus ainda se lembrasse? A Nova Alianca diz explicitamente que ele nao se lembra — o que muda quando voce leva isso a serio? Segundo: Paulo diz que a missao entre os gentios "provoca ciume" em Israel (Rm 11:11-14). Voce ja pensou que sua fidelidade ao evangelho e parte do plano de Deus para Israel? Como isso intensifica o sentido da sua vida crista? Terceiro: "eu serei o seu Deus, e eles serao o meu povo" — a formula da alianca. Em que areas da sua vida voce nao tem vivido como "povo de Deus" — agindo como se fosse seu proprio senhor?</p>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>Para Refletir</h3>
+    <p>A Nova Alianca foi prometida a "Israel e Juda" — um povo que havia quebrado a alianca anterior dezenas de vezes. O Deus que fez essa promessa sabia do historico de fracasso de Israel. Ele prometeu de qualquer forma. Como essa fidelidade de Deus diante do fracasso humano — "ele permanece fiel, porque nao pode negar-se a si mesmo" (2 Tm 2:13) — sustenta sua confianca no relacionamento com Deus quando voce mesmo falha?</p>
+    <div class="memorizar">
+        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
+        <p>"Porei a minha lei no seu interior, e a escreverei no seu coracao; e eu serei o seu Deus, e eles serao o meu povo."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Jeremias 31:33</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="int-linhas"></div><div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">A Nova Alianca e explicitamente "nao segundo" a Mosaica. Quais sao as diferencas estruturais fundamentais entre as duas aliancas — especialmente quanto a lei externa vs. lei interna, e condicionalidade vs. unilateralidade divina?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">Hebreus 8-10 cita Jeremias 31 para demonstrar que Cristo e mediador de uma alianca melhor. O que o argumento de Hebreus revela sobre a relacao entre os sacrificios do AT e o sacrificio de Cristo — tipo e antitipo?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">Paulo diz que a missao entre os gentios "provoca ciume" em Israel (Rm 11:11) como parte do plano de Deus para sua conversao futura. Como isso muda a compreensao do significado escatologico da missao crista — especialmente entre povos que ainda nao ouviram o evangelho?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">A promessa "dos seus pecados nao me lembrarei mais" e juridica e definitiva. Como a realidade do perdao total e permanente na Nova Alianca deve transformar a forma como o cristao lida com culpa, arrependimento e autocondencao no cotidiano?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>
