@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ESCHATON Volume 2 — A Palavra que Não Passará</title>
+<title>ESCHATON — Volume II — A Palavra que Não Passará</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Eschaton Vol.II">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
@@ -99,6 +105,47 @@ body{background:var(--sepia);font-family:'EB Garamond',Georgia,serif;min-height:
 /* Link Vol.1 */
 .link-vol1{display:inline-block;margin-top:16px;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cinza);border:1px solid rgba(201,168,76,0.2);padding:7px 18px;border-radius:2px;text-decoration:none;transition:all 0.2s;}
 .link-vol1:hover{color:var(--ouro);border-color:rgba(201,168,76,0.5);}
+
+/* ===== MOBILE ===== */
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 100svh;
+        padding: 48px 16px;
+    }
+    .hero-content { max-width: 100%; }
+    .vol-badge { padding: 5px 12px; margin-bottom: 18px; }
+    .vol-badge-num { font-size: 8pt; }
+    .vol-badge-txt { font-size: 7pt; }
+    .hero-titulo { font-size: clamp(26pt, 9vw, 42pt); letter-spacing: 3px; }
+    .hero-vol { font-size: 9pt; letter-spacing: 2px; }
+    .hero-divisor { width: min(220px, 100%); margin: 18px auto; }
+    .hero-sub { font-size: 12pt; max-width: 100%; margin-bottom: 24px; }
+    .hero-ref { font-size: 7.5pt; letter-spacing: 1.5px; }
+
+    .licoes-section { padding: 48px 12px; }
+    .section-header { margin-bottom: 32px; }
+    .section-header h2 { font-size: 16pt; letter-spacing: 2px; }
+    .section-header p { font-size: 10.5pt; }
+
+    .grid { grid-template-columns: 1fr; gap: 14px; }
+
+    .card-topo { height: 76px; }
+    .card-num { font-size: 38pt; }
+    .card-corpo { padding: 12px 14px 14px; }
+    .card-titulo { font-size: 11pt; }
+    .card-sub { font-size: 9pt; }
+    .card-acoes { padding: 10px 14px; }
+
+    .rodape { padding: 28px 16px 40px; }
+}
+
+@media screen and (max-width: 480px) {
+    .hero { padding: 40px 14px; }
+    .hero-titulo { letter-spacing: 2px; }
+    .licoes-section { padding: 36px 10px; }
+    .card-btn { padding: 4px 8px; font-size: 7pt; }
+}
+
 </style>
 </head>
 <body>
@@ -111,12 +158,12 @@ body{background:var(--sepia);font-family:'EB Garamond',Georgia,serif;min-height:
         <div class="vol-badge">
             <span class="vol-badge-num">VOL. II</span>
             <span class="vol-badge-sep"></span>
-            <span class="vol-badge-txt">Estudos Escatologicos</span>
+            <span class="vol-badge-txt">Estudos Escatológicos</span>
         </div>
         <h1 class="hero-titulo">ESCHATON</h1>
-        <div class="hero-vol">A Palavra que Nao Passara</div>
+        <div class="hero-vol">A Palavra que Não Passará</div>
         <div class="hero-divisor"><span class="hero-divisor-ico">&#10022;</span></div>
-       <p class="hero-sub">"O ceu e a terra passarao, mas as minhas palavras nao passarao."</p>
+       <p class="hero-sub">"O céu e a terra passarão, mas as minhas palavras não passarão."</p>
 
 <div style="margin-bottom:20px;animation:fadeUp 1s ease 0.55s both;">
     <a href="capa-vol2.html" style="text-decoration:none;">
@@ -128,15 +175,15 @@ body{background:var(--sepia);font-family:'EB Garamond',Georgia,serif;min-height:
     </a>
 </div>
 
-<div class="hero-ref">Mateus 24:35 &middot; Escola Biblica Dominical &middot; Jovens Adultos</div>
+<div class="hero-ref">Mateus 24:35 &middot; Escola Bíblica Dominical &middot; Jovens Adultos</div>
 </div>
 </section>
 
 <!-- GRID -->
-<section class="licões-section">
+<section class="licoes-section">
     <div class="section-header">
-        <h2>Sumario das Licoes</h2>
-        <p>Temas escatológicos direto das passagens-chave das Escrituras</p>
+        <h2>Sumário das Lições</h2>
+        <p>Temas escatológicos extraídos das passagens-chave das Escrituras</p>
     </div>
     <div class="grid">
 
@@ -144,52 +191,52 @@ body{background:var(--sepia);font-family:'EB Garamond',Georgia,serif;min-height:
             <div class="card-topo t01">
                 <div class="card-num">01</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 01</div>
+                    <div class="card-num-txt">Lição 01</div>
                     <div class="card-ref">Joel 2:1-11 &middot; 2 Pedro 3:10</div>
                 </div>
             </div>
             <div class="card-corpo cb01">
                 <div class="card-titulo">O Dia do Senhor</div>
-                <div class="card-sub">O grande e terrivel dia que os profetas anunciaram atraves dos seculos</div>
+                <div class="card-sub">O grande e terrível dia que os profetas anunciaram através dos séculos</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-02.html" class="card">
             <div class="card-topo t02">
                 <div class="card-num">02</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 02</div>
+                    <div class="card-num-txt">Lição 02</div>
                     <div class="card-ref">2 Ts 2:1-12 &middot; 1 Tm 4:1-3</div>
                 </div>
             </div>
             <div class="card-corpo cb02">
                 <div class="card-titulo">A Apostasia dos Ultimos Tempos</div>
-                <div class="card-sub">O abandono da fe e o homem do pecado como sinais do fim</div>
+                <div class="card-sub">O abandono da fé e o homem do pecado como sinais do fim</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-03.html" class="card">
             <div class="card-topo t03">
                 <div class="card-num">03</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 03</div>
+                    <div class="card-num-txt">Lição 03</div>
                     <div class="card-ref">Apocalipse 7:1-8 &middot; 14:1-5</div>
                 </div>
             </div>
             <div class="card-corpo cb03">
                 <div class="card-titulo">Os 144.000</div>
-                <div class="card-sub">Quem sao os selados de Deus e o que sua presenca revela sobre o plano divino</div>
+                <div class="card-sub">Quem são os selados de Deus e o que sua presença revela sobre o plano divino</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-04.html" class="card">
             <div class="card-topo t04">
                 <div class="card-num">04</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 04</div>
+                    <div class="card-num-txt">Lição 04</div>
                     <div class="card-ref">Apocalipse 8-9</div>
                 </div>
             </div>
@@ -197,44 +244,44 @@ body{background:var(--sepia);font-family:'EB Garamond',Georgia,serif;min-height:
                 <div class="card-titulo">As Sete Trombetas</div>
                 <div class="card-sub">Os julgamentos progressivos que anunciam o fim da era presente</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-05.html" class="card">
             <div class="card-topo t05">
                 <div class="card-num">05</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 05</div>
+                    <div class="card-num-txt">Lição 05</div>
                     <div class="card-ref">Apocalipse 11:1-14</div>
                 </div>
             </div>
             <div class="card-corpo cb05">
                 <div class="card-titulo">As Duas Testemunhas</div>
-                <div class="card-sub">A missao profetica da Igreja no periodo de tribulacao</div>
+                <div class="card-sub">A missão profética da Igreja no período de tribulação</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-06.html" class="card">
             <div class="card-topo t06">
                 <div class="card-num">06</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 06</div>
+                    <div class="card-num-txt">Lição 06</div>
                     <div class="card-ref">Apocalipse 12-13</div>
                 </div>
             </div>
             <div class="card-corpo cb06">
                 <div class="card-titulo">A Mulher, o Dragao e a Besta</div>
-                <div class="card-sub">O grande conflito cosmico entre o povo de Deus e as forcas do mal</div>
+                <div class="card-sub">O grande conflito cósmico entre o povo de Deus e as forças do mal</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-07.html" class="card">
             <div class="card-topo t07">
                 <div class="card-num">07</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 07</div>
+                    <div class="card-num-txt">Lição 07</div>
                     <div class="card-ref">Apocalipse 15-16</div>
                 </div>
             </div>
@@ -242,107 +289,107 @@ body{background:var(--sepia);font-family:'EB Garamond',Georgia,serif;min-height:
                 <div class="card-titulo">As Sete Tacas da Ira</div>
                 <div class="card-sub">O derramamento final da ira de Deus sobre a humanidade rebelde</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-08.html" class="card">
             <div class="card-topo t08">
                 <div class="card-num">08</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 08</div>
+                    <div class="card-num-txt">Lição 08</div>
                     <div class="card-ref">Apocalipse 17-18</div>
                 </div>
             </div>
             <div class="card-corpo cb08">
                 <div class="card-titulo">A Queda da Babilonia</div>
-                <div class="card-sub">O julgamento do sistema mundial de corrupcao, idolatria e opressao</div>
+                <div class="card-sub">O julgamento do sistema mundial de corrupção, idolatria e opressão</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-09.html" class="card">
             <div class="card-topo t09">
                 <div class="card-num">09</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 09</div>
+                    <div class="card-num-txt">Lição 09</div>
                     <div class="card-ref">Apocalipse 19:1-10</div>
                 </div>
             </div>
             <div class="card-corpo cb09">
                 <div class="card-titulo">A Ceia das Bodas do Cordeiro</div>
-                <div class="card-sub">O banquete eterno entre Cristo e sua Igreja na consumacao da historia</div>
+                <div class="card-sub">O banquete eterno entre Cristo e sua Igreja na consumação da história</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-10.html" class="card">
             <div class="card-topo t10">
                 <div class="card-num">10</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 10</div>
+                    <div class="card-num-txt">Lição 10</div>
                     <div class="card-ref">Ap 19:11-21 &middot; Zacarias 14</div>
                 </div>
             </div>
             <div class="card-corpo cb10">
                 <div class="card-titulo">A Batalha Final</div>
-                <div class="card-sub">O Rei dos reis na sua vinda gloriosa para destruir os inimigos de Deus</div>
+                <div class="card-sub">O Rei dos reis em sua vinda gloriosa para destruir os inimigos de Deus</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-11.html" class="card">
             <div class="card-topo t11">
                 <div class="card-num">11</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 11</div>
+                    <div class="card-num-txt">Lição 11</div>
                     <div class="card-ref">Daniel 2, 7 e 12</div>
                 </div>
             </div>
             <div class="card-corpo cb11">
                 <div class="card-titulo">O Livro de Daniel e o Fim</div>
-                <div class="card-sub">As grandes visoes profeticas de Daniel e sua estrutura escatologica</div>
+                <div class="card-sub">As grandes visões proféticas de Daniel e sua estrutura escatológica</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-12.html" class="card">
             <div class="card-topo t12">
                 <div class="card-num">12</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 12</div>
+                    <div class="card-num-txt">Lição 12</div>
                     <div class="card-ref">Jr 31:31-34 &middot; Ez 36 &middot; Rm 11</div>
                 </div>
             </div>
             <div class="card-corpo cb12">
                 <div class="card-titulo">A Nova Alianca e a Esperanca de Israel</div>
-                <div class="card-sub">As promessas pactais que sustentam a esperanca do povo de Deus</div>
+                <div class="card-sub">As promessas pactais que sustentam a esperança do povo de Deus</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
         <a href="licao-13.html" class="card">
             <div class="card-topo t13">
                 <div class="card-num">13</div>
                 <div style="position:relative;z-index:1;">
-                    <div class="card-num-txt">Licao 13 &middot; Final</div>
+                    <div class="card-num-txt">Lição 13 · Final</div>
                     <div class="card-ref">1 Co 16:22 &middot; Apocalipse 22:17-21</div>
                 </div>
             </div>
             <div class="card-corpo cb13">
                 <div class="card-titulo">Maranata — A Igreja que Espera</div>
-                <div class="card-sub">A oracao mais antiga da Igreja e a postura de quem vive na expectativa do Senhor</div>
+                <div class="card-sub">A oração mais antiga da Igreja e a postura de quem vive na expectativa do Senhor</div>
             </div>
-            <div class="card-acoes"><span class="card-pags">7 paginas</span><span class="card-btn">Abrir &#8594;</span></div>
+            <div class="card-acoes"><span class="card-pags">7 páginas</span><span class="card-btn">Abrir &#8594;</span></div>
         </a>
 
     </div>
 </section>
 
 <footer class="rodape">
-    <p><strong>ESCHATON &middot; VOL. II</strong> &middot; A Palavra que Nao Passara &middot; Escola Biblica Dominical</p>
-    <p style="margin-top:6px;">Estudos Escatologicos Tematicos &middot; Jovens Adultos &middot; 13 Licoes</p>
+    <p><strong>ESCHATON &middot; VOL. II</strong> &middot; A Palavra que Não Passará &middot; Escola Bíblica Dominical</p>
+    <p style="margin-top:6px;">Estudos Escatológicos Tematicos &middot; Jovens Adultos &middot; 13 Licoes</p>
     <a href="../eschaton/index.html" class="link-vol1">&#8592; Acessar Volume 1</a>
 </footer>
-<script src="https://igrejamanancialdevida.github.io/li-esebd/navegacao.js"></script>
+<script src="navegacao.js"></script>
 </body>
 </html>
