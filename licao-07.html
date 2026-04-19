@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eschaton Vol.2 · Licao 07 — As Sete Tacas da Ira</title>
+<title>Eschaton Vol. II · Lição 07 — As Sete Taças da Ira</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
@@ -95,9 +95,65 @@ ul li::before {
 [contenteditable="true"]{outline:none;cursor:text;}
 [contenteditable="true"]:hover{background:rgba(64,32,160,0.05);border-radius:2px;}
 [contenteditable="true"]:focus{background:rgba(64,32,160,0.08);border-radius:2px;}
+
+/* ===== MOBILE ===== */
+@media screen and (max-width: 768px) {
+    .painel{padding:8px 12px;gap:8px;} .marca{font-size:9.5pt;} .marca span{font-size:7pt;}
+    .btn{padding:6px 10px;font-size:7.5pt;letter-spacing:1px;}
+    .area{margin-top:54px;padding:12px 8px 60px;gap:12px;}
+    .pag{width:100% !important;min-height:unset;box-shadow:0 4px 16px rgba(0,0,0,0.5);}
+    .lbl{margin-left:8px;}
+    .int{padding:6vw 5vw 10vw 5vw;min-height:unset;} .ccon{padding:0 5vw 8vw 5vw;}
+    .ctit{font-size:clamp(14pt,5.5vw,21pt);} .cver{font-size:9.5pt;}
+    h2{font-size:11pt;} h3{font-size:9.5pt;} p{font-size:9.5pt;line-height:1.6;}
+    .cap::first-letter{font-size:28pt;}
+    .texto-biblico{padding:10px 12px;}
+    .bloco-ctx,.bloco-teo,.bloco-apl,.memorizar,.obj{padding:8px 10px;}
+    .tabela-tacas{font-size:8pt;} .tabela-tacas th,.tabela-tacas td{padding:3px 5px;}
+    .rod{padding:5px 5vw 5vw 5vw;position:relative;} .rod::before{left:5vw;right:5vw;}
+    .wm{display:none;} .int-linhas{display:none;}
+}
+@media screen and (max-width: 480px) {
+    .painel{flex-wrap:wrap;} .area{margin-top:96px;}
+    .int{padding:5vw 4vw 8vw 4vw;}
+    h2{font-size:10pt;} p{font-size:9pt;} .btn{padding:5px 8px;font-size:7pt;}
+    .tabela-tacas{font-size:7.5pt;}
+}
+
+/* ===== CAPA ENTRADA VOL. II ===== */
+.capa-entrada{background:#050505;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;min-height:210mm;position:relative;}
+.capa-entrada::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.08) 0%,rgba(0,0,0,0.0) 40%,rgba(0,0,0,0.3) 100%);pointer-events:none;}
+body.licao-iniciada #capaEntradaRevista{display:none;}
+.entrada-cta{position:absolute;bottom:32px;left:0;right:0;text-align:center;font-family:'Oswald',sans-serif;font-size:10pt;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.85);z-index:10;background:rgba(0,0,0,0.4);padding:10px;}
+.cv-wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:20mm 14mm 16mm;font-family:Georgia,'Times New Roman',serif;color:#f4ead6;background:radial-gradient(circle at 18% 14%,rgba(201,168,76,.16),transparent 22%),radial-gradient(circle at 82% 20%,rgba(192,57,43,.22),transparent 18%),radial-gradient(circle at 50% 75%,rgba(201,168,76,.08),transparent 26%),linear-gradient(180deg,#140b06 0%,#241409 34%,#2a1a0a 68%,#130b06 100%);}
+.cv-textura{position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:repeating-linear-gradient(0deg,transparent 0 28px,rgba(201,168,76,.08) 28px 29px),repeating-linear-gradient(90deg,transparent 0 42px,rgba(201,168,76,.035) 42px 43px);mix-blend-mode:screen;}
+.cv-vinheta{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle,transparent 42%,rgba(0,0,0,.45) 100%);}
+.cv-moldura{position:absolute;inset:0;pointer-events:none;}
+.cv-moldura::before{content:"";position:absolute;inset:14mm;border:1px solid rgba(201,168,76,.35);}
+.cv-moldura::after{content:"";position:absolute;inset:18mm;border:1px solid rgba(201,168,76,.14);}
+.cv-simbolo{position:absolute;inset:0;pointer-events:none;display:flex;align-items:center;justify-content:center;font-size:170pt;font-weight:700;color:rgba(255,255,255,.035);letter-spacing:4px;transform:translateY(3mm);user-select:none;}
+.cv-inner{position:relative;z-index:2;width:100%;display:flex;flex-direction:column;align-items:center;flex:1;}
+.cv-badge{display:inline-flex;align-items:center;gap:3mm;padding:2.4mm 5mm;border:1px solid rgba(201,168,76,.36);color:#c9a84c;font-family:Arial,sans-serif;font-size:8.5pt;letter-spacing:1.2pt;text-transform:uppercase;}
+.cv-badge-sep{width:.3mm;height:4mm;background:rgba(201,168,76,.35);}
+.cv-titulo{margin-top:22mm;font-size:33pt;line-height:.95;letter-spacing:2.6pt;text-transform:uppercase;font-weight:700;}
+.cv-subtitulo{margin-top:4mm;color:#c0392b;font-family:Arial,sans-serif;font-size:10pt;letter-spacing:2.1pt;text-transform:uppercase;}
+.cv-divisor{margin-top:8mm;width:62mm;display:flex;align-items:center;gap:4mm;}
+.cv-divisor::before,.cv-divisor::after{content:"";flex:1;height:.35mm;background:linear-gradient(90deg,transparent,rgba(201,168,76,.95),transparent);}
+.cv-divisor span{color:#c9a84c;font-size:13pt;}
+.cv-frase{margin-top:10mm;max-width:92mm;font-size:15.2pt;line-height:1.42;font-style:italic;color:rgba(232,213,160,.96);}
+.cv-ref{margin-top:4mm;color:#c9a84c;font-family:Arial,sans-serif;font-size:8.3pt;letter-spacing:1.2pt;text-transform:uppercase;}
+.cv-faixa{margin-top:auto;width:100%;padding:7mm 6mm;border-top:1px solid rgba(201,168,76,.20);border-bottom:1px solid rgba(201,168,76,.12);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));}
+.cv-tema{font-size:13pt;line-height:1.25;color:#f5ead8;font-weight:700;text-transform:uppercase;letter-spacing:.8pt;}
+.cv-tema-sub{margin-top:3.2mm;color:#b9aa90;font-size:10.4pt;line-height:1.45;font-style:italic;}
+.cv-rodape{margin-top:auto;width:100%;padding-top:8mm;}
+.cv-rodape-titulo{font-size:11pt;letter-spacing:1.6pt;text-transform:uppercase;color:#c9a84c;font-weight:700;}
+.cv-rodape-sub{margin-top:2.5mm;font-family:Arial,sans-serif;font-size:7.8pt;letter-spacing:1pt;text-transform:uppercase;color:#8a8a7a;}
+.cv-rodape-linha{margin:4mm auto 0;width:48mm;height:.35mm;background:linear-gradient(90deg,transparent,rgba(201,168,76,.8),transparent);}
+@media screen and (max-width:768px){.capa-entrada{min-height:100svh;}.cv-titulo{font-size:clamp(22pt,8vw,33pt);}.cv-frase{font-size:clamp(11pt,4vw,15pt);max-width:100%;}}
+
 @media print{
     body{background:none;}
-    .painel,.lbl{display:none!important;}
+    #capaEntradaRevista,.painel,.lbl{display:none!important;}
     .area{margin-top:0;padding:0;gap:0;}
     .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
     .wm,.int-linhas{display:none;}
@@ -107,90 +163,133 @@ ul li::before {
 <body>
 
 <div class="painel">
-    <div class="marca">ESCHATON VOL. II<span>Licao 07 &middot; As Sete Tacas da Ira</span></div>
+    <div class="marca">ESCHATON VOL. II<span>Lição 07 · As Sete Taças da Ira</span></div>
     <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
     <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
     <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
 </div>
 
 <div class="area">
+<div class="pag capa-entrada" id="capaEntradaRevista" onclick="entrarLicao()" aria-label="Abrir lição 07">
+    <div class="cv-wrap">
+        <div class="cv-textura"></div><div class="cv-vinheta"></div>
+        <div class="cv-moldura"></div><div class="cv-simbolo">✦</div>
+        <div class="cv-inner">
+            <div class="cv-badge"><span>Vol. II</span><span class="cv-badge-sep"></span><span>Estudos Escatológicos</span></div>
+            <div class="cv-titulo">ESCHATON</div>
+            <div class="cv-subtitulo">A Palavra que Não Passará</div>
+            <div class="cv-divisor"><span>✦</span></div>
+            <div class="cv-frase">"O céu e a terra passarão, mas as minhas palavras não passarão."</div>
+            <div class="cv-ref">Mateus 24:35</div>
+            <div class="cv-faixa">
+                <div class="cv-tema">Estudos Escatológicos Temáticos</div>
+                <div class="cv-tema-sub">Temas do fim dos tempos apresentados a partir das passagens-chave das Escrituras.</div>
+            </div>
+            <div class="cv-rodape">
+                <div class="cv-rodape-titulo">Escola Bíblica Dominical</div>
+                <div class="cv-rodape-sub">Jovens Adultos · 13 lições</div>
+                <div class="cv-rodape-linha"></div>
+            </div>
+        </div>
+    </div>
+    <div class="entrada-cta">Toque para entrar na lição</div>
+</div>
+<div id="conteudoLicao">
 
 <!-- PG 1 CAPA -->
-<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="lbl">Página 1 · Capa</div>
 <div class="pag capa">
     <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
     <div class="cimg"></div><div class="clh"></div>
     <div class="cnbg">07</div>
     <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
     <div class="ccon">
-        <div class="cser">Eschaton &middot; A Palavra que Nao Passara</div>
+        <div class="cser">Eschaton · A Palavra que Não Passará</div>
         <div class="cref">Apocalipse 15:1 — 16:21</div>
-        <div class="ctit">As Sete Tacas da Ira</div>
+        <div class="ctit">As Sete Taças da Ira</div>
         <div class="cver">
-            "E ouvi o anjo das aguas dizer: Justo es tu, que es e que eras, o Santo, porque julgaste assim. Porque eles derramaram o sangue dos santos e dos profetas, e tambem lhes deste a beber sangue, pois o merecem."
+            "E ouvi o anjo das águas dizer: Justo és tu, que és e que eras, o Santo, porque julgaste assim. Porque eles derramaram o sangue dos santos e dos profetas, e também lhes deste a beber sangue, pois o merecem."
             <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Apocalipse 16:5-6</span>
         </div>
     </div>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
 </div>
 
-<!-- PG 2 TEXTO BIBLICO -->
-<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<!-- PG 2 INTRODUCAO -->
+<div class="lbl">Página 2 · Introdução</div>
 <div class="pag int">
     <div class="int-linhas"></div>
     <div class="wm">2</div>
-    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
-    <h2>A Passagem-Base</h2>
+    <div class="ph"><span class="phl">Lição 07 · Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>Introdução</h2>
+    <p class="cap">Após os sete selos e as sete trombetas, o Apocalipse reserva sua série mais intensa de julgamentos para o final: as sete taças da ira de Deus. Se as trombetas eram avisos — julgamentos parciais que ainda deixavam espaço para o arrependimento —, as taças são a consumação: a ira derramada sem redução, sem mitigação, sem pausa.</p>
+    <p>Esta lição convida a encarar uma das realidades mais sombrias e mais necessárias da teologia bíblica: o julgamento final de Deus é real, é justo e é inevitável. Não como sadismo divino, mas como a resposta santa e proporcional de um Deus que é amor perfeito diante de tudo o que destrói sua criação e derrama o sangue dos seus filhos.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Por que estudar as sete taças?</div>
+        <p>Porque elas revelam o caráter de Deus em sua plenitude — não apenas sua misericórdia, mas também sua justiça. Ignorar as taças é construir um Deus que não existe: tolerante com o mal sem limite. Compreendê-las é aprender a adorar o Deus que realmente é — o Juiz justo que também é o Salvador gracioso.</p>
+    </div>
+    <h3>O Fio Condutor desta Lição</h3>
+    <p>Examinaremos o contexto das taças dentro da sequência dos julgamentos do Apocalipse, o panorama das sete taças e seus paralelos com as pragas do Egito, a teologia da ira de Deus no Novo Testamento, e o significado da proclamação "Está feito!" que encerra a sétima taça.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 TEXTO BIBLICO -->
+<div class="lbl">Página 3 · Texto Bíblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>I-A Passagem-Base</h2>
     <div class="texto-biblico">
         <div class="texto-biblico-ref">Apocalipse 15:1, 7-8</div>
-        <p>"E vi outro sinal no ceu, grande e maravilhoso: sete anjos com sete pragas, as ultimas; porque com elas se consumou a ira de Deus."</p>
-        <p>"E um dos quatro seres viventes deu aos sete anjos sete tacas de ouro, cheias da ira de Deus, que vive pelos seculos dos seculos. E o templo ficou cheio de fumaca pela gloria de Deus e pelo seu poder; e ninguem podia entrar no templo ate que se cumprissem as sete pragas dos sete anjos."</p>
+        <p>"E vi outro sinal no céu, grande e maravilhoso: sete anjos com sete pragas, as últimas; porque com elas se consumou a ira de Deus."</p>
+        <p>"E um dos quatro seres viventes deu aos sete anjos sete taças de ouro, cheias da ira de Deus, que vive pelos séculos dos séculos. E o templo ficou cheio de fumaça pela glória de Deus e pelo seu poder; e ninguém podia entrar no templo até que se cumprissem as sete pragas dos sete anjos."</p>
         <span class="ref-final">Apocalipse 15:1, 7-8</span>
     </div>
     <div class="texto-biblico">
         <div class="texto-biblico-ref">Apocalipse 16:9-11</div>
-        <p>"E os homens se queimaram com o grande calor, e blasfemaram o nome de Deus, que tem poder sobre estas pragas; e nao se arrependeram para lhe dar gloria. E o quinto anjo derramou a sua taca sobre o trono da besta, e o seu reino se tornou cheio de trevas; e os homens mordiam as suas linguas de dor. E blasfemaram o Deus do ceu por causa das suas dores e das suas chagas; e nao se arrependeram das suas obras."</p>
+        <p>"E os homens se queimaram com o grande calor, e blasfemaram o nome de Deus, que tem poder sobre estas pragas; e não se arrependeram para lhe dar glória. E o quinto anjo derramou a sua taça sobre o trono da besta, e o seu reino se tornou cheio de trevas; e os homens mordiam as suas línguas de dor. E blasfemaram o Deus do céu por causa das suas dores e das suas chagas; e não se arrependeram das suas obras."</p>
         <span class="ref-final">Apocalipse 16:9-11</span>
     </div>
     <div class="obj">
         <div class="ot">Objetivos desta licao</div>
         <ul>
-            <li>Compreender as tacas como "ultimas pragas" — a ira de Deus consumada, sem reducao</li>
-            <li>Examinar os paralelos com as pragas do Egito e seu significado teologico</li>
-            <li>Analisar a resposta de blasfemia e nao-arrependimento como revelacao da depravacao</li>
-            <li>Compreender a justeza do julgamento de Deus afirmada pelos anjos e pelo altar</li>
+            <li>Compreender as taças como "últimas pragas" — a ira de Deus consumada, sem redução</li>
+            <li>Examinar os paralelos com as pragas do Egito e seu significado teológico</li>
+            <li>Analisar a resposta de blasfêmia e não-arrependimento como revelação da depravação</li>
+            <li>Compreender a justiça do julgamento de Deus afirmada pelos anjos e pelo altar</li>
         </ul>
-    </div>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
-</div>
-
-<!-- PG 3 CONTEXTO ORIGINAL -->
-<div class="lbl">Pagina 3 &middot; Contexto Original</div>
-<div class="pag int">
-    <div class="int-linhas"></div>
-    <div class="wm">3</div>
-    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
-    <h2>Contexto Original</h2>
-    <div class="bloco-ctx">
-        <div class="bloco-ctx-titulo">As Tacas e a Sequencia dos Julgamentos</div>
-        <p>As sete tacas sao a terceira e ultima serie de julgamentos no Apocalipse, apos os sete selos e as sete trombetas. A diferenca crucial e descrita no proprio texto: as tacas sao as pragas "ultimas, porque com elas se consumou a ira de Deus" (Ap 15:1). Enquanto as trombetas afetavam "um terco" da criacao — julgamento parcial com espaco para arrependimento — as tacas sao derramadas "sobre a terra" sem reducao. E o julgamento definitivo, sem mitigacao.</p>
-    </div>
-    <h3>O Cantico de Moises — Ap 15:3-4</h3>
-    <p>Antes das tacas, os vencedores sobre a besta cantam o "cantico de Moises" (Ap 15:3) — o mesmo cantico entoado por Israel apos a travessia do Mar Vermelho (Ex 15). O paralelo e deliberado: assim como Farao e seus exercitos foram destruidos nas aguas enquanto Israel assistia em seguranca na outra margem, os julgamentos das tacas caem sobre os inimigos do povo de Deus enquanto ele observa da margem da vitoria. O Exodo continua sendo o modelo narrativo mestre de toda a acao redentora e judicial de Deus.</p>
-    <div class="bloco-ctx">
-        <div class="bloco-ctx-titulo">O Templo Cheio de Fumaca — Ap 15:8</div>
-        <p>Ninguem pode entrar no templo celestial ate o fim das sete tacas — ecoando a consagracao do tabernacle em Exodo 40:34-35 e do Templo de Salomao em 1 Reis 8:10-11, quando a gloria de Deus era tao intensa que os sacerdotes nao conseguiam entrar. A ira das tacas nao e capricho — e a gloria de Deus agindo em justica plena, insuprimivel e irresistivel.</p>
     </div>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
-<!-- PG 4 EXEGESE -->
-<div class="lbl">Pagina 4 &middot; As Sete Tacas</div>
+<!-- PG 4 CONTEXTO ORIGINAL -->
+<div class="lbl">Página 4 · I — Contexto Original</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>II-Contexto Original</h2>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">As Taças e a Sequência dos Julgamentos</div>
+        <p>As sete taças são a terceira e última série de julgamentos no Apocalipse, após os sete selos e as sete trombetas. A diferença crucial é descrita no próprio texto: as taças são as pragas "últimas, porque com elas se consumou a ira de Deus" (Ap 15:1). Enquanto as trombetas afetavam "um terço" da criação — julgamento parcial com espaço para arrependimento — as taças são derramadas "sobre a terra" sem redução. É o julgamento definitivo, sem mitigação.</p>
+    </div>
+    <h3>O Cântico de Moisés — Ap 15:3-4</h3>
+    <p>Antes das taças, os vencedores sobre a besta cantam o "cântico de Moisés" (Ap 15:3) — o mesmo cântico entoado por Israel após a travessia do Mar Vermelho (Ex 15). O paralelo é deliberado: assim como Faraó e seus exércitos foram destruídos nas águas enquanto Israel assistia em segurança na outra margem, os julgamentos das taças caem sobre os inimigos do povo de Deus enquanto ele observa da margem da vitória. O Êxodo continua sendo o modelo narrativo mestre de toda a ação redentora e judicial de Deus.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">O Templo Cheio de Fumaça — Ap 15:8</div>
+        <p>Ninguém pode entrar no templo celestial até o fim das sete taças — ecoando a consagração do tabernáculo em Êxodo 40:34-35 e do Templo de Salomão em 1 Reis 8:10-11, quando a glória de Deus era tão intensa que os sacerdotes não conseguiam entrar. A ira das taças não é capricho — é a glória de Deus agindo em justiça plena, insuprimível e irresistível.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 TACAS PANORAMA -->
+<div class="lbl">Página 5 · II — As Sete Taças</div>
 <div class="pag int">
     <div class="int-linhas"></div>
     <div class="wm">4</div>
-    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
-    <h2>As Sete Tacas — Panorama</h2>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>III-As Sete Taças — Panorama</h2>
     <table class="tabela-tacas">
         <tr>
             <th>Taca</th>
@@ -199,7 +298,7 @@ ul li::before {
         </tr>
         <tr>
             <td>1&#170;</td>
-            <td>Chagas malignas sobre os que tem a marca da besta</td>
+            <td>Chagas malignas sobre os que têm a marca da besta</td>
             <td>6&#170; praga do Egito (Ex 9:8-12)</td>
         </tr>
         <tr>
@@ -214,111 +313,158 @@ ul li::before {
         </tr>
         <tr>
             <td>4&#170;</td>
-            <td>Sol queima com fogo — homens blasfemam, nao se arrependem</td>
+            <td>Sol queima com fogo — homens blasfemam, não se arrependem</td>
             <td>Inversao da 9&#170; praga (trevas)</td>
         </tr>
         <tr>
             <td>5&#170;</td>
-            <td>Trevas sobre o trono da besta — dor, blasfemia, nao-arrependimento</td>
+            <td>Trevas sobre o trono da besta — dor, blasfêmia, não-arrependimento</td>
             <td>9&#170; praga do Egito (Ex 10:21-22)</td>
         </tr>
         <tr>
             <td>6&#170;</td>
-            <td>Eufrates seca — tres espiritos imundos convocam para Armagedom</td>
+            <td>Eufrates seca — três espíritos imundos convocam para Armagedom</td>
             <td>Travessia do Mar Vermelho</td>
         </tr>
         <tr>
             <td>7&#170;</td>
-            <td>"Esta feito!" — terremoto, granizo, Babilonia dividida em tres</td>
+            <td>"Está feito!" — terremoto, granizo, Babilônia dividida em três</td>
             <td>Sinai (Ex 19:16-19)</td>
         </tr>
     </table>
-    <h3>A Resposta Invariavel: Blasfemia</h3>
-    <p>Tres vezes em Apocalipse 16 os homens respondem aos julgamentos das tacas com blasfemia e recusa ao arrependimento (vv.9, 11, 21). Essa repeticao e teologicamente significativa: o julgamento final nao converte — apenas revela o que o coracao ja escolheu. A dureza que era parcial nas trombetas e agora total nas tacas. Nao ha mais espaco para arrependimento nessa fase — o tempo da misericordia se encerrou.</p>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
-</div>
-
-<!-- PG 5 TEOLOGIA -->
-<div class="lbl">Pagina 5 &middot; Teologia da Passagem</div>
-<div class="pag int">
-    <div class="int-linhas"></div>
-    <div class="wm">5</div>
-    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
-    <h2>Teologia da Passagem</h2>
-    <div class="bloco-teo">
-        <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
-        <p>As tacas revelam que a ira de Deus e santa, justa e proporcional — nao arbitraria ou passional. O anjo das aguas proclama: "Justo es tu... porque julgaste assim. Porque eles derramaram o sangue dos santos... e lhes deste sangue a beber, pois o merecem" (Ap 16:5-6). Ha uma correspondencia precisa entre o crime e o castigo. O altar confirma: "Sim, Senhor Deus Todo-Poderoso, verdadeiros e justos sao os teus julgamentos" (Ap 16:7). O universo inteiro afirma a justeza do julgamento de Deus.</p>
-    </div>
-    <h3>A Ira de Deus no NT — Nao e Emocao</h3>
-    <p>A "ira de Deus" (<em>orge Theou</em>) no NT nao e uma emocao explosiva e passional — e a oposicao firme, santa e consistente de Deus a tudo o que destrui e corrompe sua boa criacao. Paulo descreve em Romanos 1:18-32 a ira de Deus como um processo de "entregar" — Deus retira sua graca restritiva e permite que o pecado alcance suas consequencias naturais. As tacas sao a manifestacao plena e final desse processo de entrega.</p>
-    <h3>Armagedom — Ap 16:16</h3>
-    <p>A sexta taca prepara o terreno para "Armagedom" — transliteracao de <em>Har Megiddo</em>, o Monte de Megido, local de batalhas decisivas na historia de Israel (Jz 5:19; 2 Rs 23:29). No Apocalipse, Armagedom nao e necessariamente uma batalha geografica literal no vale de Jezreel — e o simbolo da confrontacao final entre o poder de Deus e as forcas reunidas do mal. O desfecho e descrito em Apocalipse 19:11-21.</p>
-    <div class="bloco-teo">
-        <div class="bloco-teo-titulo">"Esta Feito!" — Ap 16:17</div>
-        <p>A setima taca vem acompanhada de uma voz do trono: "Esta feito!" — o mesmo grito de vitoria de Jo 19:30 na cruz. O julgamento final e a consumacao do que Cristo ja pagou no Calvario. Cruz e consumacao sao o mesmo evento visto de angulos distintos da historia.</p>
-    </div>
+    <h3>A Resposta Invariável: Blasfêmia</h3>
+    <p>Três vezes em Apocalipse 16 os homens respondem aos julgamentos das taças com blasfêmia e recusa ao arrependimento (vv. 9, 11, 21). Essa repetição é teologicamente significativa: o julgamento final não converte — apenas revela o que o coração já escolheu. A dureza que era parcial nas trombetas é agora total nas taças. Não há mais espaço para arrependimento nessa fase — o tempo da misericórdia se encerrou.</p>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
-<!-- PG 6 APLICACAO -->
-<div class="lbl">Pagina 6 &middot; Aplicacao Direta</div>
+<!-- PG 6 TEOLOGIA -->
+<div class="lbl">Página 6 · III — Teologia da Passagem</div>
 <div class="pag int">
     <div class="int-linhas"></div>
-    <div class="wm">6</div>
-    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
-    <h2>Aplicacao Direta</h2>
-    <p class="cap">As tacas sao descritas como cheias da ira de Deus que vive "pelos seculos dos seculos" (Ap 15:7). Essa ira nao e a raiva passageira de um ser temperamental — e a reacao eterna e santa de um Deus que e amor perfeito diante de tudo o que destroi o que ele ama. Entender a ira de Deus e entender o amor de Deus — os dois sao inseparaveis.</p>
-    <div class="bloco-apl">
-        <div class="bloco-apl-titulo">Para esta semana</div>
-        <p>Primeiro: os vencedores cantam o "cantico de Moises" antes das tacas — adoracao precede e sustenta o cristao atraves do julgamento. Como sua pratica de adoracao o prepara para enfrentar a hostilidade do mundo, e nao apenas para celebrar nos momentos bons? Segundo: a resposta dos homens as tacas e blasfemia e nao-arrependimento. Reflita: ha areas em sua propria vida onde voce tem respondido as "tacas menores" — dificuldades, perdas, fracassos — com ressentimento contra Deus em vez de arrependimento e confianca? Terceiro: o anjo afirma que o julgamento e justo porque os condenados "derramaram o sangue dos santos." Como a certeza de que Deus e o Vingador dos oprimidos libera voce da necessidade de buscar justica pelas proprias maos?</p>
+    <div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>IV-Teologia da Passagem</h2>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
+        <p>As taças revelam que a ira de Deus é santa, justa e proporcional — não arbitrária ou passional. O anjo das águas proclama: "Justo és tu... porque julgaste assim. Porque eles derramaram o sangue dos santos... e lhes deste sangue a beber, pois o merecem" (Ap 16:5-6). Há uma correspondência precisa entre o crime e o castigo. O altar confirma: "Sim, Senhor Deus Todo-Poderoso, verdadeiros e justos são os teus julgamentos" (Ap 16:7). O universo inteiro afirma a justiça do julgamento de Deus.</p>
     </div>
-    <div class="sep"><span>&#10022;</span></div>
-    <h3>Para Refletir</h3>
-    <p>A setima taca proclama "Esta feito!" — o mesmo grito da cruz (Jo 19:30). A justica divina e uma so historia com dois capitulos: o Calvario e a consumacao. Para o cristao, o julgamento ja foi executado em Cristo — por isso ele esta do lado dos vencedores que cantam o cantico de Moises, nao do lado dos que enfrentam as tacas. Como essa verdade transforma sua gratidao pela obra de Cristo?</p>
-    <div class="memorizar">
-        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
-        <p>"Grandes e maravilhosas sao as tuas obras, Senhor Deus Todo-Poderoso; justos e verdadeiros sao os teus caminhos, o Rei dos santos."</p>
-        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 15:3</p>
+    <h3>A Ira de Deus no NT — Não é Emoção</h3>
+    <p>A "ira de Deus" (<em>orgê Theou</em>) no NT não é uma emoção explosiva e passional — é a oposição firme, santa e consistente de Deus a tudo o que destrói e corrompe sua boa criação. Paulo descreve em Romanos 1:18-32 a ira de Deus como um processo de "entregar" — Deus retira sua graça restritiva e permite que o pecado alcance suas consequências naturais. As taças são a manifestação plena e final desse processo de entrega.</p>
+    <h3>Armagedom — Ap 16:16</h3>
+    <p>A sexta taça prepara o terreno para "Armagedom" — transliteração de <em>Har Megiddo</em>, o Monte de Megido, local de batalhas decisivas na história de Israel (Jz 5:19; 2 Rs 23:29). No Apocalipse, Armagedom não é necessariamente uma batalha geográfica literal no vale de Jezreel — é o símbolo da confrontação final entre o poder de Deus e as forças reunidas do mal. O desfecho é descrito em Apocalipse 19:11-21.</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">"Está Feito!" — Ap 16:17</div>
+        <p>A sétima taça vem acompanhada de uma voz do trono: "Está feito!" — o mesmo grito de vitória de Jo 19:30 na cruz. O julgamento final é a consumação do que Cristo já pagou no Calvário. Cruz e consumação são o mesmo evento visto de ângulos distintos da história.</p>
     </div>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
-<!-- PG 7 QUESTOES -->
-<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<!-- PG 7 SECAO IV -->
+<div class="lbl">Página 7 · IV — Armagedom e a Consumação</div>
 <div class="pag int">
     <div class="int-linhas"></div>
     <div class="wm">7</div>
-    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Tacas da Ira</span></div>
-    <h2>Questoes para Reflexao</h2>
+    <div class="ph"><span class="phl">Lição 07 · Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>Armagedom e a Consumação</h2>
+    <h3>Armagedom — Ap 16:16</h3>
+    <p>A sexta taça prepara o terreno para "Armagedom" — transliteração de <em>Har Megiddo</em>, o Monte de Megido, local de batalhas decisivas na história de Israel (Jz 5:19; 2 Rs 23:29). No Apocalipse, Armagedom não é necessariamente uma batalha geográfica literal no vale de Jezreel — é o símbolo da confrontação final entre o poder de Deus e as forças reunidas do mal. O desfecho é descrito em Apocalipse 19:11-21.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Os Três Espíritos Imundos — Ap 16:13-14</div>
+        <p>Do dragão, da besta e do falso profeta saem três espíritos como rãs, que vão reunir os reis da terra para a batalha. A trindade do mal — dragão, besta, falso profeta — ecoa a Santíssima Trindade de forma perversa. Os espíritos imundos são instrumentos de engano que mobilizam o mundo para sua própria destruição, cumprindo paradoxalmente os propósitos de Deus.</p>
+    </div>
+    <h3>"Está Feito!" — Ap 16:17</h3>
+    <p>A sétima taça vem acompanhada de uma voz do trono: "Está feito!" — o mesmo grito de vitória de Jo 19:30 na cruz. O julgamento final é a consumação do que Cristo já pagou no Calvário. Cruz e consumação são o mesmo evento visto de ângulos distintos da história.</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">Babilônia dividida em três — Ap 16:19</div>
+        <p>"A grande cidade foi dividida em três partes, e as cidades das nações caíram; e a grande Babilônia veio em memória diante de Deus." A queda de Babilônia — símbolo de todo sistema humano que se opõe a Deus — é o tema que será desdobrado nas lições seguintes (Apocalipse 17-18). As taças preparam o terreno; a narrativa continua.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+<!-- PG 8 CONCLUSAO -->
+<div class="lbl">Página 8 · Conclusão</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">8</div>
+    <div class="ph"><span class="phl">Lição 07 · Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>Conclusão</h2>
+    <p class="cap">As sete taças não são o retrato de um Deus cruel — são o retrato de um Deus que leva a sério o mal, o sofrimento dos inocentes e a rebeldia dos que persistem no pecado. Cada taça é a confirmação de que o universo moral não é uma ilusão: há consequências reais para escolhas reais, e há um Juiz que age com precisão e justiça perfeitas.</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que esta lição nos ensinou</div>
+        <p>Aprendemos que as taças são a série final de julgamentos — a ira de Deus consumada, sem a mitigação das trombetas. Vimos que elas ecoam as pragas do Êxodo, confirmando que o mesmo Deus que libertou Israel age em julgamento no fim dos tempos. Examinamos a resposta invariável de blasfêmia dos homens, revelando que o julgamento não converte — apenas manifesta o que o coração já escolheu. E encontramos no "Está feito!" da sétima taça o eco do "Está consumado!" da cruz.</p>
+    </div>
+    <h3>A Segurança do Povo de Deus</h3>
+    <p>Os vencedores cantam o "cântico de Moisés" <em>antes</em> das taças — na margem da vitória, não sob os julgamentos. Para quem está em Cristo, o julgamento das taças já foi executado no Calvário. A única questão que permanece para cada pessoa é: estou do lado dos vencedores que cantam, ou do lado dos que enfrentam as taças?</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Ponte para as próximas lições</div>
+        <p>A sétima taça menciona a queda de Babilônia — que será narrada em detalhe em Apocalipse 17-18, temas das próximas lições. As taças são o prelúdio; a narrativa da queda do sistema do mal e da vitória do Cordeiro continuará até a consumação em Apocalipse 21-22.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">8</span></div>
+</div>
+
+<!-- PG 9 APLICACAO -->
+<div class="lbl">Página 9 · Aplicação Direta</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>Aplicação Direta</h2>
+    <p class="cap">As taças são descritas como cheias da ira de Deus que vive "pelos séculos dos séculos" (Ap 15:7). Essa ira não é a raiva passageira de um ser temperamental — é a reação eterna e santa de um Deus que é amor perfeito diante de tudo o que destrói o que ele ama. Entender a ira de Deus é entender o amor de Deus — os dois são inseparáveis.</p>
+    <div class="bloco-apl">
+        <div class="bloco-apl-titulo">Para esta semana</div>
+        <p>Primeiro: os vencedores cantam o "cântico de Moisés" antes das taças — a adoração precede e sustenta o cristão através do julgamento. Como sua prática de adoração o prepara para enfrentar a hostilidade do mundo, e não apenas para celebrar nos momentos bons? Segundo: a resposta dos homens às taças é blasfêmia e não-arrependimento. Reflita: há áreas em sua própria vida onde você tem respondido às "taças menores" — dificuldades, perdas, fracassos — com ressentimento contra Deus em vez de arrependimento e confiança? Terceiro: o anjo afirma que o julgamento é justo porque os condenados "derramaram o sangue dos santos." Como a certeza de que Deus é o Vingador dos oprimidos libera você da necessidade de buscar justiça pelas próprias mãos?</p>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>Para Refletir</h3>
+    <p>A sétima taça proclama "Está feito!" — o mesmo grito da cruz (Jo 19:30). A justiça divina é uma só história com dois capítulos: o Calvário e a consumação. Para o cristão, o julgamento já foi executado em Cristo — por isso ele está do lado dos vencedores que cantam o cântico de Moisés, não do lado dos que enfrentam as taças. Como essa verdade transforma sua gratidão pela obra de Cristo?</p>
+    <div class="memorizar">
+        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
+        <p>"Grandes e maravilhosas são as tuas obras, Senhor Deus Todo-Poderoso; justos e verdadeiros são os teus caminhos, o Rei dos santos."</p>
+        <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 15:3</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">9</span></div>
+</div>
+
+<!-- PG 10 QUESTOES -->
+<div class="lbl">Página 10 · Questões e Anotações</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 07 &middot; Vol. II</span><span class="pht">As Sete Taças da Ira</span></div>
+    <h2>Questões para Reflexão</h2>
     <div class="q">
-        <div class="qn">Questao 01</div>
-        <div class="qt">As trombetas afetavam "um terco" da criacao; as tacas sao derramadas sem reducao. O que essa progressao revela sobre as fases do julgamento de Deus na historia — e como o "espaco para arrependimento" das trombetas difere da "consumacao" das tacas?</div>
+        <div class="qn">Questão 01</div>
+        <div class="qt">As trombetas afetavam "um terço" da criação; as taças são derramadas sem redução. O que essa progressão revela sobre as fases do julgamento de Deus na história — e como o "espaço para arrependimento" das trombetas difere da "consumação" das taças?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
     <div class="q">
-        <div class="qn">Questao 02</div>
-        <div class="qt">O anjo proclama que o julgamento e justo porque os condenados "derramaram o sangue dos santos" (Ap 16:6). Como essa correspondencia entre crime e castigo reflete o principio biblico de justicia retributiva — e como isso consola os perseguidos de todos os seculos?</div>
+        <div class="qn">Questão 02</div>
+        <div class="qt">O anjo proclama que o julgamento é justo porque os condenados "derramaram o sangue dos santos" (Ap 16:6). Como essa correspondência entre crime e castigo reflete o princípio bíblico de justiça retributiva — e como isso consola os perseguidos de todos os séculos?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
     <div class="q">
-        <div class="qn">Questao 03</div>
-        <div class="qt">Tres vezes os homens blasfemam e recusam o arrependimento diante das tacas (Ap 16:9,11,21). O que isso ensina sobre a natureza do julgamento final — ele endurece ou revela o coracao que ja estava endurecido? Como Romanos 1:24-28 ilumina essa dinamica?</div>
+        <div class="qn">Questão 03</div>
+        <div class="qt">Três vezes os homens blasfemam e recusam o arrependimento diante das taças (Ap 16:9, 11, 21). O que isso ensina sobre a natureza do julgamento final — ele endurece ou revela o coração que já estava endurecido? Como Romanos 1:24-28 ilumina essa dinâmica?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
     <div class="q">
-        <div class="qn">Questao 04</div>
-        <div class="qt">A setima taca proclama "Esta feito!" ecoando Jo 19:30 na cruz. Como a cruz e o julgamento final sao o mesmo evento visto de angulos distintos — e o que isso revela sobre a relacao entre a graca que voce recebeu e a justica que os condenados enfrentarao?</div>
+        <div class="qn">Questão 04</div>
+        <div class="qt">A sétima taça proclama "Está feito!" ecoando Jo 19:30 na cruz. Como a cruz e o julgamento final são o mesmo evento visto de ângulos distintos — e o que isso revela sobre a relação entre a graça que você recebeu e a justiça que os condenados enfrentarão?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
-    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <h3 style="margin-top:12px;">Anotações</h3>
     <div class="lins">
         <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
     </div>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">10</span></div>
 </div>
 
-</div>
+</div><!-- /conteudoLicao -->
 <script>
+function entrarLicao(){
+    document.body.classList.add('licao-iniciada');
+    window.scrollTo({top: 0, behavior: 'instant'});
+}
 let edit=false;
 const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM','TD','TH'];
 function toggleEdit(){
