@@ -207,6 +207,25 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
     .wm,.int-linhas{display:none;}
 }
+
+/* Ajuste para Celulares */
+@media screen and (max-width: 600px) {
+    .ctit {
+        font-size: 22pt !important; /* Diminui o título da capa no celular */
+        line-height: 1.2 !important;
+    }
+    
+    .pht {
+        font-size: 10pt !important; /* Diminui o título do topo da página no celular */
+        white-space: normal !important; /* Permite quebrar linha se necessário no topo */
+        text-align: right;
+        max-width: 60%; /* Evita que o título atropele o texto da esquerda */
+    }
+
+    .ph {
+        align-items: center !important; /* Alinha melhor no topo do celular */
+    }
+}
 </style>
 </head>
 <body>
