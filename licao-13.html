@@ -50,9 +50,34 @@ body{background:#100e04;font-family:'EB Garamond',Georgia,serif;}
 .int::after{content:'';position:absolute;top:6px;left:14mm;right:12mm;height:1px;background:rgba(144,112,32,0.15);}
 .int-linhas{position:absolute;inset:0;top:20mm;pointer-events:none;background-image:repeating-linear-gradient(transparent,transparent 23px,rgba(144,112,32,0.055) 23px,rgba(144,112,32,0.055) 24px);z-index:0;}
 .wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.03);line-height:1;user-select:none;pointer-events:none;}
-.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;position:relative;z-index:1;}
-.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
-.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+.ph {
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px double var(--cor); /* Linha dupla elegante como na L12 */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+}
+
+.phl {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11pt; /* Aumentado para visibilidade */
+    color: var(--cor);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.pht {
+    font-family: 'Cinzel', serif; /* Fonte clássica do título */
+    font-size: 14pt;
+    color: var(--cor); /* Agora usa o dourado/ocre da lição */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal; /* Remove o itálico antigo */
+}
 h2{font-family:'Cinzel',serif;font-weight:700;font-size:13pt;letter-spacing:1px;text-transform:uppercase;color:var(--cor);border-bottom:2px solid var(--cor);padding-bottom:6px;margin-bottom:12px;margin-top:4px;line-height:1.2;position:relative;z-index:1;}
 h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1.5px;color:#503010;text-transform:uppercase;margin-bottom:6px;margin-top:12px;position:relative;z-index:1;}
 p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;position:relative;z-index:1;}
@@ -214,13 +239,36 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
 </head>
 <body>
 <div class="painel">
-    <div class="marca">ESCHATON VOL. II<span>Lição 13 · Final · Maranata — A Igreja que Espera</span></div>
+    <div class="marca">ESCHATON VOL. II<span>Lição 13 &middot; Final &middot; Maranata — A Igreja que Espera</span></div>
     <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
     <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
     <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
 </div>
-<div class="area">
 
+<div class="area">
+<div class="lbl">Página 1 · Capa</div>
+    <div class="pag capa">
+        <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+        <div class="cimg"></div><div class="clh"></div>
+        <div class="cnbg">13</div>
+        <div class="capa-fim">
+            <div class="capa-fim-txt">Lição Final · Encerramento do Volume II</div>
+            <div class="capa-fim-linha"></div>
+        </div>
+        <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
+        <div class="ccon">
+            <div class="cser">Eschaton · A Palavra que Não Passará</div>
+            <div class="cref">1 Coríntios 16:22 · Apocalipse 22:20</div>
+            <div class="ctit">Maranata: A Igreja que Espera</div>
+            <div class="cver">
+                "O Espírito e a esposa dizem: Vem. E aquele que ouve diga: Vem... Aquele que testifica estas coisas diz: Certamente venho sem demora. Amém! Vem, Senhor Jesus."
+                <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Apocalipse 22:17,20</span>
+            </div>
+        </div>
+        <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">1</span></div>
+    </div>
+
+    <div class="lbl">Página 2</div>
 <!-- PG 1 CAPA -->
 <div class="lbl">Página 1 · Capa</div>
 <div class="pag capa">
