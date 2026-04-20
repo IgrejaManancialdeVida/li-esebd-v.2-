@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eschaton Vol.2 · Licao 12 — A Nova Alianca e a Esperanca de Israel</title>
+<title>Eschaton Vol. II · Lição 12 — A Nova Aliança e a Esperança de Israel</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
@@ -67,30 +67,7 @@ p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--
 .obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
 .obj ul{list-style:none;padding:0;}
 .obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
-.obj ul {
-    list-style: none;
-    padding: 0;
-}
-
-.obj ul li {
-    font-family: 'EB Garamond', serif;
-    font-size: 10pt;
-    color: var(--ct);
-    padding: 2px 0 2px 20px !important;
-    position: relative;
-    line-height: 1.4;
-}
-
-.obj ul li::before {
-    content: '\2192' !important;
-    position: absolute !important;
-    left: 0 !important;
-    color: var(--cor) !important;
-    font-size: 10pt !important;
-    font-weight: bold !important;
-    display: inline-block !important;
-    visibility: visible !important;
-}
+.obj ul li::before{content:'\2192';position:absolute;left:0;color:var(--cor);font-size:9pt;}
 .sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.3;position:relative;z-index:1;}
 .sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cor);}
 .sep span{font-size:8pt;color:var(--ouro);}
@@ -107,9 +84,80 @@ p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--
 [contenteditable="true"]{outline:none;cursor:text;}
 [contenteditable="true"]:hover{background:rgba(48,80,128,0.05);border-radius:2px;}
 [contenteditable="true"]:focus{background:rgba(48,80,128,0.08);border-radius:2px;}
+
+/* ===== MOBILE ===== */
+@media screen and (max-width: 768px) {
+    .painel{padding:8px 12px;gap:8px;}
+    .marca{font-size:clamp(8pt,2.5vw,11pt);}
+    .marca span{font-size:clamp(6pt,1.8vw,7.5pt);}
+    .btn{padding:6px 10px;font-size:clamp(6.5pt,1.9vw,9pt);letter-spacing:1px;}
+    .area{margin-top:54px;padding:12px 8px 60px;gap:12px;}
+    .pag{width:100% !important;min-height:unset;box-shadow:0 4px 16px rgba(0,0,0,0.5);}
+    .lbl{margin-left:8px;}
+    .int{padding:6vw 5vw 10vw 5vw;min-height:unset;}
+    .ccon{padding:0 5vw 8vw 5vw;}
+    .ctit{font-size:clamp(13pt,5vw,17pt);}
+    .cver{font-size:clamp(8.5pt,2.5vw,10pt);}
+    h2{font-size:clamp(10pt,3.2vw,13pt);}
+    h3{font-size:clamp(8.5pt,2.8vw,10pt);}
+    p{font-size:clamp(9pt,2.6vw,10.5pt);line-height:1.6;}
+    .cap::first-letter{font-size:clamp(24pt,7vw,38pt);}
+    .texto-biblico{padding:10px 12px;}
+    .texto-biblico p{font-size:clamp(9pt,2.5vw,10.5pt);}
+    .bloco-ctx,.bloco-teo,.bloco-apl,.memorizar,.obj{padding:8px 10px;}
+    .rod{padding:5px 5vw 5vw 5vw;position:relative;}
+    .rod::before{left:5vw;right:5vw;}
+    .wm{display:none;}
+    .int-linhas{display:none;}
+}
+@media screen and (max-width: 480px) {
+    .painel{flex-wrap:wrap;}
+    .area{margin-top:96px;}
+    .int{padding:5vw 4vw 8vw 4vw;}
+    h2{font-size:clamp(9.5pt,3vw,11pt);}
+    p{font-size:clamp(8.5pt,2.4vw,9.5pt);}
+    .btn{padding:5px 8px;font-size:clamp(6pt,1.7vw,7pt);}
+}
+
+/* ===== CAPA ENTRADA VOL. II ===== */
+.capa-entrada{background:#050505;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;min-height:210mm;position:relative;}
+.capa-entrada::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.08) 0%,rgba(0,0,0,0.0) 40%,rgba(0,0,0,0.3) 100%);pointer-events:none;}
+body.licao-iniciada #capaEntradaRevista{display:none;}
+.entrada-cta{position:absolute;bottom:32px;left:0;right:0;text-align:center;font-family:'Oswald',sans-serif;font-size:10pt;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.85);z-index:10;background:rgba(0,0,0,0.4);padding:10px;}
+.cv-wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:20mm 14mm 16mm;font-family:Georgia,'Times New Roman',serif;color:#f4ead6;background:radial-gradient(circle at 18% 14%,rgba(201,168,76,.16),transparent 22%),radial-gradient(circle at 82% 20%,rgba(48,80,128,.32),transparent 18%),radial-gradient(circle at 50% 75%,rgba(201,168,76,.08),transparent 26%),linear-gradient(180deg,#080c14 0%,#0e1622 34%,#101828 68%,#080c14 100%);}
+.cv-textura{position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:repeating-linear-gradient(0deg,transparent 0 28px,rgba(201,168,76,.08) 28px 29px),repeating-linear-gradient(90deg,transparent 0 42px,rgba(201,168,76,.035) 42px 43px);mix-blend-mode:screen;}
+.cv-vinheta{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle,transparent 42%,rgba(0,0,0,.45) 100%);}
+.cv-moldura{position:absolute;inset:0;pointer-events:none;}
+.cv-moldura::before{content:"";position:absolute;inset:14mm;border:1px solid rgba(201,168,76,.35);}
+.cv-moldura::after{content:"";position:absolute;inset:18mm;border:1px solid rgba(201,168,76,.14);}
+.cv-simbolo{position:absolute;inset:0;pointer-events:none;display:flex;align-items:center;justify-content:center;font-size:170pt;font-weight:700;color:rgba(255,255,255,.035);letter-spacing:4px;transform:translateY(3mm);user-select:none;}
+.cv-inner{position:relative;z-index:2;width:100%;display:flex;flex-direction:column;align-items:center;flex:1;}
+.cv-badge{display:inline-flex;align-items:center;gap:3mm;padding:2.4mm 5mm;border:1px solid rgba(201,168,76,.36);color:#c9a84c;font-family:Arial,sans-serif;font-size:8.5pt;letter-spacing:1.2pt;text-transform:uppercase;}
+.cv-badge-sep{width:.3mm;height:4mm;background:rgba(201,168,76,.35);}
+.cv-titulo{margin-top:22mm;font-size:33pt;line-height:.95;letter-spacing:2.6pt;text-transform:uppercase;font-weight:700;}
+.cv-subtitulo{margin-top:4mm;color:#4a70a8;font-family:Arial,sans-serif;font-size:10pt;letter-spacing:2.1pt;text-transform:uppercase;}
+.cv-divisor{margin-top:8mm;width:62mm;display:flex;align-items:center;gap:4mm;}
+.cv-divisor::before,.cv-divisor::after{content:"";flex:1;height:.35mm;background:linear-gradient(90deg,transparent,rgba(201,168,76,.95),transparent);}
+.cv-divisor span{color:#c9a84c;font-size:13pt;}
+.cv-frase{margin-top:10mm;max-width:92mm;font-size:15.2pt;line-height:1.42;font-style:italic;color:rgba(232,213,160,.96);}
+.cv-ref{margin-top:4mm;color:#c9a84c;font-family:Arial,sans-serif;font-size:8.3pt;letter-spacing:1.2pt;text-transform:uppercase;}
+.cv-faixa{margin-top:auto;width:100%;padding:7mm 6mm;border-top:1px solid rgba(201,168,76,.20);border-bottom:1px solid rgba(201,168,76,.12);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));}
+.cv-tema{font-size:13pt;line-height:1.25;color:#f5ead8;font-weight:700;text-transform:uppercase;letter-spacing:.8pt;}
+.cv-tema-sub{margin-top:3.2mm;color:#b9aa90;font-size:10.4pt;line-height:1.45;font-style:italic;}
+.cv-rodape{margin-top:auto;width:100%;padding-top:8mm;}
+.cv-rodape-titulo{font-size:11pt;letter-spacing:1.6pt;text-transform:uppercase;color:#c9a84c;font-weight:700;}
+.cv-rodape-sub{margin-top:2.5mm;font-family:Arial,sans-serif;font-size:7.8pt;letter-spacing:1pt;text-transform:uppercase;color:#8a8a7a;}
+.cv-rodape-linha{margin:4mm auto 0;width:48mm;height:.35mm;background:linear-gradient(90deg,transparent,rgba(201,168,76,.8),transparent);}
+@media screen and (max-width:768px){
+    .capa-entrada{min-height:100svh;}
+    .cv-titulo{font-size:clamp(22pt,8vw,33pt);}
+    .cv-frase{font-size:clamp(11pt,4vw,15pt);max-width:100%;}
+    .entrada-cta{font-size:clamp(8pt,2.5vw,10pt);}
+}
+
 @media print{
     body{background:none;}
-    .painel,.lbl{display:none!important;}
+    #capaEntradaRevista,.painel,.lbl{display:none!important;}
     .area{margin-top:0;padding:0;gap:0;}
     .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
     .wm,.int-linhas{display:none;}
@@ -117,175 +165,271 @@ p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--
 </style>
 </head>
 <body>
+
 <div class="painel">
-    <div class="marca">ESCHATON VOL. II<span>Licao 12 &middot; A Nova Alianca e a Esperanca de Israel</span></div>
+    <div class="marca">ESCHATON VOL. II<span>Lição 12 · A Nova Aliança e a Esperança de Israel</span></div>
     <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
     <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
     <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
 </div>
+
 <div class="area">
 
+<!-- CAPA ENTRADA -->
+<div class="pag capa-entrada" id="capaEntradaRevista" onclick="entrarLicao()" aria-label="Abrir lição 12">
+    <div class="cv-wrap">
+        <div class="cv-textura"></div><div class="cv-vinheta"></div>
+        <div class="cv-moldura"></div><div class="cv-simbolo">✦</div>
+        <div class="cv-inner">
+            <div class="cv-badge"><span>Vol. II</span><span class="cv-badge-sep"></span><span>Estudos Escatológicos</span></div>
+            <div class="cv-titulo">ESCHATON</div>
+            <div class="cv-subtitulo">A Palavra que Não Passará</div>
+            <div class="cv-divisor"><span>✦</span></div>
+            <div class="cv-frase">"O céu e a terra passarão, mas as minhas palavras não passarão."</div>
+            <div class="cv-ref">Mateus 24:35</div>
+            <div class="cv-faixa">
+                <div class="cv-tema">Estudos Escatológicos Temáticos</div>
+                <div class="cv-tema-sub">Temas do fim dos tempos apresentados a partir das passagens-chave das Escrituras.</div>
+            </div>
+            <div class="cv-rodape">
+                <div class="cv-rodape-titulo">Escola Bíblica Dominical</div>
+                <div class="cv-rodape-sub">Jovens Adultos · 13 lições</div>
+                <div class="cv-rodape-linha"></div>
+            </div>
+        </div>
+    </div>
+    <div class="entrada-cta">Toque para entrar na lição</div>
+</div>
+<div id="conteudoLicao">
+
 <!-- PG 1 CAPA -->
-<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="lbl">Página 1 · Capa</div>
 <div class="pag capa">
     <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
     <div class="cimg"></div><div class="clh"></div>
     <div class="cnbg">12</div>
     <div class="cvol"><div class="cvol-num">VOL. II</div><div class="cvol-linha"></div></div>
     <div class="ccon">
-        <div class="cser">Eschaton &middot; A Palavra que Nao Passara</div>
-        <div class="cref">Jeremias 31:31-34 &middot; Ezequiel 36:24-28 &middot; Romanos 11:25-27</div>
-        <div class="ctit">A Nova Alianca e a Esperanca de Israel</div>
+        <div class="cser">Eschaton · A Palavra que Não Passará</div>
+        <div class="cref">Jeremias 31:31-34 · Ezequiel 36:24-28 · Romanos 11:25-27</div>
+        <div class="ctit">A Nova Aliança e a Esperança de Israel</div>
         <div class="cver">
-            "Eis que vem dias, diz o Senhor, em que farei uma nova alianca com a casa de Israel e com a casa de Juda... Porei a minha lei no seu interior, e a escreverei no seu coracao; e eu serei o seu Deus, e eles serao o meu povo."
-            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Jeremias 31:31,33</span>
+            "Eis que vêm dias, diz o Senhor, em que farei uma nova aliança com a casa de Israel e com a casa de Judá... Porei a minha lei no seu interior, e a escreverei no seu coração; e eu serei o seu Deus, e eles serão o meu povo."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Jeremias 31:31, 33</span>
         </div>
     </div>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">1</span></div>
 </div>
 
-<!-- PG 2 TEXTO BIBLICO -->
-<div class="lbl">Pagina 2 &middot; Texto Biblico</div>
+<!-- PG 2 INTRODUÇÃO -->
+<div class="lbl">Página 2 · Introdução</div>
 <div class="pag int">
-    <div class="int-linhas"></div><div class="wm">2</div>
-    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
+    <div class="int-linhas"></div>
+    <div class="wm">2</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
+    <h2>Introdução</h2>
+    <p class="cap">Em 587 a.C., Babilônia incendiava o Templo de Jerusalém e deportava o povo de Deus para o exílio. No momento de maior catástrofe da história de Israel, Jeremias recebeu a promessa mais ousada de toda a Bíblia Hebraica: Deus faria uma aliança nova — não como a que foi quebrada, mas inquebrável, escrita não em pedra, mas no coração. Essa promessa aguardou sete séculos por seu cumprimento em Cristo.</p>
+    <p>Esta lição convida ao que toda boa exegese exige: ler Jeremias 31, Ezequiel 36 e Romanos 11 como partes de uma mesma narrativa de aliança que se move do Sinai à cruz, do Templo ao Espírito, do Israel étnico ao Israel de Deus — e que ainda avança na história pela missão da Igreja até a consumação final.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Uma promessa feita na hora errada</div>
+        <p>O paradoxo de Jeremias 31 é que a promessa da Nova Aliança foi feita exatamente quando a aliança antiga havia falhado de forma irreversível. Deus não promete uma segunda chance com as mesmas condições — promete uma aliança completamente diferente, cujas condições ele mesmo cumprirá. O fracasso humano não é o fim da história de Deus com o seu povo; é o ponto de partida para uma graça ainda maior.</p>
+    </div>
+    <h3>O Fio Condutor desta Lição</h3>
+    <p>Examinaremos o contexto histórico de Jeremias 31, a estrutura das aliancas bíblicas, a exegese dos quatro elementos da Nova Aliança, a sua consumação em Cristo segundo Hebreus, e o mistério do futuro de Israel segundo Romanos 11 — com as duas interpretações principais e a sua implicação para a missão cristã.</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 TEXTO BÍBLICO -->
+<div class="lbl">Página 3 · Texto Bíblico</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">3</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
     <h2>A Passagem-Base</h2>
     <div class="texto-biblico">
         <div class="texto-biblico-ref">Jeremias 31:31-34</div>
-        <p>"Eis que vem dias, diz o Senhor, em que farei uma nova alianca com a casa de Israel e com a casa de Juda; nao segundo a alianca que fiz com seus pais, no dia em que os tomei pela mao para os tirar da terra do Egito... Porei a minha lei no seu interior, e a escreverei no seu coracao; e eu serei o seu Deus, e eles serao o meu povo. E nao ensinara mais cada um ao seu proximo... pois todos me conhecerao, desde o menor deles ate o maior... porque perdoarei a sua iniquidade e dos seus pecados nao me lembrarei mais."</p>
+        <p>"Eis que vêm dias, diz o Senhor, em que farei uma nova aliança com a casa de Israel e com a casa de Judá; não segundo a aliança que fiz com seus pais, no dia em que os tomei pela mão para os tirar da terra do Egito... Porei a minha lei no seu interior, e a escreverei no seu coração; e eu serei o seu Deus, e eles serão o meu povo. E não ensinará mais cada um ao seu próximo... pois todos me conhecerão, desde o menor deles até o maior... porque perdoarei a sua iniquidade e dos seus pecados não me lembrarei mais."</p>
         <span class="ref-final">Jeremias 31:31-34</span>
     </div>
     <div class="texto-biblico">
         <div class="texto-biblico-ref">Romanos 11:25-26</div>
-        <p>"Porque nao quero, irmaos, que ignoreis este misterio, para que nao presumais de vos mesmos: que o endurecimento veio em parte sobre Israel, ate que a plenitude dos gentios haja entrado. E assim todo o Israel sera salvo, como esta escrito: Vira de Siao o Libertador, e desviara de Jaco as impiedades."</p>
+        <p>"Porque não quero, irmãos, que ignoreis este mistério, para que não presumais de vós mesmos: que o endurecimento veio em parte sobre Israel, até que a plenitude dos gentios haja entrado. E assim todo o Israel será salvo, como está escrito: Virá de Sião o Libertador, e desviará de Jacó as impiedades."</p>
         <span class="ref-final">Romanos 11:25-26</span>
     </div>
     <div class="obj">
-        <div class="ot">Objetivos desta licao</div>
+        <div class="ot">Objetivos desta lição</div>
         <ul>
-            <li>Examinar Jeremias 31:31-34 como promessa central da Nova Alianca</li>
-            <li>Comparar a Nova Alianca com as aliancas anteriores — continuidade e superacao</li>
+            <li>Examinar Jeremias 31:31-34 como promessa central da Nova Aliança</li>
+            <li>Comparar a Nova Aliança com as aliancas anteriores — continuidade e superação</li>
             <li>Analisar Romanos 11:25-27 como texto-chave sobre o futuro de Israel</li>
-            <li>Compreender como a Nova Alianca e cumprida em Cristo e aplicada pela Igreja</li>
+            <li>Compreender como a Nova Aliança é cumprida em Cristo e aplicada pela Igreja</li>
         </ul>
     </div>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
-<!-- PG 3 CONTEXTO ORIGINAL -->
-<div class="lbl">Pagina 3 &middot; Contexto Original</div>
+<!-- PG 4 I — CONTEXTO ORIGINAL -->
+<div class="lbl">Página 4 · I — Contexto Original</div>
 <div class="pag int">
-    <div class="int-linhas"></div><div class="wm">3</div>
-    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
-    <h2>Contexto Original</h2>
+    <div class="int-linhas"></div>
+    <div class="wm">4</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
+    <h2>I — O Contexto da Nova Aliança</h2>
     <div class="bloco-ctx">
-        <div class="bloco-ctx-titulo">Jeremias — A Profecia na Vespera do Exilio</div>
-        <p>Jeremias proferiu as palavras de Jeremias 31 por volta de 587 a.C. — exatamente quando Babilonia destruia Jerusalem e o Templo era incendiado. No momento de maior catastrofe nacional, Deus promete uma alianca nova e superior. O contexto e crucial: a Nova Alianca nao e uma renegociacao da antiga; e sua superacao radical. A alianca mosaica foi quebrada por Israel continuamente — a nova sera inquebravel porque escrita no coracao, nao em pedra.</p>
+        <div class="bloco-ctx-titulo">Jeremias — A Profecia na Véspera do Exílio</div>
+        <p>Jeremias proferiu as palavras de Jeremias 31 por volta de 587 a.C. — exatamente quando Babilônia destruía Jerusalém e o Templo era incendiado. No momento de maior catástrofe nacional, Deus promete uma aliança nova e superior. O contexto é crucial: a Nova Aliança não é uma renegociação da antiga — é a sua superação radical. A aliança mosaica foi quebrada por Israel continuamente; a nova será inquebrável porque escrita no coração, não em pedra.</p>
     </div>
-    <h3>As Aliancas de Deus — Uma Estrutura</h3>
-    <p>A Biblia apresenta uma serie de aliancas progressivas: com Noe (Gn 9), com Abraao (Gn 15 e 17), com Moises/Israel (Ex 19-24), com Davi (2 Sm 7) e a Nova Alianca de Jeremias 31. Cada alianca nao cancela as anteriores, mas as cumpre e supera. A Nova Alianca e a consumacao de todas — o ponto para o qual todas as outras apontavam. Jesus a institui na Ultima Ceia: "Este calice e a nova alianca no meu sangue" (Lc 22:20).</p>
+    <h3>As Alianças de Deus — Uma Estrutura</h3>
+    <p>A Bíblia apresenta uma série de alianças progressivas: com Noé (Gn 9), com Abraão (Gn 15 e 17), com Moisés e Israel (Ex 19–24), com Davi (2 Sm 7) e a Nova Aliança de Jeremias 31. Cada aliança não cancela as anteriores, mas as cumpre e supera. A Nova Aliança é a consumação de todas — o ponto para o qual todas as outras apontavam. Jesus a institui na Última Ceia: "Este cálice é a nova aliança no meu sangue" (Lc 22:20).</p>
     <div class="bloco-ctx">
-        <div class="bloco-ctx-titulo">Ezequiel 36 — O Espirito que Capacita</div>
-        <p>Ezequiel 36:24-28 e o paralelo de Jeremias 31 — mas adiciona o elemento do Espirito Santo: "porei o meu Espirito dentro de vos, e farei que andeis nos meus estatutos" (Ez 36:27). O que Jeremias descreve como lei escrita no coracao, Ezequiel descreve como obra do Espirito. A Nova Alianca e trinitaria em sua estrutura: fundada pelo Pai, estabelecida pelo Filho, aplicada pelo Espirito.</p>
+        <div class="bloco-ctx-titulo">Ezequiel 36 — O Espírito que Capacita</div>
+        <p>Ezequiel 36:24-28 é o paralelo de Jeremias 31 — mas acrescenta o elemento do Espírito Santo: "porei o meu Espírito dentro de vós, e farei que andeis nos meus estatutos" (Ez 36:27). O que Jeremias descreve como lei escrita no coração, Ezequiel descreve como obra do Espírito. A Nova Aliança é trinitária em sua estrutura: fundada pelo Pai, estabelecida pelo Filho, aplicada pelo Espírito.</p>
     </div>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
-<!-- PG 4 EXEGESE -->
-<div class="lbl">Pagina 4 &middot; Exegese Versiculo a Versiculo</div>
+<!-- PG 5 II — EXEGESE DA PASSAGEM -->
+<div class="lbl">Página 5 · II — Exegese da Passagem</div>
 <div class="pag int">
-    <div class="int-linhas"></div><div class="wm">4</div>
-    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
-    <h2>Exegese da Passagem</h2>
-    <h3>"Nao segundo a alianca que fiz com seus pais" — Jr 31:32</h3>
-    <p>A Nova Alianca e explicitamente distinta da Mosaica — "nao segundo." A alianca do Sinai era condicional: "se ouvirdes... serei vosso Deus." Israel a quebrou repetidamente (Jr 31:32b). A Nova Alianca e de estrutura radicalmente diferente: e Deus quem age unilateralmente — "porei", "escreverei", "serei", "perdoarei." A iniciativa e a capacitacao sao inteiramente divinas.</p>
+    <div class="int-linhas"></div>
+    <div class="wm">5</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
+    <h2>II — Exegese da Passagem</h2>
+    <h3>"Não segundo a aliança que fiz com seus pais" — Jr 31:32</h3>
+    <p>A Nova Aliança é explicitamente distinta da Mosaica — "não segundo." A aliança do Sinai era condicional: "se ouvirdes... serei vosso Deus." Israel a quebrou repetidamente (Jr 31:32b). A Nova Aliança tem estrutura radicalmente diferente: é Deus quem age unilateralmente — "porei", "escreverei", "serei", "perdoarei." A iniciativa e a capacitação são inteiramente divinas.</p>
     <h3>"Porei a minha lei no seu interior" — Jr 31:33</h3>
-    <p>A lei do Sinai estava em tabuas de pedra — externa ao homem, incapaz de transformar o coracao. A lei da Nova Alianca sera "no interior" — o mesmo vocabulario de Ezequiel 36:27 sobre o Espirito. Paulo desenvolve esse contraste em 2 Corintios 3:3: a Igreja e "carta de Cristo... escrita nao com tinta, mas com o Espirito do Deus vivo; nao em tabuas de pedra, mas em tabuas de carne, nos coracoes."</p>
-    <h3>"Todos me conhecerao" — Jr 31:34</h3>
-    <p>Na Nova Alianca, o conhecimento de Deus nao depende de mediacao sacerdotal — "nao ensinara mais cada um ao seu proximo." Cada membro do povo tera acesso direto e pessoal a Deus. Isso e cumprido no sacerdocio universal dos crentes (1 Pe 2:9) e no acesso direto ao Pai pelo Filho (Ef 2:18). O Templo e os sacerdotes eram necessarios na alianca antiga — na nova, "o Senhor Deus Todo-Poderoso e o Cordeiro sao o seu templo" (Ap 21:22).</p>
-    <h3>"Dos seus pecados nao me lembrarei mais" — Jr 31:34</h3>
-    <p>O fundamento da Nova Alianca e o perdao total e definitivo. Hebreus 8-10 cita Jeremias 31 tres vezes para demonstrar que Cristo e o mediador da Nova e Melhor Alianca — cujo sangue oferece o que os sacrificios animais nunca puderam: purificacao permanente da consciencia (Hb 9:14) e remissao definitiva dos pecados (Hb 10:17-18).</p>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+    <p>A lei do Sinai estava em tábuas de pedra — externa ao homem, incapaz de transformar o coração. A lei da Nova Aliança será "no interior" — o mesmo vocabulário de Ezequiel 36:27 sobre o Espírito. Paulo desenvolve esse contraste em 2 Coríntios 3:3: a Igreja é "carta de Cristo... escrita não com tinta, mas com o Espírito do Deus vivo; não em tábuas de pedra, mas em tábuas de carne, nos corações."</p>
+    <h3>"Todos me conhecerão" — Jr 31:34</h3>
+    <p>Na Nova Aliança, o conhecimento de Deus não depende de mediação sacerdotal — "não ensinará mais cada um ao seu próximo." Cada membro do povo terá acesso direto e pessoal a Deus. Isso se cumpre no sacerdócio universal dos crentes (1 Pe 2:9) e no acesso direto ao Pai pelo Filho (Ef 2:18). Na aliança antiga, o Templo e os sacerdotes eram necessários; na nova, "o Senhor Deus Todo-Poderoso e o Cordeiro são o seu templo" (Ap 21:22).</p>
+    <h3>"Dos seus pecados não me lembrarei mais" — Jr 31:34</h3>
+    <p>O fundamento da Nova Aliança é o perdão total e definitivo. Hebreus 8–10 cita Jeremias 31 três vezes para demonstrar que Cristo é o mediador da Nova e Melhor Aliança — cujo sangue oferece o que os sacrifícios animais nunca puderam: purificação permanente da consciência (Hb 9:14) e remissão definitiva dos pecados (Hb 10:17-18).</p>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
-<!-- PG 5 TEOLOGIA -->
-<div class="lbl">Pagina 5 &middot; Teologia da Passagem</div>
+<!-- PG 6 III — TEOLOGIA DA PASSAGEM -->
+<div class="lbl">Página 6 · III — Teologia da Passagem</div>
 <div class="pag int">
-    <div class="int-linhas"></div><div class="wm">5</div>
-    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
-    <h2>Teologia da Passagem</h2>
+    <div class="int-linhas"></div>
+    <div class="wm">6</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
+    <h2>III — Teologia da Passagem</h2>
     <div class="bloco-teo">
         <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
-        <p>Deus e o Deus das aliancas — ele se compromete com seu povo de forma juridica e pessoal, assumindo obrigacoes voluntarias. A Nova Alianca revela um Deus que nao desiste de seu povo mesmo quando o povo o abandona: a resposta ao fracasso repetido de Israel nao e abandono, mas uma alianca nova e inquebravel, cujas condicoes Deus mesmo cumpre. O perdao definitivo — "dos seus pecados nao me lembrarei mais" — revela um Deus cuja misericordia supera infinitamente sua memoria das transgressoes.</p>
+        <p>Deus é o Deus das alianças — ele se compromete com o seu povo de forma jurídica e pessoal, assumindo obrigações voluntárias. A Nova Aliança revela um Deus que não desiste do seu povo mesmo quando o povo o abandona: a resposta ao fracasso repetido de Israel não é o abandono, mas uma aliança nova e inquebrável, cujas condições o próprio Deus cumpre. O perdão definitivo — "dos seus pecados não me lembrarei mais" — revela um Deus cuja misericórdia supera infinitamente a sua memória das transgressões.</p>
     </div>
-    <h3>Romanos 11 — O Misterio do Futuro de Israel</h3>
-    <p>Paulo revela em Romanos 11:25-27 um "misterio" — algo antes oculto, agora revelado. Dois elementos: (1) o endurecimento de Israel e parcial e temporario — "ate que a plenitude dos gentios haja entrado"; (2) "e assim todo o Israel sera salvo." A sequencia e missionaria: a missao entre os gentios e o mecanismo pelo qual Deus provoca ciume em Israel (Rm 11:11) e precipita sua conversao futura.</p>
+    <h3>Romanos 11 — O Mistério do Futuro de Israel</h3>
+    <p>Paulo revela em Romanos 11:25-27 um "mistério" — algo antes oculto, agora revelado. Dois elementos: (1) o endurecimento de Israel é parcial e temporário — "até que a plenitude dos gentios haja entrado"; (2) "e assim todo o Israel será salvo." A sequência é missionária: a missão entre os gentios é o mecanismo pelo qual Deus provoca ciúme em Israel (Rm 11:11) e precipita a sua conversão futura.</p>
     <h3>O Que Significa "Todo o Israel"?</h3>
-    <p>A expressao "todo o Israel" e debatida. Para o dispensacionalismo, e a nacao judaica convertida em massa na Tribulacao. Para a teologia da alianca, pode ser o Israel de Deus em sua totalidade — judeus e gentios unidos em Cristo (Gl 6:16) — ou a conversao de um grande numero de judeus etnicos ao evangelho ao longo da historia, sem necessariamente um evento nacional especifico e futuro. O que Paulo garante: Deus nao rejeitou seu povo (Rm 11:1-2).</p>
+    <p>A expressão "todo o Israel" é debatida. Para o dispensacionalismo, é a nação judaica convertida em massa na Tribulação. Para a teologia da aliança, pode ser o Israel de Deus em sua totalidade — judeus e gentios unidos em Cristo (Gl 6:16) — ou a conversão de um grande número de judeus étnicos ao evangelho ao longo da história, sem necessariamente um evento nacional específico e futuro. O que Paulo garante: Deus não rejeitou o seu povo (Rm 11:1-2).</p>
     <div class="bloco-teo">
-        <div class="bloco-teo-titulo">A Nova Alianca e a Ceia do Senhor</div>
-        <p>Cada vez que a Igreja celebra a Ceia do Senhor — "Este calice e a nova alianca no meu sangue" (Lc 22:20; 1 Co 11:25) — ela proclama o cumprimento de Jeremias 31 em Cristo. A Ceia nao e um rito religioso arbitrario; e a celebracao do coracão da Nova Alianca: perda de pecados, comunhao com Deus, antecipacao da Ceia das Bodas.</p>
+        <div class="bloco-teo-titulo">A Nova Aliança e a Ceia do Senhor</div>
+        <p>Cada vez que a Igreja celebra a Ceia do Senhor — "Este cálice é a nova aliança no meu sangue" (Lc 22:20; 1 Co 11:25) — ela proclama o cumprimento de Jeremias 31 em Cristo. A Ceia não é um rito religioso arbitrário; é a celebração do coração da Nova Aliança: perdão dos pecados, comunhão com Deus e antecipação da Ceia das Bodas.</p>
     </div>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
-<!-- PG 6 APLICACAO -->
-<div class="lbl">Pagina 6 &middot; Aplicacao Direta</div>
+<!-- PG 7 IV — AS INTERPRETAÇÕES PRINCIPAIS -->
+<div class="lbl">Página 7 · IV — As Interpretações Principais</div>
 <div class="pag int">
-    <div class="int-linhas"></div><div class="wm">6</div>
-    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
-    <h2>Aplicacao Direta</h2>
-    <p class="cap">A Nova Alianca tem quatro promessas para o crente: lei no coracao (transformacao interna), conhecimento direto de Deus (acesso pessoal), perdao definitivo (nenhuma condenacao restante) e identidade de povo (pertencimento eterno). Essas nao sao aspiracoes futuras — sao realidades presentes de quem esta em Cristo. A pergunta nao e "quando terei isso?" mas "estou vivendo a luz do que ja tenho?"</p>
+    <div class="int-linhas"></div>
+    <div class="wm">7</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
+    <h2>IV — As Interpretações Principais</h2>
+    <h3>A Interpretação Dispensacionalista</h3>
+    <p>O dispensacionalismo mantém uma distinção permanente entre Israel étnico e a Igreja. A Nova Aliança foi prometida a Israel e terá seu cumprimento pleno com a nação judaica durante e após a Grande Tribulação — com conversão nacional em massa ao reconhecer Jesus como Messias (Zc 12:10). A Igreja participa das bênçãos espirituais da Nova Aliança, mas não é a sua destinatária primária. "Todo o Israel será salvo" de Romanos 11:26 refere-se especificamente a Israel étnico, convertido num evento futuro específico.</p>
+    <h3>A Interpretação da Teologia da Aliança</h3>
+    <p>O amilenarismo reformado vê a Igreja como o Israel espiritual — a continuação e expansão do povo de Deus, incluindo tanto judeus como gentios que creem em Cristo (Rm 2:28-29; Gl 3:29; Ef 2:11-22). A Nova Aliança foi prometida "à casa de Israel" e é cumprida na Igreja de judeus e gentios. "Todo o Israel será salvo" pode referir-se ao Israel de Deus em sua completude — ou a uma conversão histórica progressiva e significativa de judeus étnicos ao evangelho, sem necessariamente um evento nacional futuro único.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">O Que as Interpretações Têm em Comum</div>
+        <p>Independentemente da escola interpretativa, todas concordam nos pontos centrais: Deus não rejeitou o seu povo (Rm 11:1); a fidelidade divina à aliança não falha; a missão entre os gentios tem papel no plano de Deus para Israel; e a Nova Aliança é cumprida no sangue de Cristo, aplicada pelo Espírito, e celebrada na Ceia do Senhor. A divergência está no quem e no quando — não na fidelidade do Deus da aliança.</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+<!-- PG 8 CONCLUSÃO -->
+<div class="lbl">Página 8 · Conclusão</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">8</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
+    <h2>Conclusão</h2>
+    <p class="cap">A Nova Aliança foi prometida no momento em que a antiga havia colapsado irreversivelmente. Esse é o padrão de Deus: não remendar o que está irremediavelmente roto, mas criar algo completamente novo. "Eis que faço novas todas as coisas" (Ap 21:5) não é apenas uma promessa escatológica — é o caráter do Deus que já fez uma aliança nova quando a antiga agonizava. O cristão vive dentro dessa nova realidade desde a Pentecostes.</p>
+    <div class="bloco-teo">
+        <div class="bloco-teo-titulo">O que esta lição nos ensinou</div>
+        <p>Aprendemos que a Nova Aliança foi prometida em contexto de catástrofe e é estruturalmente diferente da Mosaica — unilateral, inquebrável, escrita no coração pelo Espírito. Vimos que seus quatro elementos — lei interior, conhecimento direto de Deus, perdão definitivo e identidade de povo — são realidades presentes para quem está em Cristo. Examinamos o mistério de Romanos 11 e as duas interpretações sobre "todo o Israel será salvo." E descobrimos que cada celebração da Ceia do Senhor é a proclamação do coração da Nova Aliança.</p>
+    </div>
+    <h3>A Certeza que Permanece</h3>
+    <p>A Nova Aliança foi prometida a um povo que havia falhado — e Deus prometeu de qualquer forma. "Ele permanece fiel, porque não pode negar-se a si mesmo" (2 Tm 2:13). A fidelidade de Deus à aliança não depende da fidelidade humana — essa é precisamente a diferença entre a aliança nova e a antiga. Para o cristão que falha, essa verdade não é permissão para pecar, mas fundamento inabalável para retornar.</p>
+    <div class="bloco-ctx">
+        <div class="bloco-ctx-titulo">Ponte para a próxima lição</div>
+        <p>A última lição desta série apresentará a Nova Criação e o estado eterno — o destino final para o qual a Nova Aliança aponta. O que estudamos hoje sobre a aliança inquebrável de Deus será o fundamento para compreender a promessa de Apocalipse 21:3: "Eis o tabernáculo de Deus com os homens... e ele será o seu Deus."</p>
+    </div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">8</span></div>
+</div>
+
+<!-- PG 9 APLICAÇÃO DIRETA -->
+<div class="lbl">Página 9 · Aplicação Direta</div>
+<div class="pag int">
+    <div class="int-linhas"></div>
+    <div class="wm">9</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
+    <h2>Aplicação Direta</h2>
+    <p class="cap">A Nova Aliança tem quatro promessas para o crente: lei no coração (transformação interna), conhecimento direto de Deus (acesso pessoal), perdão definitivo (nenhuma condenação restante) e identidade de povo (pertencimento eterno). Essas não são aspirações futuras — são realidades presentes de quem está em Cristo. A pergunta não é "quando terei isso?" mas "estou vivendo à luz do que já tenho?"</p>
     <div class="bloco-apl">
         <div class="bloco-apl-titulo">Para esta semana</div>
-        <p>Primeiro: Jeremias 31:34 promete que Deus "nao se lembrara mais" dos seus pecados. Ha alguma culpa ou vergonha do passado que voce carrega como se Deus ainda se lembrasse? A Nova Alianca diz explicitamente que ele nao se lembra — o que muda quando voce leva isso a serio? Segundo: Paulo diz que a missao entre os gentios "provoca ciume" em Israel (Rm 11:11-14). Voce ja pensou que sua fidelidade ao evangelho e parte do plano de Deus para Israel? Como isso intensifica o sentido da sua vida crista? Terceiro: "eu serei o seu Deus, e eles serao o meu povo" — a formula da alianca. Em que areas da sua vida voce nao tem vivido como "povo de Deus" — agindo como se fosse seu proprio senhor?</p>
+        <p>Primeiro: Jeremias 31:34 promete que Deus "não se lembrará mais" dos seus pecados. Há alguma culpa ou vergonha do passado que você carrega como se Deus ainda se lembrasse? A Nova Aliança diz explicitamente que ele não se lembra — o que muda quando você leva isso a sério? Segundo: Paulo diz que a missão entre os gentios "provoca ciúme" em Israel (Rm 11:11-14). Você já pensou que a sua fidelidade ao evangelho é parte do plano de Deus para Israel? Como isso intensifica o sentido da sua vida cristã? Terceiro: "eu serei o seu Deus, e eles serão o meu povo" — a fórmula da aliança. Em que áreas da sua vida você não tem vivido como "povo de Deus" — agindo como se fosse o seu próprio senhor?</p>
     </div>
     <div class="sep"><span>&#10022;</span></div>
     <h3>Para Refletir</h3>
-    <p>A Nova Alianca foi prometida a "Israel e Juda" — um povo que havia quebrado a alianca anterior dezenas de vezes. O Deus que fez essa promessa sabia do historico de fracasso de Israel. Ele prometeu de qualquer forma. Como essa fidelidade de Deus diante do fracasso humano — "ele permanece fiel, porque nao pode negar-se a si mesmo" (2 Tm 2:13) — sustenta sua confianca no relacionamento com Deus quando voce mesmo falha?</p>
+    <p>A Nova Aliança foi prometida a "Israel e Judá" — um povo que havia quebrado a aliança anterior dezenas de vezes. O Deus que fez essa promessa conhecia o histórico de fracasso de Israel. Ele prometeu de qualquer forma. Como essa fidelidade de Deus diante do fracasso humano — "ele permanece fiel, porque não pode negar-se a si mesmo" (2 Tm 2:13) — sustenta a sua confiança no relacionamento com Deus quando você mesmo falha?</p>
     <div class="memorizar">
-        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
-        <p>"Porei a minha lei no seu interior, e a escreverei no seu coracao; e eu serei o seu Deus, e eles serao o meu povo."</p>
+        <div class="memorizar-titulo">&#10022; Versículo para Memorizar</div>
+        <p>"Porei a minha lei no seu interior, e a escreverei no seu coração; e eu serei o seu Deus, e eles serão o meu povo."</p>
         <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Jeremias 31:33</p>
     </div>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">9</span></div>
 </div>
 
-<!-- PG 7 QUESTOES -->
-<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<!-- PG 10 QUESTÕES -->
+<div class="lbl">Página 10 · Questões e Anotações</div>
 <div class="pag int">
-    <div class="int-linhas"></div><div class="wm">7</div>
-    <div class="ph"><span class="phl">Licao 12 &middot; Vol. II</span><span class="pht">A Nova Alianca e a Esperanca de Israel</span></div>
-    <h2>Questoes para Reflexao</h2>
+    <div class="int-linhas"></div>
+    <div class="wm">10</div>
+    <div class="ph"><span class="phl">Lição 12 · Vol. II</span><span class="pht">A Nova Aliança e a Esperança de Israel</span></div>
+    <h2>Questões para Reflexão</h2>
     <div class="q">
-        <div class="qn">Questao 01</div>
-        <div class="qt">A Nova Alianca e explicitamente "nao segundo" a Mosaica. Quais sao as diferencas estruturais fundamentais entre as duas aliancas — especialmente quanto a lei externa vs. lei interna, e condicionalidade vs. unilateralidade divina?</div>
+        <div class="qn">Questão 01</div>
+        <div class="qt">A Nova Aliança é explicitamente "não segundo" a Mosaica. Quais são as diferenças estruturais fundamentais entre as duas alianças — especialmente quanto à lei externa versus lei interna, e condicionalidade versus unilateralidade divina?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
     <div class="q">
-        <div class="qn">Questao 02</div>
-        <div class="qt">Hebreus 8-10 cita Jeremias 31 para demonstrar que Cristo e mediador de uma alianca melhor. O que o argumento de Hebreus revela sobre a relacao entre os sacrificios do AT e o sacrificio de Cristo — tipo e antitipo?</div>
+        <div class="qn">Questão 02</div>
+        <div class="qt">Hebreus 8–10 cita Jeremias 31 para demonstrar que Cristo é mediador de uma aliança melhor. O que o argumento de Hebreus revela sobre a relação entre os sacrifícios do AT e o sacrifício de Cristo — tipo e antítipo?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
     <div class="q">
-        <div class="qn">Questao 03</div>
-        <div class="qt">Paulo diz que a missao entre os gentios "provoca ciume" em Israel (Rm 11:11) como parte do plano de Deus para sua conversao futura. Como isso muda a compreensao do significado escatologico da missao crista — especialmente entre povos que ainda nao ouviram o evangelho?</div>
+        <div class="qn">Questão 03</div>
+        <div class="qt">Paulo diz que a missão entre os gentios "provoca ciúme" em Israel (Rm 11:11) como parte do plano de Deus para a sua conversão futura. Como isso muda a compreensão do significado escatológico da missão cristã — especialmente entre povos que ainda não ouviram o evangelho?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
     <div class="q">
-        <div class="qn">Questao 04</div>
-        <div class="qt">A promessa "dos seus pecados nao me lembrarei mais" e juridica e definitiva. Como a realidade do perdao total e permanente na Nova Alianca deve transformar a forma como o cristao lida com culpa, arrependimento e autocondencao no cotidiano?</div>
+        <div class="qn">Questão 04</div>
+        <div class="qt">A promessa "dos seus pecados não me lembrarei mais" é jurídica e definitiva. Como a realidade do perdão total e permanente na Nova Aliança deve transformar a forma como o cristão lida com culpa, arrependimento e autocondenação no cotidiano?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
-    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <h3 style="margin-top:12px;">Anotações</h3>
     <div class="lins">
         <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
     </div>
-    <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+    <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">10</span></div>
 </div>
 
-</div>
+</div><!-- /conteudoLicao -->
 <script>
+function entrarLicao(){
+    document.body.classList.add('licao-iniciada');
+    window.scrollTo({top: 0, behavior: 'instant'});
+}
 let edit=false;
 const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
 function toggleEdit(){
