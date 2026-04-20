@@ -71,7 +71,14 @@ p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--
 .sintese-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;}
 .sintese-item{font-family:'EB Garamond',serif;font-size:9.5pt;color:var(--ct);padding:3px 0 3px 14px;position:relative;line-height:1.4;border-bottom:1px solid rgba(144,112,32,0.12);}
 .sintese-item:last-child{border-bottom:none;}
-.sintese-item::before{content:'&#10022;';position:absolute;left:0;color:var(--ouro);font-size:8pt;top:4px;}
+.sintese-item::before {
+    content: "\2726"; /* Este é o código que o CSS entende para o símbolo ✦ */
+    position: absolute;
+    left: 0;
+    color: var(--ouro);
+    font-size: 10pt; /* Aumentei um pouco para aparecer melhor */
+    top: 2px;
+}
 /* Encerramento */
 .encerramento{background:linear-gradient(135deg,#201808,#281e08);border-radius:3px;padding:14px;margin:12px 0;text-align:center;position:relative;z-index:1;}
 .enc-titulo{font-family:'Cinzel',serif;font-size:11pt;color:var(--ouro);letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;}
@@ -328,21 +335,21 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="int-linhas"></div><div class="wm">5</div>
     <div class="ph"><span class="phl">Licao 13 &middot; Final</span><span class="pht">Maranata — A Igreja que Espera</span></div>
     <h2>O que a Palavra nos Ensinou</h2>
-    <div class="sintese">
-        <div class="sintese-titulo">Sintese das 13 Licoes — Volume II</div>
-        <div class="sintese-item">O Dia do Senhor e real, justo e misericordioso — clama por arrependimento (L1)</div>
-        <div class="sintese-item">A apostasia comeca em coracoes que nao amam a verdade — vacine-se com a Palavra (L2)</div>
-        <div class="sintese-item">Os 144.000 sao o povo completo de Deus — chamado a seguir o Cordeiro (L3)</div>
-        <div class="sintese-item">As trombetas sao advertencias progressivas — Deus age antes de consumar (L4)</div>
-        <div class="sintese-item">As Duas Testemunhas profetizam, morrem e ressuscitam — o padrao do testemunho (L5)</div>
-        <div class="sintese-item">A guerra cosmica ja foi decidida na cruz — vencemos pelo sangue do Cordeiro (L6)</div>
-        <div class="sintese-item">As tacas sao a ira consumada — "Esta feito!" ecoa o Calvario (L7)</div>
-        <div class="sintese-item">Babilonia cai "em uma hora" — nada construido sobre o mundo e permanente (L8)</div>
-        <div class="sintese-item">A Ceia das Bodas e o destino eterno — o Noivo ja prepara o lugar (L9)</div>
-        <div class="sintese-item">O Cavaleiro vence pela Palavra — "Rei dos Reis e Senhor dos Senhores" (L10)</div>
-        <div class="sintese-item">Daniel viu os reinos passarem e o de Deus permanecer — fidelidade no exilio (L11)</div>
-        <div class="sintese-item">A Nova Alianca e inquebravel — "dos seus pecados nao me lembrarei mais" (L12)</div>
-    </div>
+<div class="sintese">
+    <div class="sintese-titulo">Sintese das 13 Licoes &mdash; Volume II</div>
+    <div class="sintese-item">O Dia do Senhor e real, justo e misericordioso &bull; clama por arrependimento (L1)</div>
+    <div class="sintese-item">A apostasia comeca em coracoes que nao amam a verdade &bull; vacine-se com a Palavra (L2)</div>
+    <div class="sintese-item">Os 144.000 sao o povo completo de Deus &bull; chamado a seguir o Cordeiro (L3)</div>
+    <div class="sintese-item">As trombetas sao advertencias progressivas &bull; Deus age antes de consumar (L4)</div>
+    <div class="sintese-item">As Duas Testemunhas profetizam, morrem e ressuscitam &bull; o padrao do testemunho (L5)</div>
+    <div class="sintese-item">A guerra cosmica ja foi decidida na cruz &bull; vencemos pelo sangue do Cordeiro (L6)</div>
+    <div class="sintese-item">As tacas sao a ira consumada &bull; "Esta feito!" ecoa o Calvario (L7)</div>
+    <div class="sintese-item">Babilonia cai "em uma hora" &bull; nada construido sobre o mundo e permanente (L8)</div>
+    <div class="sintese-item">A Ceia das Bodas e o destino eterno &bull; o Noivo ja prepara o lugar (L9)</div>
+    <div class="sintese-item">O Cavaleiro vence pela Palavra &bull; "Rei dos Reis e Senhor dos Senhores" (L10)</div>
+    <div class="sintese-item">Daniel viu os reinos passarem e o de Deus permanecer &bull; fidelidade no exilio (L11)</div>
+    <div class="sintese-item">A Nova Alianca e inquebravel &bull; "dos seus pecados nao me lembrarei mais" (L12)</div>
+</div>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
