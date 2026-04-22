@@ -177,6 +177,16 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
 .bloco-leve-num{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);font-weight:700;flex-shrink:0;width:14px;line-height:1.5;}
 .bloco-leve-item p{margin-bottom:0;font-size:9.5pt;}
 
+/* ===== QR CODE BLOCO ===== */
+.bloco-qr{position:relative;z-index:1;margin:10px 0;display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(160,32,32,0.04),rgba(201,168,76,0.06));border:1px solid rgba(160,32,32,0.18);border-left:4px solid var(--ouro);border-radius:2px;padding:10px 12px;}
+.bloco-qr-canvas{flex-shrink:0;width:68px;height:68px;background:#fff;border:2px solid rgba(201,168,76,0.35);border-radius:2px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.bloco-qr-canvas canvas,.bloco-qr-canvas img{width:64px!important;height:64px!important;display:block;}
+.bloco-qr-info{flex:1;min-width:0;}
+.bloco-qr-label{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2.5px;text-transform:uppercase;color:#8a6a20;margin-bottom:4px;}
+.bloco-qr-titulo{font-family:'Cinzel',serif;font-size:8.5pt;font-weight:700;color:var(--ct);line-height:1.3;margin-bottom:3px;}
+.bloco-qr-desc{font-family:'EB Garamond',serif;font-size:9pt;color:#666;line-height:1.4;}
+.bloco-qr-url{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:0.5px;color:var(--cor);opacity:0.7;margin-top:3px;word-break:break-all;}
+
 @media print{
     body{background:none;}
     #capaEntradaRevista,.painel,.lbl{display:none!important;}
@@ -498,7 +508,17 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="qt">A parábola das dez virgens (Mt 25:1-13) termina com a porta fechada e o noivo dizendo "não vos conheço." Que advertência essa parábola dirige especificamente à Igreja que se considera convidada às Bodas? O que distingue a virgem prudente da néscia — e como essa distinção se aplica concretamente à sua vida espiritual hoje?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
-    <h3 style="margin-top:12px;">Anotações</h3>
+
+<div class="bloco-qr">
+        <div class="bloco-qr-canvas" id="qrcode-licao09"></div>
+        <div class="bloco-qr-info">
+            <div class="bloco-qr-label">▶ Vídeo Complementar</div>
+            <div class="bloco-qr-titulo">As Bodas do Cordeiro (Apocalipse 19)</div>
+            <div class="bloco-qr-desc">Aprofunde seus estudos com a exposição bíblica do Rev. Hernandes Dias Lopes.</div>
+            <div class="bloco-qr-url">youtube.com · Lição 09 · Eschaton Vol. II</div>
+        </div>
+    </div>
+<h3 style="margin-top:12px;">Anotações</h3>
     <div class="lins">
         <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
     </div>
