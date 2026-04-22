@@ -516,6 +516,29 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="qt">Joel 2:13 diz: "rasgai o vosso coração e não as vossas vestes." Qual é a diferença entre arrependimento externo e arrependimento genuíno? Em que área da sua vida você precisa de um arrependimento mais profundo do que superficial?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
+    <div class="bloco-qr" style="margin:14px 0 10px;display:flex;align-items:center;gap:14px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.3);border-left:3px solid var(--ouro);padding:10px 12px;position:relative;z-index:1;">
+        <div id="qrDiv" style="width:72px;height:72px;flex-shrink:0;border:1px solid rgba(201,168,76,0.2);background:#fff;display:flex;align-items:center;justify-content:center;"></div>
+        <div>
+            <div style="font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:4px;">▶ Assista</div>
+            <div style="font-family:'EB Garamond',serif;font-style:italic;font-size:9.5pt;color:var(--ct);line-height:1.4;">O Dia do Senhor</div>
+            <div style="font-family:'Oswald',sans-serif;font-size:8pt;color:#888;letter-spacing:1px;margin-top:2px;">Pr. Hélio Peixoto · YouTube</div>
+        </div>
+    </div>
+    <script>
+    (function(){
+        var url="https://www.youtube.com/watch?v=Lb6R8b8nxaI";
+        var script=document.createElement('script');
+        script.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+        script.onload=function(){
+            new QRCode(document.getElementById('qrDiv'),{
+                text:url,width:70,height:70,
+                colorDark:'#1a0808',colorLight:'#ffffff',
+                correctLevel:QRCode.CorrectLevel.M
+            });
+        };
+        document.head.appendChild(script);
+    })();
+    </script>
     <h3 style="margin-top:12px;">Anotações</h3>
     <div class="lins">
         <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
