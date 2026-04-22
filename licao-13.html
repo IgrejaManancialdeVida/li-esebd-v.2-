@@ -432,11 +432,20 @@ body.licao-iniciada #capaEntradaRevista { display: none; }
   .cv-frase { font-size: clamp(11pt, 4vw, 15pt); max-width: 100%; }
   .entrada-cta { font-size: clamp(8pt, 2.5vw, 10pt); }
   .badge-prof { display: none; }
-  /* Corrige VOL. II sobrepondo versículos na capa mobile */
+  /* Corrige sobreposição de elementos na capa mobile */
+  .capa { flex-direction: column; justify-content: flex-start; overflow: visible; }
+  .cimg { height: 35%; }
+  .clh { top: 36%; }
   .cvol { position: static; text-align: left; margin-bottom: 6px; }
   .cvol-num { font-size: 7pt; opacity: 0.7; }
   .cvol-linha { display: none; }
   .cref { font-size: 7pt; letter-spacing: 1px; }
+  .capa-fim { position: static; padding: 4px 5vw 0 5vw; }
+  .capa-fim-txt { font-size: 6.5pt; letter-spacing: 2px; }
+  .capa-fim-linha { display: none; }
+  .cser { font-size: 6.5pt; letter-spacing: 2px; margin-bottom: 8px; }
+  .ctit { font-size: clamp(13pt, 5vw, 17pt) !important; letter-spacing: 1px !important; word-spacing: 2px; line-height: 1.15; }
+  .ccon { padding: 6vw 5vw 8vw 5vw; margin-top: auto; }
 }
 @media screen and (max-width: 480px) {
   .painel { flex-wrap: wrap; }
