@@ -138,6 +138,45 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
 .cv-rodape-linha{margin:4mm auto 0;width:48mm;height:.35mm;background:linear-gradient(90deg,transparent,rgba(201,168,76,.8),transparent);}
 @media screen and (max-width:768px){.capa-entrada{min-height:100svh;}.cv-titulo{font-size:clamp(22pt,8vw,33pt);}.cv-frase{font-size:clamp(11pt,4vw,15pt);max-width:100%;}}
 
+/* ===== BLOCOS DO ALUNO — VERSÃO 2 ===== */
+.bloco-aluno{position:relative;margin:12px 0;border-radius:3px;page-break-inside:avoid;z-index:1;}
+.bloco-aluno-header{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+.bloco-aluno-icone{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11pt;flex-shrink:0;line-height:1;}
+.bloco-aluno-label{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;font-weight:600;}
+.bloco-aluno p{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.6;color:var(--ct);margin-bottom:5px;text-align:left;}
+
+/* Para Você Refletir — pg 2 */
+.bloco-refletir{background:rgba(122,80,16,0.06);border:1px solid rgba(122,80,16,0.22);border-left:4px solid var(--cor);padding:10px 12px;}
+.bloco-refletir .bloco-aluno-icone{background:var(--cor);color:#fff;}
+.bloco-refletir .bloco-aluno-label{color:var(--cor);}
+.bloco-refletir-linha{border-bottom:1px dashed rgba(122,80,16,0.25);height:22px;margin-top:4px;}
+
+/* Conexão Bíblica — pg 3 */
+.bloco-conexao{background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.32);border-left:4px solid var(--ouro);padding:10px 12px;}
+.bloco-conexao .bloco-aluno-icone{background:var(--ouro);color:#2a1800;}
+.bloco-conexao .bloco-aluno-label{color:#7a5c10;}
+.bloco-conexao cite{font-family:'EB Garamond',serif;font-style:italic;font-size:9.5pt;color:#5a3a08;display:block;margin-top:5px;padding-left:10px;border-left:2px solid rgba(201,168,76,0.5);line-height:1.55;}
+
+/* Sabia Que? — pg 4 */
+.bloco-sabia{background:rgba(100,70,10,0.05);border:1px solid rgba(122,80,16,0.22);border-left:4px solid var(--vermelho);padding:10px 12px;}
+.bloco-sabia .bloco-aluno-icone{background:var(--vermelho);color:#fff;}
+.bloco-sabia .bloco-aluno-label{color:var(--vermelho);}
+
+/* Pense Nisso — pg 5 */
+.bloco-pense{background:linear-gradient(135deg,rgba(122,80,16,0.05),rgba(201,168,76,0.07));border:1px solid rgba(122,80,16,0.18);border-top:3px solid var(--ouro);padding:10px 12px;}
+.bloco-pense .bloco-aluno-icone{background:linear-gradient(135deg,var(--cor),var(--ouro));color:#fff;}
+.bloco-pense .bloco-aluno-label{color:#7a5c10;}
+.bloco-pense-destaque{font-family:'Cinzel',serif;font-size:9.5pt;color:var(--cor);font-style:normal;font-weight:700;display:block;text-align:center;margin:6px 0 4px;line-height:1.4;}
+
+/* Leve para a Sua Vida — pg 6 */
+.bloco-leve{background:var(--creme);border:1px solid rgba(201,168,76,0.35);border-radius:3px;padding:10px 12px;}
+.bloco-leve .bloco-aluno-header{border-bottom:1px solid rgba(122,80,16,0.15);padding-bottom:6px;margin-bottom:8px;}
+.bloco-leve .bloco-aluno-icone{background:linear-gradient(135deg,var(--ouro),#d4940a);color:#fff;}
+.bloco-leve .bloco-aluno-label{color:var(--cor);}
+.bloco-leve-item{display:flex;gap:8px;margin-bottom:6px;align-items:flex-start;}
+.bloco-leve-num{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);font-weight:700;flex-shrink:0;width:14px;line-height:1.5;}
+.bloco-leve-item p{margin-bottom:0;font-size:9.5pt;}
+
 @media print{
     body{background:none;}
     #capaEntradaRevista,.painel,.lbl{display:none!important;}
@@ -219,6 +258,16 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     </div>
     <h3>O Fio Condutor desta Lição</h3>
     <p>Examinaremos o contexto da cena em Apocalipse 19, os paralelos veterotestamentários que constroem a imagem das bodas, a exegese dos versículos centrais, as duas principais leituras interpretativas, e a teologia que emerge dessa passagem — culminando na sua aplicação prática para o discípulo que vive como noiva à espera do noivo.</p>
+    <div class="bloco-aluno bloco-refletir">
+        <div class="bloco-aluno-header">
+            <div class="bloco-aluno-icone">&#9998;</div>
+            <span class="bloco-aluno-label">Para Você Refletir</span>
+        </div>
+        <p>A história termina com um banquete de bodas. Como essa imagem — comunhão íntima, celebração, amor eterno — muda a forma como você enxerga o seu destino final como cristão? O que você sente ao pensar que Deus deseja não apenas servos, mas uma noiva amada?</p>
+        <div class="bloco-refletir-linha"></div>
+        <div class="bloco-refletir-linha"></div>
+        <div class="bloco-refletir-linha"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -250,6 +299,16 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
             <li>Aplicar a postura de espera vigilante e fiel ao discipulado cristão no presente</li>
         </ul>
     </div>
+    <div class="bloco-aluno bloco-conexao">
+        <div class="bloco-aluno-header">
+            <div class="bloco-aluno-icone">&#9741;</div>
+            <span class="bloco-aluno-label">Conexão Bíblica</span>
+        </div>
+        <p>A metáfora nupcial percorre toda a Escritura. Leia e relacione com Apocalipse 19:7-9:</p>
+        <cite>Oséias 2:19 — "E desposar-te-ei comigo para sempre..."</cite>
+        <cite>Isaías 62:5 — "...como o noivo se alegra com a noiva, assim o teu Deus se alegrará contigo."</cite>
+        <cite>João 3:29 — "O amigo do noivo, que está em pé e o ouve, alegra-se muito com a voz do noivo."</cite>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -259,7 +318,7 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="int-linhas"></div>
     <div class="wm">4</div>
     <div class="ph"><span class="phl">Lição 09 · Vol. II</span><span class="pht">A Ceia das Bodas do Cordeiro</span></div>
-    <h2>I — O Contexto das Bodas</h2>
+    <h2>I-O Contexto das Bodas</h2>
     <div class="bloco-ctx">
         <div class="bloco-ctx-titulo">Apocalipse 19 no Contexto do Livro</div>
         <p>Apocalipse 19 abre com o cântico do Aleluia mais exuberante de todo o livro — a resposta do céu à queda da grande Babilônia (Ap 18). Após o lamento do mundo diante da destruição do sistema que o seduzia, o céu explode em adoração: "Aleluia! porque já o Senhor nosso Deus Todo-Poderoso reina" (v.6). É nesse clima de vitória consumada que a cena das Bodas é revelada — não como sequência futura, mas como realidade já proclamada: "são chegadas as bodas do Cordeiro."</p>
@@ -272,10 +331,17 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="bloco-ctx-titulo">O Contexto Imediato: Após a Queda da Babilônia</div>
         <p>A Ceia das Bodas é anunciada imediatamente após a destruição da grande prostituta (Ap 17–18) — a figura que representa o sistema mundano de sedução e idolatria. O contraste é deliberado: de um lado, a meretriz que seduzia as nações com seu vinho; do outro, a noiva pura vestida de linho fino. O mundo oferece sedução. Cristo oferece aliança. O Apocalipse convida o leitor a escolher com quem quer se sentar à mesa.</p>
     </div>
+    <div class="bloco-aluno bloco-sabia">
+        <div class="bloco-aluno-header">
+            <div class="bloco-aluno-icone">&#9432;</div>
+            <span class="bloco-aluno-label">Sabia Que?</span>
+        </div>
+        <p>No judaísmo do século I, o noivo percorria à noite o caminho até a casa da noiva em procissão com tochas acesas — exatamente a cena retratada na parábola das dez virgens (Mt 25:1-13). Os convidados que aguardavam precisavam ter azeite suficiente para manter suas lâmpadas acesas durante toda a espera. A imagem de vigilância e preparo era imediatamente compreendida pelos primeiros leitores de João.</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
-<!-- PG 5 II — EXEGESE DA PASSAGEM -->
+<!-- PG 5 II-EXEGESE DA PASSAGEM -->
 <div class="lbl">Página 5 · II — Exegese da Passagem</div>
 <div class="pag int">
     <div class="int-linhas"></div>
@@ -290,6 +356,14 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <p>O linho fino branco (<em>byssinos</em>) contrasta diretamente com a púrpura e a escarlata da prostituta Babilônia (Ap 17:4; 18:16). A vestimenta da noiva não é adquirida — "foi-lhe <em>dado</em>" (passivo divino): é dom de Deus. E o linho representa as "justiças dos santos" — no plural grego <em>dikaiōmata</em>, ações justas, frutos da fé. A roupa da noiva é, ao mesmo tempo, graça imputada e caráter transformado. Ela não se veste de seus próprios méritos — veste-se da justiça de Cristo que se torna vida santa.</p>
     <h3>"Bem-aventurados os que são chamados" — v.9</h3>
     <p>Esta é a quarta das sete bem-aventuranças do Apocalipse — e é a única que descreve um banquete. O chamado (<em>keklēmenoi</em>) é o convite eficaz da graça soberana: não são bem-aventurados os que se convidaram, mas os que foram chamados. A bem-aventurança não é para os que merecem a festa — é para os que responderam ao convite do noivo.</p>
+    <div class="bloco-aluno bloco-pense">
+        <div class="bloco-aluno-header">
+            <div class="bloco-aluno-icone">&#8857;</div>
+            <span class="bloco-aluno-label">Pense Nisso</span>
+        </div>
+        <span class="bloco-pense-destaque">"Foi-lhe dado que se vestisse" — Ap 19:8</span>
+        <p>O verbo está no passivo — a vestimenta da noiva é dom de Deus, não conquista própria. Ao mesmo tempo, ela "se aprontou" — voz média grega, ação reflexiva. A santificação é simultaneamente recebida e vivida. Como você tem correspondido à graça que Deus lhe deu para preparar sua "veste"?</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -299,7 +373,7 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="int-linhas"></div>
     <div class="wm">6</div>
     <div class="ph"><span class="phl">Lição 09 · Vol. II</span><span class="pht">A Ceia das Bodas do Cordeiro</span></div>
-    <h2>III — Teologia da Passagem</h2>
+    <h2>III-Teologia da Passagem</h2>
     <div class="bloco-teo">
         <div class="bloco-teo-titulo">O que essa passagem revela sobre Deus</div>
         <p>Deus não redime a humanidade por obrigação — redime por amor de aliança. A escolha da metáfora nupcial para descrever o destino final da história não é acidental: é a revelação mais íntima do coração de Deus. Ele não quer apenas servos obedientes — quer uma esposa amada. A escatologia cristã não termina com a execução de um contrato jurídico; termina com um banquete de bodas. O Deus do Apocalipse é o Noivo que preparou a festa, pagou o preço do resgate e vai buscar a sua noiva.</p>
@@ -312,6 +386,24 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="bloco-teo-titulo">A Bênção dos Chamados</div>
         <p>A bem-aventurança de Apocalipse 19:9 é declarada por um anjo e confirmada com solenidade: "estas são as verdadeiras palavras de Deus." A festa não é hipotética — é certa. Os chamados são bem-aventurados não pelo que fazem, mas pelo Noivo que os amou e os chamou. A certeza da festa fundamenta a perseverança no caminho.</p>
     </div>
+    <div class="bloco-aluno bloco-leve">
+        <div class="bloco-aluno-header">
+            <div class="bloco-aluno-icone">&#10132;</div>
+            <span class="bloco-aluno-label">Leve para a Sua Vida</span>
+        </div>
+        <div class="bloco-leve-item">
+            <span class="bloco-leve-num">1</span>
+            <p><strong>Na próxima Santa Ceia</strong> celebrada em sua igreja, participe com consciência escatológica: você está ensaiando a Ceia das Bodas. Lembre que cada pão partido é um "até que ele venha" (1 Co 11:26).</p>
+        </div>
+        <div class="bloco-leve-item">
+            <span class="bloco-leve-num">2</span>
+            <p><strong>Examine sua veste</strong> — quais ações desta semana refletem as "justiças dos santos"? Onde o linho está manchado e precisa da lavagem da Palavra (Ef 5:26)?</p>
+        </div>
+        <div class="bloco-leve-item">
+            <span class="bloco-leve-num">3</span>
+            <p><strong>Ore a partir de Ap 19:7</strong>, pedindo ao Senhor que o prepare como noiva fiel: "Senhor, que eu me apronte — em caráter, em fé e em santidade — para o encontro com o Noivo."</p>
+        </div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -321,11 +413,11 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="int-linhas"></div>
     <div class="wm">7</div>
     <div class="ph"><span class="phl">Lição 09 · Vol. II</span><span class="pht">A Ceia das Bodas do Cordeiro</span></div>
-    <h2>IV — As Interpretações Principais</h2>
+    <h2>IV-As Interpretações Principais</h2>
     <h3>A Interpretação Dispensacionalista</h3>
     <p>O dispensacionalismo distingue a noiva (a Igreja da era atual, arrebatada antes da Tribulação) dos "chamados à ceia" (santos do AT e da Tribulação, convidados como hóspedes). Nessa leitura, a Ceia das Bodas ocorre no céu durante os sete anos da Grande Tribulação terrestre, antes do retorno de Cristo para o milênio. A distinção entre "esposa" e "convidados" (v.9) seria literal e significaria dois grupos distintos de salvos com destinos e posições diferentes no reino.</p>
     <h3>A Interpretação Reformada Amilenista</h3>
-    <p>O amilenarismo reformado vê a noiva como a totalidade do povo de Deus de todas as eras — Israel e Igreja, Antigo e Novo Testamento — reunidos em Cristo. "Esposa" e "chamados à ceia" não são dois grupos distintos, mas a mesma realidade descrita de ângulos diferentes: a noiva é a Igreja vista em sua identidade; os chamados são a Igreja vista em sua convocação. A Ceia das Bodas ocorre na consumação final — após o julgamento, na eternidade da nova criação. Não há intervalo milênário entre o convite e a festa.</p>
+    <p>O amilenarismo reformado vê a noiva como a totalidade do povo de Deus de todas as eras — Israel e Igreja, Antigo e Novo Testamento — reunidos em Cristo. "Esposa" e "chamados à ceia" não são dois grupos distintos, mas a mesma realidade descrita de ângulos diferentes: a noiva é a Igreja vista em sua identidade; os chamados são a Igreja vista em sua convocação. A Ceia das Bodas ocorre na consumação final — após o julgamento, na eternidade da nova criação. Não há intervalo milenário entre o convite e a festa.</p>
     <div class="bloco-ctx">
         <div class="bloco-ctx-titulo">O Que as Interpretações Têm em Comum</div>
         <p>Independentemente da escola interpretativa, todas concordam nos pontos essenciais: a Ceia das Bodas é real e futura; a noiva é o povo de Deus redimido pelo sangue do Cordeiro; a vestimenta é dom da graça e fruto da vida santa; e a bem-aventurança pertence aos que responderam ao chamado. A divergência está no tempo e na composição — não na substância da esperança.</p>
