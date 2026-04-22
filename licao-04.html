@@ -151,6 +151,46 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
     .wm,.int-linhas{display:none;}
 }
+
+/* ===== BLOCOS DO ALUNO (versão 2) ===== */
+/* --- Para Você Refletir (pg 2) --- */
+.bloco-aluno-refletir{background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.35);border-top:3px solid var(--ouro);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-refletir-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-refletir-titulo::before{content:'✦';font-size:7pt;}
+.bloco-aluno-refletir p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);font-style:italic;line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-refletir .lra{border-bottom:1px solid rgba(201,168,76,0.3);height:22px;margin-top:4px;}
+
+/* --- Conexão Bíblica (pg 3) --- */
+.bloco-aluno-conexao{background:rgba(32,64,128,0.05);border:1px solid rgba(32,64,128,0.25);border-left:4px solid var(--cor);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-conexao-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-conexao-titulo::before{content:'✦';font-size:7pt;}
+.bloco-aluno-conexao p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-conexao .ref-bib{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1.5px;color:var(--cor);text-transform:uppercase;margin-top:4px;}
+.bloco-aluno-conexao .lra{border-bottom:1px solid rgba(32,64,128,0.2);height:22px;margin-top:4px;}
+
+/* --- Sabia Que? (pg 4) --- */
+.bloco-aluno-sabia{background:linear-gradient(135deg,rgba(8,8,24,0.04),rgba(201,168,76,0.07));border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-sabia-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-sabia-titulo::before{content:'?';font-family:'Cinzel',serif;font-size:10pt;font-weight:700;color:var(--ouro);line-height:1;}
+.bloco-aluno-sabia p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:0;}
+
+/* --- Pense Nisso (pg 5) --- */
+.bloco-aluno-pense{background:#fff;border:1px solid rgba(32,64,128,0.18);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;text-align:center;}
+.bloco-aluno-pense-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;}
+.bloco-aluno-pense-icone{font-size:16pt;color:var(--ouro);margin-bottom:4px;display:block;}
+.bloco-aluno-pense p{font-family:'EB Garamond',serif;font-size:10.5pt;font-style:italic;color:#1a2040;line-height:1.65;text-align:center;margin-bottom:0;}
+.bloco-aluno-pense .lra{border-bottom:1px solid rgba(32,64,128,0.2);height:22px;margin-top:6px;text-align:left;}
+
+/* --- Leve para a Sua Vida (pg 6) --- */
+.bloco-aluno-leve{background:linear-gradient(135deg,rgba(32,64,128,0.06),rgba(201,168,76,0.07));border:1px solid rgba(32,64,128,0.22);border-radius:2px;padding:12px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-leve-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-leve-titulo::before{content:'→';font-size:10pt;color:var(--ouro);}
+.bloco-aluno-leve p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-leve .lra{border-bottom:1px solid rgba(32,64,128,0.2);height:22px;margin-top:4px;}
+
+@media screen and (max-width:768px){
+    .bloco-aluno-refletir,.bloco-aluno-conexao,.bloco-aluno-sabia,.bloco-aluno-pense,.bloco-aluno-leve{padding:8px 10px;}
+}
 </style>
 </head>
 <body>
@@ -225,6 +265,12 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     </div>
     <h3>O Fio Condutor desta Lição</h3>
     <p>Examinaremos o contexto literário e histórico das trombetas, sua estrutura progressiva em quatro seções, a teologia que emerge da passagem, e o desafio que ela lança ao discípulo que vive entre o primeiro e o segundo advento de Cristo.</p>
+    <div class="bloco-aluno-refletir">
+        <div class="bloco-aluno-refletir-titulo">Para Você Refletir</div>
+        <p>Quando você pensa nos julgamentos de Deus descritos no Apocalipse, sua primeira reação é medo ou confiança? O que essa reação revela sobre a sua compreensão do caráter de Deus?</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -255,6 +301,13 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
             <li>Refletir sobre a dureza do coração humano diante dos julgamentos divinos</li>
         </ul>
     </div>
+    <div class="bloco-aluno-conexao">
+        <div class="bloco-aluno-conexao-titulo">Conexão Bíblica</div>
+        <p>Compare as trombetas do Apocalipse com as pragas do Êxodo (Ex 7:20; 9:23; 10:12, 21). Que paralelos você identifica? O que a repetição desse padrão — julgamento seguido de libertação — revela sobre o caráter e os propósitos de Deus na história?</p>
+        <div class="ref-bib">Êx 7:20 · Êx 9:23 · Êx 10:12, 21 · Ap 8–9</div>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -276,6 +329,10 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="bloco-ctx">
         <div class="bloco-ctx-titulo">A Função das Trombetas no Mundo Antigo</div>
         <p>Trombetas no mundo bíblico tinham três funções: anunciar guerra, convocar o povo e proclamar eventos reais. As trombetas do Apocalipse cumprem as três funções simultaneamente — anunciam o julgamento de Deus, convocam ao arrependimento e proclamam a soberania do Rei sobre a história.</p>
+    </div>
+    <div class="bloco-aluno-sabia">
+        <div class="bloco-aluno-sabia-titulo">Sabia Que?</div>
+        <p>No mundo bíblico, trombetas (<em>shofar</em>) eram feitas de chifres de carneiro e tinham uso litúrgico e militar. O <em>shofar</em> soava no Ano Novo (<em>Rosh Hashaná</em>), no Jubileu (Lv 25:9) e antes das batalhas (Jz 7:16-22). Para os leitores judeus do século I, ouvir "sete trombetas" remetia imediatamente à conquista de Jericó (Js 6:4-5) — quando Deus derrubou muros de forma sobrenatural. João usa esse vocabulário para dizer que Deus está agindo da mesma forma na história toda.</p>
     </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
@@ -331,6 +388,13 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     </table>
     <h3>A Progressão: Um Terço para Tudo</h3>
     <p>As primeiras quatro trombetas afetam um terço da criação — terra, mar, rios, céus. O número parcial é deliberado: o julgamento é real, mas ainda não completo; ainda há espaço para o arrependimento. As trombetas 5ª e 6ª intensificam e atingem diretamente a humanidade. A 7ª não descreve mais um julgamento parcial, mas a proclamação da soberania total de Deus — o fim chegou.</p>
+    <div class="bloco-aluno-pense">
+        <span class="bloco-aluno-pense-icone">✦</span>
+        <div class="bloco-aluno-pense-titulo">Pense Nisso</div>
+        <p>As primeiras quatro trombetas afetam apenas um terço da criação — o julgamento é real, mas deliberadamente incompleto. Se Deus pudesse destruir tudo de uma vez e escolhe não fazê-lo, o que isso diz sobre a misericórdia que habita no centro mesmo da sua ira?</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -352,6 +416,12 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="bloco-teo">
         <div class="bloco-teo-titulo">O Novo Êxodo Cósmico</div>
         <p>Assim como as pragas do Egito demonstraram que o Deus de Israel é soberano sobre os deuses do Egito, as trombetas do Apocalipse demonstram que o Deus de Jesus Cristo é soberano sobre todos os sistemas e poderes que escravizam a humanidade. O objetivo é a libertação — um novo e definitivo Êxodo para o povo de Deus.</p>
+    </div>
+    <div class="bloco-aluno-leve">
+        <div class="bloco-aluno-leve-titulo">Leve para a Sua Vida</div>
+        <p>O silêncio de meia hora antecede os julgamentos porque Deus ouve antes de agir. Esta semana, antes de iniciar sua oração, fique em silêncio por pelo menos dois minutos. Não peça nada — apenas escute. Anote aqui o que surgir nesse silêncio.</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
     </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
