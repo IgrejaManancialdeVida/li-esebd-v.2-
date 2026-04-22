@@ -476,6 +476,42 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="qt">A besta exigia adoração universal e controlava quem podia comprar e vender (Ap 13:16-17). Quais formas contemporâneas de pressão econômica, social ou cultural funcionam de forma similar — exigindo conformidade em troca de participação e aceitação?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
+    <div class="bloco-qr" style="margin:14px 0 10px;display:flex;align-items:center;gap:14px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.3);border-left:3px solid var(--ouro);padding:10px 12px;position:relative;z-index:1;">
+        <canvas id="qrCanvas" width="72" height="72" style="flex-shrink:0;border:1px solid rgba(201,168,76,0.2);background:#fff;"></canvas>
+        <div>
+            <div style="font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:4px;">▶ Assista</div>
+            <div style="font-family:'EB Garamond',serif;font-style:italic;font-size:9.5pt;color:var(--ct);line-height:1.4;"><em>A Mulher e o Dragão</em> (Ap 12.1–18)</div>
+            <div style="font-family:'Oswald',sans-serif;font-size:8pt;color:#888;letter-spacing:1px;margin-top:2px;">Augustus Nicodemus · YouTube</div>
+        </div>
+    </div>
+    <script>
+    (function(){
+        var url="https://www.youtube.com/watch?v=kfXlJUMIRrM";
+        var c=document.getElementById('qrCanvas');
+        if(!c)return;
+        var ctx=c.getContext('2d');
+        var s=72,m=4,mod=(s-m*2)/25,bg='#fff',fg='#1a0808';
+        // QR code matrix for the YouTube URL (pre-computed pattern)
+        // Using a simple QR-like visual that encodes the URL via qrcode-generator approach
+        // We'll use the qrcodejs library loaded inline
+        c.style.display='none';
+        var wrapper=c.parentNode;
+        var div=document.createElement('div');
+        div.id='qrDiv';
+        div.style.cssText='width:72px;height:72px;flex-shrink:0;border:1px solid rgba(201,168,76,0.2);background:#fff;display:flex;align-items:center;justify-content:center;';
+        wrapper.insertBefore(div,c);
+        var script=document.createElement('script');
+        script.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+        script.onload=function(){
+            new QRCode(document.getElementById('qrDiv'),{
+                text:url,width:70,height:70,
+                colorDark:'#1a0808',colorLight:'#ffffff',
+                correctLevel:QRCode.CorrectLevel.M
+            });
+        };
+        document.head.appendChild(script);
+    })();
+    </script>
     <h3 style="margin-top:12px;">Anotações</h3>
     <div class="lins">
         <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
