@@ -517,6 +517,29 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="qt">A sétima trombeta proclama a soberania de Cristo sobre todos os reinos (Ap 11:15). Como essa certeza escatológica — de que Cristo já é o vencedor — deve moldar sua postura diante das notícias de guerras, corrupção e crise global que você consome diariamente?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
+    <div class="bloco-qr" style="margin:14px 0 10px;display:flex;align-items:center;gap:14px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.3);border-left:3px solid var(--ouro);padding:10px 12px;position:relative;z-index:1;">
+        <div id="qrDiv" style="width:72px;height:72px;flex-shrink:0;border:1px solid rgba(201,168,76,0.2);background:#fff;display:flex;align-items:center;justify-content:center;"></div>
+        <div>
+            <div style="font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:4px;">▶ Assista</div>
+            <div style="font-family:'EB Garamond',serif;font-style:italic;font-size:9.5pt;color:var(--ct);line-height:1.4;">As Trombetas de Deus</div>
+            <div style="font-family:'Oswald',sans-serif;font-size:8pt;color:#888;letter-spacing:1px;margin-top:2px;">Hernandes Dias Lopes · YouTube</div>
+        </div>
+    </div>
+    <script>
+    (function(){
+        var url="https://www.youtube.com/watch?v=kUFUqc6P0MY";
+        var script=document.createElement('script');
+        script.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+        script.onload=function(){
+            new QRCode(document.getElementById('qrDiv'),{
+                text:url,width:70,height:70,
+                colorDark:'#1a0808',colorLight:'#ffffff',
+                correctLevel:QRCode.CorrectLevel.M
+            });
+        };
+        document.head.appendChild(script);
+    })();
+    </script>
     <h3 style="margin-top:12px;">Anotações</h3>
     <div class="lins">
         <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
