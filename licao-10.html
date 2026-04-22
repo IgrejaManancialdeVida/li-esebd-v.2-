@@ -6,6 +6,7 @@
 <title>Eschaton Vol. II · Lição 10 — A Batalha Final · v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
 :root{--cor:#a02020;--grad1:#200808;--grad2:#280808;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--pergaminho:#f8f2e8;--creme:#f0e8d8;--cc:#ddd8cc;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -193,6 +194,15 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
 .bloco-leve .bloco-aluno-label{color:#5a2878;}
 .bloco-leve .bloco-aluno-lin{border-bottom-color:rgba(90,40,120,0.15);}
 
+/* ===== QR CODE BLOCO ===== */
+.bloco-qr{position:relative;z-index:1;margin:10px 0;display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(160,32,32,0.04),rgba(201,168,76,0.06));border:1px solid rgba(160,32,32,0.18);border-left:4px solid var(--ouro);border-radius:2px;padding:10px 12px;}
+.bloco-qr-canvas{flex-shrink:0;width:68px;height:68px;background:#fff;border:2px solid rgba(201,168,76,0.35);border-radius:2px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.bloco-qr-canvas canvas,.bloco-qr-canvas img{width:64px!important;height:64px!important;display:block;}
+.bloco-qr-info{flex:1;min-width:0;}
+.bloco-qr-label{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2.5px;text-transform:uppercase;color:#8a6a20;margin-bottom:4px;}
+.bloco-qr-titulo{font-family:'Cinzel',serif;font-size:8.5pt;font-weight:700;color:var(--ct);line-height:1.3;margin-bottom:3px;}
+.bloco-qr-desc{font-family:'EB Garamond',serif;font-size:9pt;color:#666;line-height:1.4;}
+.bloco-qr-url{font-family:'Oswald',sans-serif;font-size:7pt;letter-spacing:0.5px;color:var(--cor);opacity:0.7;margin-top:3px;word-break:break-all;}
 /* ===== CAPA ENTRADA — visual tipo título de livro ===== */
 .cv-wrap{font-family:'Cinzel',serif;}
 .cv-titulo{font-family:'Cinzel',serif;font-size:36pt;line-height:.92;letter-spacing:4pt;text-transform:uppercase;font-weight:900;text-shadow:0 2px 18px rgba(201,168,76,0.25);}
@@ -336,7 +346,7 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="int-linhas"></div>
     <div class="wm">4</div>
     <div class="ph"><span class="phl">Lição 10 · Vol. II</span><span class="pht">A Batalha Final</span></div>
-    <h2>I-Contexto Original</h2>
+    <h2>I — Contexto Original</h2>
     <div class="bloco-ctx">
         <div class="bloco-ctx-titulo">O Cavaleiro do Cavalo Branco — Quem é Ele?</div>
         <p>O cavaleiro do cavalo branco de Apocalipse 19:11 não deve ser confundido com o cavaleiro do primeiro selo em Apocalipse 6:2, que muitos identificam como o Anticristo. Os dois textos são radicalmente distintos em contexto e descrição. O cavaleiro de Ap 19 é identificado por quatro títulos cumulativos: "Fiel e Verdadeiro" (v. 11), "O Verbo de Deus" (v. 13 — o mesmo título de João 1:1), um nome oculto (v. 12) e "Rei dos Reis e Senhor dos Senhores" (v. 16). Não há dúvida: este é Jesus Cristo em sua Parusia gloriosa.</p>
@@ -521,6 +531,15 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="qt">O título "Rei dos Reis e Senhor dos Senhores" é inscrito no manto — visível a todos. Como a soberania absoluta e já presente de Cristo sobre todos os reinos deve moldar a postura do cristão diante das autoridades políticas — nem subversão irresponsável nem lealdade idolátrica?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
+    <div class="bloco-qr">
+        <div class="bloco-qr-canvas" id="qrcode-licao10"></div>
+        <div class="bloco-qr-info">
+            <div class="bloco-qr-label">▶ Vídeo Complementar</div>
+            <div class="bloco-qr-titulo">Uma Nova Aliança com Jesus</div>
+            <div class="bloco-qr-desc">Aponte a câmera do celular para assistir ao vídeo de aprofundamento desta lição.</div>
+            <div class="bloco-qr-url">youtube.com · Lição 12 · Eschaton Vol. II</div>
+        </div>
+    </div>
     <h3 style="margin-top:12px;">Anotações</h3>
     <div class="lins">
         <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
@@ -534,6 +553,21 @@ function entrarLicao(){
     document.body.classList.add('licao-iniciada');
     window.scrollTo({top: 0, behavior: 'instant'});
 }
+
+// Gera o QR Code
+(function(){
+    var el = document.getElementById('qrcode-licao10');
+    if(el && typeof QRCode !== 'undefined'){
+        new QRCode(el, {
+            text: 'https://www.youtube.com/watch?v=vAp2EQC9AgU',
+            width: 64,
+            height: 64,
+            colorDark: '#200808',
+            colorLight: '#ffffff',
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    }
+})();
 let edit=false;
 const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
 function toggleEdit(){
