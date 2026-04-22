@@ -145,6 +145,46 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
     .wm,.int-linhas{display:none;}
 }
+
+/* ===== BLOCOS DO ALUNO (versão 2) ===== */
+/* --- Para Você Refletir (pg 2) --- */
+.bloco-aluno-refletir{background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.35);border-top:3px solid var(--ouro);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-refletir-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-refletir-titulo::before{content:'✦';font-size:7pt;}
+.bloco-aluno-refletir p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);font-style:italic;line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-refletir .lra{border-bottom:1px solid rgba(201,168,76,0.3);height:22px;margin-top:4px;}
+
+/* --- Conexão Bíblica (pg 3) --- */
+.bloco-aluno-conexao{background:rgba(107,32,96,0.05);border:1px solid rgba(107,32,96,0.25);border-left:4px solid var(--cor);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-conexao-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-conexao-titulo::before{content:'✦';font-size:7pt;}
+.bloco-aluno-conexao p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-conexao .ref-bib{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1.5px;color:var(--cor);text-transform:uppercase;margin-top:4px;}
+.bloco-aluno-conexao .lra{border-bottom:1px solid rgba(107,32,96,0.2);height:22px;margin-top:4px;}
+
+/* --- Sabia Que? (pg 4) --- */
+.bloco-aluno-sabia{background:linear-gradient(135deg,rgba(26,10,20,0.04),rgba(201,168,76,0.07));border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-sabia-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-sabia-titulo::before{content:'?';font-family:'Cinzel',serif;font-size:10pt;font-weight:700;color:var(--ouro);line-height:1;}
+.bloco-aluno-sabia p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:0;}
+
+/* --- Pense Nisso (pg 5) --- */
+.bloco-aluno-pense{background:#fff;border:1px solid rgba(107,32,96,0.18);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;text-align:center;}
+.bloco-aluno-pense-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;}
+.bloco-aluno-pense-icone{font-size:16pt;color:var(--ouro);margin-bottom:4px;display:block;}
+.bloco-aluno-pense p{font-family:'EB Garamond',serif;font-size:10.5pt;font-style:italic;color:#2a1028;line-height:1.65;text-align:center;margin-bottom:0;}
+.bloco-aluno-pense .lra{border-bottom:1px solid rgba(107,32,96,0.2);height:22px;margin-top:6px;text-align:left;}
+
+/* --- Leve para a Sua Vida (pg 6) --- */
+.bloco-aluno-leve{background:linear-gradient(135deg,rgba(107,32,96,0.06),rgba(201,168,76,0.07));border:1px solid rgba(107,32,96,0.22);border-radius:2px;padding:12px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-leve-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-leve-titulo::before{content:'→';font-size:10pt;color:var(--ouro);}
+.bloco-aluno-leve p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-leve .lra{border-bottom:1px solid rgba(107,32,96,0.2);height:22px;margin-top:4px;}
+
+@media screen and (max-width:768px){
+    .bloco-aluno-refletir,.bloco-aluno-conexao,.bloco-aluno-sabia,.bloco-aluno-pense,.bloco-aluno-leve{padding:8px 10px;}
+}
 </style>
 </head>
 <body>
@@ -219,6 +259,12 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     </div>
     <h3>O Fio Condutor desta Lição</h3>
     <p>Examinaremos o contexto de Apocalipse 11 dentro do livro, os paralelos veterotestamentários que constroem a identidade das Testemunhas, a exegese versículo a versículo da passagem e as duas interpretações principais — individual e eclesial —, culminando na teologia e na aplicação prática para o discípulo hoje.</p>
+    <div class="bloco-aluno-refletir">
+        <div class="bloco-aluno-refletir-titulo">Para Você Refletir</div>
+        <p>O testemunho das Duas Testemunhas é descrito como urgente e penitencial — "vestidas de sacos". Como você descreveria o tom do seu próprio testemunho hoje: urgente, confortável ou inexistente? O que isso revela sobre como você entende o momento em que vivemos?</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -246,6 +292,13 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
             <li>Aplicar o chamado ao testemunho fiel mesmo diante da hostilidade e da morte</li>
         </ul>
     </div>
+    <div class="bloco-aluno-conexao">
+        <div class="bloco-aluno-conexao-titulo">Conexão Bíblica</div>
+        <p>Leia Zacarias 4:1-6, 11-14. Os "dois oliveiros" e os "dois castiçais" da visão de Zacarias são a fonte direta de Apocalipse 11:4. Qual é a mensagem central de Zacarias 4:6 — e como ela define o poder pelo qual as Duas Testemunhas realizam seu ministério?</p>
+        <div class="ref-bib">Zc 4:1-6, 11-14 · Ap 11:3-4 · Dt 19:15</div>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -268,6 +321,10 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     </div>
     <h3>Os 1.260 Dias</h3>
     <p>O período de 1.260 dias (= 42 meses = três anos e meio) aparece múltiplas vezes no Apocalipse (11:2-3; 12:6, 14; 13:5). Remete a Daniel 7:25 e ao período de tribulação de Antíoco IV Epifânio (167–164 a.C.) como tipo. O número não é necessariamente literal — representa o período completo entre a primeira e a segunda vinda de Cristo, durante o qual a Igreja exerce seu ministério profético.</p>
+    <div class="bloco-aluno-sabia">
+        <div class="bloco-aluno-sabia-titulo">Sabia Que?</div>
+        <p>O período de 1.260 dias equivale exatamente a 42 meses de 30 dias cada — ou três anos e meio. Esse número remete ao tempo em que o profeta Elias fechou o céu sem chuva (1 Rs 17:1; Tg 5:17). No Apocalipse, ele aparece em seis passagens diferentes (Ap 11:2-3; 12:6, 14; 13:5; Dn 7:25; 12:7), sempre descrevendo o período de tribulação do povo de Deus. A repetição é intencional: João quer que o leitor reconheça que estamos sempre dentro desse período — e que ele tem limite certo.</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -286,6 +343,13 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <p>A sequência é crucial: as Testemunhas só podem ser mortas depois de terem "acabado o seu testemunho" (v.7). A besta não pode tocá-las antes — é a soberania de Deus sobre o martírio. Nenhum servo de Deus morre antes de cumprir sua missão. Essa sequência é o modelo de toda a história do martírio cristão — desde Estêvão até os mártires contemporâneos.</p>
     <h3>"O espírito de vida entrou neles" — v.11</h3>
     <p>A linguagem ecoa Ezequiel 37:10 — os ossos secos que recebem o espírito e se levantam. A ressurreição das Testemunhas após três dias e meio (eco da ressurreição de Cristo em três dias) é o sinal definitivo de que o testemunho da Igreja não pode ser silenciado permanentemente. O mundo celebra a sua morte (v.10) — e é surpreendido pela sua ressurreição (v.11).</p>
+    <div class="bloco-aluno-pense">
+        <span class="bloco-aluno-pense-icone">✦</span>
+        <div class="bloco-aluno-pense-titulo">Pense Nisso</div>
+        <p>As Testemunhas só podem ser mortas depois de terem "acabado o seu testemunho". Se nenhum servo de Deus morre antes de cumprir sua missão, o que isso libera em você diante do medo de testemunhar? Que risco você tem evitado por não acreditar nessa soberania?</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -308,6 +372,12 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="bloco-teo-titulo">A Celebração do Mundo e o Julgamento</div>
         <p>"Os que habitam na terra alegrar-se-ão sobre eles e festejarão" (v.10) — o mundo celebra o silenciamento do testemunho cristão. Mas o julgamento vem no mesmo momento (v.13). A história repete o padrão: onde o testemunho é silenciado, o julgamento avança.</p>
     </div>
+    <div class="bloco-aluno-leve">
+        <div class="bloco-aluno-leve-titulo">Leve para a Sua Vida</div>
+        <p>O testemunho que parece morto pode ser ressuscitado. Identifique uma pessoa, relacionamento ou contexto onde você desistiu de testemunhar. Esta semana, dê um passo concreto de retomada — uma mensagem, uma visita, uma conversa. Registre aqui o que você planeja fazer.</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
 
@@ -321,7 +391,7 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <h3>A Interpretação Individual — Elias e Moisés</h3>
     <p>A leitura mais antiga e mais difundida no dispensacionalismo identifica as Duas Testemunhas como dois profetas individuais que aparecerão durante a Grande Tribulação. Os candidatos mais citados são Elias e Moisés — presentes juntos na Transfiguração (Mt 17:3) — ou Elias e Enoque, os dois homens que partiram sem morrer no AT. O mérito desta interpretação é a coerência com certos detalhes literais do texto; sua fragilidade é ignorar o padrão simbólico que governa todo o gênero apocalíptico.</p>
     <h3>A Interpretação Simbólico-Eclesial</h3>
-    <p>Adotada pelo amilenarismo reformado, esta leitura vê as Duas Testemunhas como a Igreja em seu ministério profético coletivo durante toda a era entre os dois advientos de Cristo. Os argumentos internos do texto favorecem esta leitura: os "dois castiçais" de Ap 11:4 remetem às sete igrejas de Ap 1-3 (castiçais); os 1.260 dias representam o período completo da era da Igreja; e o "dois" remete ao princípio jurídico do testemunho suficiente (Dt 19:15), não a dois indivíduos.</p>
+    <p>Adotada pelo amilenarismo reformado, esta leitura vê as Duas Testemunhas como a Igreja em seu ministério profético coletivo durante toda a era entre os dois adventos de Cristo. Os argumentos internos do texto favorecem esta leitura: os "dois castiçais" de Ap 11:4 remetem às sete igrejas de Ap 1-3 (castiçais); os 1.260 dias representam o período completo da era da Igreja; e o "dois" remete ao princípio jurídico do testemunho suficiente (Dt 19:15), não a dois indivíduos.</p>
     <div class="bloco-ctx">
         <div class="bloco-ctx-titulo">O Que as Interpretações Têm em Comum</div>
         <p>Independentemente da escola interpretativa, todas concordam nos pontos centrais: o testemunho fiel enfrenta oposição mortal; Deus preserva os seus até que cumpram sua missão; a morte aparente do testemunho cristão não é definitiva; e a ressurreição e a ascensão são a palavra final sobre qualquer testemunho que foi silenciado. A divergência está na identidade — não na mensagem.</p>
