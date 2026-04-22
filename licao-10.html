@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eschaton Vol. II · Lição 10 — A Batalha Final</title>
+<title>Eschaton Vol. II · Lição 10 — A Batalha Final · v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
@@ -151,6 +151,56 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
     .wm,.int-linhas{display:none;}
 }
+
+/* ===== BLOCOS DO ALUNO (versão 2) ===== */
+.bloco-aluno{position:relative;z-index:1;margin:12px 0;border-radius:2px;overflow:hidden;}
+.bloco-aluno-cab{display:flex;align-items:center;gap:8px;padding:7px 12px 6px;position:relative;}
+.bloco-aluno-icone{font-size:13pt;line-height:1;flex-shrink:0;}
+.bloco-aluno-label{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;}
+.bloco-aluno-corpo{padding:0 12px 10px 12px;}
+.bloco-aluno-corpo p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.55;margin-bottom:0;text-align:left;}
+/* Linha de escrita para respostas */
+.bloco-aluno-linhas{padding:4px 12px 10px 12px;display:flex;flex-direction:column;gap:17px;}
+.bloco-aluno-lin{border-bottom:1px solid rgba(0,0,0,0.15);height:18px;}
+
+/* Para Você Refletir — vermelho suave */
+.bloco-refletir{background:rgba(160,32,32,0.06);border:1px solid rgba(160,32,32,0.22);border-left:4px solid var(--cor);}
+.bloco-refletir .bloco-aluno-cab{background:rgba(160,32,32,0.08);}
+.bloco-refletir .bloco-aluno-label{color:var(--cor);}
+.bloco-refletir .bloco-aluno-lin{border-bottom-color:rgba(160,32,32,0.18);}
+
+/* Conexão Bíblica — ouro suave */
+.bloco-biblica{background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.30);border-left:4px solid var(--ouro);}
+.bloco-biblica .bloco-aluno-cab{background:rgba(201,168,76,0.10);}
+.bloco-biblica .bloco-aluno-label{color:#8a6a20;}
+.bloco-biblica .bloco-aluno-lin{border-bottom-color:rgba(201,168,76,0.22);}
+
+/* Sabia Que? — azul cinza discreto */
+.bloco-sabia{background:rgba(60,80,120,0.05);border:1px solid rgba(60,80,120,0.18);border-left:4px solid #4a6090;}
+.bloco-sabia .bloco-aluno-cab{background:rgba(60,80,120,0.08);}
+.bloco-sabia .bloco-aluno-label{color:#3a5080;}
+.bloco-sabia .bloco-aluno-lin{border-bottom-color:rgba(60,80,120,0.15);}
+
+/* Pense Nisso — verde musgo escuro */
+.bloco-pense{background:rgba(40,80,50,0.05);border:1px solid rgba(40,80,50,0.18);border-left:4px solid #3a6045;}
+.bloco-pense .bloco-aluno-cab{background:rgba(40,80,50,0.08);}
+.bloco-pense .bloco-aluno-label{color:#2e4f38;}
+.bloco-pense .bloco-aluno-lin{border-bottom-color:rgba(40,80,50,0.15);}
+
+/* Leve para a sua Vida — roxo / violeta refinado */
+.bloco-leve{background:rgba(90,40,120,0.05);border:1px solid rgba(90,40,120,0.20);border-left:4px solid #6a3090;}
+.bloco-leve .bloco-aluno-cab{background:rgba(90,40,120,0.08);}
+.bloco-leve .bloco-aluno-label{color:#5a2878;}
+.bloco-leve .bloco-aluno-lin{border-bottom-color:rgba(90,40,120,0.15);}
+
+/* ===== CAPA ENTRADA — visual tipo título de livro ===== */
+.cv-wrap{font-family:'Cinzel',serif;}
+.cv-titulo{font-family:'Cinzel',serif;font-size:36pt;line-height:.92;letter-spacing:4pt;text-transform:uppercase;font-weight:900;text-shadow:0 2px 18px rgba(201,168,76,0.25);}
+.cv-subtitulo{margin-top:5mm;color:#c0392b;font-family:'Oswald',sans-serif;font-size:9.5pt;letter-spacing:3pt;text-transform:uppercase;}
+.cv-frase{margin-top:11mm;max-width:96mm;font-family:'EB Garamond',serif;font-size:15pt;line-height:1.48;font-style:italic;color:rgba(232,213,160,.97);}
+.cv-badge{display:inline-flex;align-items:center;gap:3mm;padding:2.8mm 6mm;border:1px solid rgba(201,168,76,.42);color:#d4b060;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1.8pt;text-transform:uppercase;}
+.cv-tema{font-family:'Cinzel',serif;font-size:12.5pt;line-height:1.25;color:#f5ead8;font-weight:700;text-transform:uppercase;letter-spacing:1pt;}
+.cv-rodape-titulo{font-family:'Cinzel',serif;font-size:11pt;letter-spacing:2pt;text-transform:uppercase;color:#c9a84c;font-weight:700;}
 </style>
 </head>
 <body>
@@ -223,6 +273,20 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     </div>
     <h3>O Fio Condutor desta Lição</h3>
     <p>Examinaremos o contexto da visão e o paralelo com Zacarias 14, os quatro títulos do Cavaleiro e suas implicações teológicas, a natureza da "batalha" que não é uma batalha, e a seção IV sobre o destino final da besta, do falso profeta e de Satanás.</p>
+    <div class="bloco-aluno bloco-refletir">
+        <div class="bloco-aluno-cab">
+            <span class="bloco-aluno-icone">🪞</span>
+            <span class="bloco-aluno-label">Para Você Refletir</span>
+        </div>
+        <div class="bloco-aluno-corpo">
+            <p>Antes de começar esta lição, reflita: quando você enfrenta situações de injustiça ou ameaça, qual é a sua primeira reação? Em que você costuma depositar a esperança de vitória?</p>
+        </div>
+        <div class="bloco-aluno-linhas">
+            <div class="bloco-aluno-lin"></div>
+            <div class="bloco-aluno-lin"></div>
+            <div class="bloco-aluno-lin"></div>
+        </div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -241,13 +305,27 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <span class="ref-final">Apocalipse 19:11-16</span>
     </div>
     <div class="obj">
-        <div class="ot">Objetivos desta licao</div>
+        <div class="ot">Objetivos desta lição</div>
         <ul>
             <li>Examinar a descrição do Cavaleiro do Cavalo Branco e seus títulos em Ap 19:11-16</li>
             <li>Compreender a "espada da boca" como Palavra de Deus que julga e vence</li>
             <li>Analisar o paralelo com Zacarias 14 e o Dia do Senhor sobre os inimigos</li>
             <li>Aplicar a certeza da vitória de Cristo ao engajamento corajoso do cristão hoje</li>
         </ul>
+    </div>
+    <div class="bloco-aluno bloco-biblica">
+        <div class="bloco-aluno-cab">
+            <span class="bloco-aluno-icone">📖</span>
+            <span class="bloco-aluno-label">Conexão Bíblica</span>
+        </div>
+        <div class="bloco-aluno-corpo">
+            <p>Que outros textos das Escrituras você conhece que falam da soberania de Cristo sobre todas as nações? Escreva as referências e uma palavra-chave de cada uma.</p>
+        </div>
+        <div class="bloco-aluno-linhas">
+            <div class="bloco-aluno-lin"></div>
+            <div class="bloco-aluno-lin"></div>
+            <div class="bloco-aluno-lin"></div>
+        </div>
     </div>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
@@ -258,7 +336,7 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="int-linhas"></div>
     <div class="wm">4</div>
     <div class="ph"><span class="phl">Lição 10 · Vol. II</span><span class="pht">A Batalha Final</span></div>
-    <h2>I — Contexto Original</h2>
+    <h2>I-Contexto Original</h2>
     <div class="bloco-ctx">
         <div class="bloco-ctx-titulo">O Cavaleiro do Cavalo Branco — Quem é Ele?</div>
         <p>O cavaleiro do cavalo branco de Apocalipse 19:11 não deve ser confundido com o cavaleiro do primeiro selo em Apocalipse 6:2, que muitos identificam como o Anticristo. Os dois textos são radicalmente distintos em contexto e descrição. O cavaleiro de Ap 19 é identificado por quatro títulos cumulativos: "Fiel e Verdadeiro" (v. 11), "O Verbo de Deus" (v. 13 — o mesmo título de João 1:1), um nome oculto (v. 12) e "Rei dos Reis e Senhor dos Senhores" (v. 16). Não há dúvida: este é Jesus Cristo em sua Parusia gloriosa.</p>
@@ -271,6 +349,15 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     </div>
     <h3>A Cena do Grande Banquete — Ap 19:17-18</h3>
     <p>Antes da batalha, um anjo convoca as aves para o "grande banquete de Deus" — uma irônica inversão da Ceia das Bodas. Enquanto os redimidos celebram o banquete do Cordeiro, os inimigos se tornam o banquete das aves. A imagem ecoa Ezequiel 39:17-20 e a batalha de Gogue e Magogue. A inversão é deliberada e perturbadora.</p>
+    <div class="bloco-aluno bloco-sabia">
+        <div class="bloco-aluno-cab">
+            <span class="bloco-aluno-icone">💡</span>
+            <span class="bloco-aluno-label">Sabia Que?</span>
+        </div>
+        <div class="bloco-aluno-corpo">
+            <p>O título "Rei dos Reis e Senhor dos Senhores" era usado pelos imperadores persas e romanos para afirmar supremacia política absoluta. João usa exatamente esse título para Jesus — uma declaração direta de que todo poder humano é subautoridade diante de Cristo. Na época da perseguição sob Roma, essa afirmação era ato de coragem.</p>
+        </div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -289,6 +376,19 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <p>O manto tinto de sangue é debatido: é o sangue de Cristo derramado na cruz, ou o sangue dos inimigos pisados no lagar da ira (eco de Is 63:1-6)? A linguagem de Isaías 63 apoia a segunda leitura — o guerreiro que "pisou o lagar sozinho" e cujas vestes foram tingidas pelo sangue dos inimigos. Mas em João, o Cordeiro já foi imolado — o sangue da cruz permeia toda a visão.</p>
     <h3>"Rei dos Reis e Senhor dos Senhores" — Ap 19:16</h3>
     <p>O título final está escrito no manto E na coxa — visível a todos enquanto o Cavaleiro avança. Toda autoridade humana — reis, presidentes, imperadores, parlamentos — é subautoridade sob esse título. Não há poder legítimo que não derive e não responda ao Rei dos Reis. A história inteira corre para esse reconhecimento universal.</p>
+    <div class="bloco-aluno bloco-pense">
+        <div class="bloco-aluno-cab">
+            <span class="bloco-aluno-icone">🤔</span>
+            <span class="bloco-aluno-label">Pense Nisso</span>
+        </div>
+        <div class="bloco-aluno-corpo">
+            <p>Se a arma de Cristo é a Palavra — e não a força —, o que isso significa para a forma como a Igreja deve agir em situações de conflito cultural, político ou social? Anote sua reflexão.</p>
+        </div>
+        <div class="bloco-aluno-linhas">
+            <div class="bloco-aluno-lin"></div>
+            <div class="bloco-aluno-lin"></div>
+        </div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -310,6 +410,20 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="bloco-teo">
         <div class="bloco-teo-titulo">O Fim do Anticristo e do Falso Profeta</div>
         <p>A besta e o falso profeta — os dois agentes do dragão — são lançados no lago de fogo (Ap 19:20). Satanás será preso por mil anos (Ap 20:1-3) e depois lançado no mesmo lago (Ap 20:10). A trindade invertida tem o mesmo destino final: destruição eterna. O plano do inimigo não prospera — nem agora, nem nunca.</p>
+    </div>
+    <div class="bloco-aluno bloco-leve">
+        <div class="bloco-aluno-cab">
+            <span class="bloco-aluno-icone">🌱</span>
+            <span class="bloco-aluno-label">Leve para a Sua Vida</span>
+        </div>
+        <div class="bloco-aluno-corpo">
+            <p>O Cordeiro imolado e o Rei dos Reis são a mesma pessoa. Como essa verdade muda a maneira como você enfrenta suas lutas cotidianas? Escreva uma atitude concreta que você quer levar desta lição para esta semana.</p>
+        </div>
+        <div class="bloco-aluno-linhas">
+            <div class="bloco-aluno-lin"></div>
+            <div class="bloco-aluno-lin"></div>
+            <div class="bloco-aluno-lin"></div>
+        </div>
     </div>
     <div class="rod"><span class="rt">Eschaton Vol. II &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
@@ -373,7 +487,7 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <h3>Para Refletir</h3>
     <p>Apocalipse 19:16 inscreve no manto do Cavaleiro: "REI DOS REIS E SENHOR DOS SENHORES" — em maiúsculas, visível a todos. Toda autoridade humana é contingente e temporária; esse título é eterno e absoluto. Como essa certeza — de que Cristo já é o Soberano de toda a história — muda sua ansiedade diante das crises políticas, sociais e geopolíticas do mundo hoje?</p>
     <div class="memorizar">
-        <div class="memorizar-titulo">&#10022; Versiculo para Memorizar</div>
+        <div class="memorizar-titulo">&#10022; Versículo para Memorizar</div>
         <p>"E no seu manto e na sua coxa tem escrito este nome: REI DOS REIS E SENHOR DOS SENHORES."</p>
         <p style="font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);margin-top:6px;">Apocalipse 19:16</p>
     </div>
