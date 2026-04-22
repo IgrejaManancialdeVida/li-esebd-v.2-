@@ -6,6 +6,7 @@
 <title>Eschaton Vol. II · Lição 07 — As Sete Taças da Ira</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
 :root{--cor:#4020a0;--grad1:#080818;--grad2:#100a28;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--pergaminho:#f8f2e8;--creme:#f0e8d8;--cc:#ddd8cc;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -184,6 +185,16 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
 
 .bloco-aluno .linhas-resposta{display:flex;flex-direction:column;gap:15px;margin-top:8px;}
 .bloco-aluno .linhas-resposta .lin{border-bottom:1px dashed rgba(64,32,160,0.25);height:18px;}
+
+/* ===== QR CODE BLOCO ===== */
+.bloco-qr{position:relative;z-index:1;margin:10px 0;display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(64,32,160,0.04),rgba(201,168,76,0.06));border:1px solid rgba(64,32,160,0.18);border-left:4px solid var(--ouro);border-radius:2px;padding:10px 12px;}
+.bloco-qr-canvas{flex-shrink:0;width:68px;height:68px;background:#fff;border:2px solid rgba(201,168,76,0.35);border-radius:2px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.bloco-qr-canvas canvas,.bloco-qr-canvas img{width:64px!important;height:64px!important;display:block;}
+.bloco-qr-info{flex:1;}
+.bloco-qr-label{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:3px;}
+.bloco-qr-titulo{font-family:'Cinzel',serif;font-size:9pt;font-weight:700;color:var(--cor);line-height:1.3;margin-bottom:3px;}
+.bloco-qr-desc{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#666;line-height:1.4;}
+.bloco-qr-url{font-family:'Oswald',sans-serif;font-size:6.5pt;color:#999;letter-spacing:0.5px;margin-top:4px;word-break:break-all;}
 
 @media print{
     body{background:none;}
@@ -523,6 +534,15 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="qt">A sétima taça proclama "Está feito!" ecoando Jo 19:30 na cruz. Como a cruz e o julgamento final são o mesmo evento visto de ângulos distintos — e o que isso revela sobre a relação entre a graça que você recebeu e a justiça que os condenados enfrentarão?</div>
         <div class="lr"></div><div class="lr"></div>
     </div>
+    <div class="bloco-qr">
+        <div class="bloco-qr-canvas" id="qrcode-licao07"></div>
+        <div class="bloco-qr-info">
+            <div class="bloco-qr-label">▶ Vídeo Complementar</div>
+            <div class="bloco-qr-titulo">Apocalipse 15 e 16 — As Sete Taças da Ira de Deus</div>
+            <div class="bloco-qr-desc">Leandro Lima · Aponte a câmera do celular para assistir ao vídeo de aprofundamento desta lição.</div>
+            <div class="bloco-qr-url">youtube.com/watch?v=_6oe3kFmWFg</div>
+        </div>
+    </div>
     <h3 style="margin-top:12px;">Anotações</h3>
     <div class="lins">
         <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
@@ -536,6 +556,20 @@ function entrarLicao(){
     document.body.classList.add('licao-iniciada');
     window.scrollTo({top: 0, behavior: 'instant'});
 }
+// Gera o QR Code
+(function(){
+    var el = document.getElementById('qrcode-licao07');
+    if(el && typeof QRCode !== 'undefined'){
+        new QRCode(el, {
+            text: 'https://www.youtube.com/watch?v=_6oe3kFmWFg',
+            width: 64,
+            height: 64,
+            colorDark: '#080818',
+            colorLight: '#ffffff',
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    }
+})();
 let edit=false;
 const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM','TD','TH'];
 function toggleEdit(){
