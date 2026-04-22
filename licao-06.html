@@ -145,6 +145,46 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
     .wm,.int-linhas{display:none;}
 }
+
+/* ===== BLOCOS DO ALUNO (versão 2) ===== */
+/* --- Para Você Refletir (pg 2) --- */
+.bloco-aluno-refletir{background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.35);border-top:3px solid var(--ouro);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-refletir-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-refletir-titulo::before{content:'✦';font-size:7pt;}
+.bloco-aluno-refletir p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);font-style:italic;line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-refletir .lra{border-bottom:1px solid rgba(201,168,76,0.3);height:22px;margin-top:4px;}
+
+/* --- Conexão Bíblica (pg 3) --- */
+.bloco-aluno-conexao{background:rgba(155,32,16,0.05);border:1px solid rgba(155,32,16,0.25);border-left:4px solid var(--cor);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-conexao-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-conexao-titulo::before{content:'✦';font-size:7pt;}
+.bloco-aluno-conexao p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-conexao .ref-bib{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:1.5px;color:var(--cor);text-transform:uppercase;margin-top:4px;}
+.bloco-aluno-conexao .lra{border-bottom:1px solid rgba(155,32,16,0.2);height:22px;margin-top:4px;}
+
+/* --- Sabia Que? (pg 4) --- */
+.bloco-aluno-sabia{background:linear-gradient(135deg,rgba(26,8,8,0.04),rgba(201,168,76,0.07));border:1px solid rgba(201,168,76,0.3);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-sabia-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#8a6a20;margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-sabia-titulo::before{content:'?';font-family:'Cinzel',serif;font-size:10pt;font-weight:700;color:var(--ouro);line-height:1;}
+.bloco-aluno-sabia p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:0;}
+
+/* --- Pense Nisso (pg 5) --- */
+.bloco-aluno-pense{background:#fff;border:1px solid rgba(155,32,16,0.18);border-radius:2px;padding:11px 13px;margin:12px 0;position:relative;z-index:1;text-align:center;}
+.bloco-aluno-pense-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;}
+.bloco-aluno-pense-icone{font-size:16pt;color:var(--ouro);margin-bottom:4px;display:block;}
+.bloco-aluno-pense p{font-family:'EB Garamond',serif;font-size:10.5pt;font-style:italic;color:#2a0808;line-height:1.65;text-align:center;margin-bottom:0;}
+.bloco-aluno-pense .lra{border-bottom:1px solid rgba(155,32,16,0.2);height:22px;margin-top:6px;text-align:left;}
+
+/* --- Leve para a Sua Vida (pg 6) --- */
+.bloco-aluno-leve{background:linear-gradient(135deg,rgba(155,32,16,0.06),rgba(201,168,76,0.07));border:1px solid rgba(155,32,16,0.22);border-radius:2px;padding:12px 13px;margin:12px 0;position:relative;z-index:1;}
+.bloco-aluno-leve-titulo{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.bloco-aluno-leve-titulo::before{content:'→';font-size:10pt;color:var(--ouro);}
+.bloco-aluno-leve p{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.6;margin-bottom:6px;}
+.bloco-aluno-leve .lra{border-bottom:1px solid rgba(155,32,16,0.2);height:22px;margin-top:4px;}
+
+@media screen and (max-width:768px){
+    .bloco-aluno-refletir,.bloco-aluno-conexao,.bloco-aluno-sabia,.bloco-aluno-pense,.bloco-aluno-leve{padding:8px 10px;}
+}
 </style>
 </head>
 <body>
@@ -219,6 +259,12 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     </div>
     <h3>O Fio Condutor desta Lição</h3>
     <p>Examinaremos a identidade dos três personagens centrais — a Mulher, o Dragão e a Besta —, o contexto veterotestamentário que os fundamenta, a exegese versículo a versículo da passagem e as implicações teológicas e práticas da vitória já conquistada em Cristo, culminando na fórmula de Apocalipse 12:11.</p>
+    <div class="bloco-aluno-refletir">
+        <div class="bloco-aluno-refletir-titulo">Para Você Refletir</div>
+        <p>Se a guerra cósmica de Apocalipse 12 já foi decidida na cruz — e Satanás age como um inimigo derrotado —, por que tantos cristãos vivem como se o resultado ainda fosse incerto? Como essa certeza deveria mudar sua postura diante dos desafios espirituais desta semana?</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">2</span></div>
 </div>
 
@@ -250,6 +296,13 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
             <li>Aplicar a fórmula da vitória de Apocalipse 12:11 ao testemunho cristão hoje</li>
         </ul>
     </div>
+    <div class="bloco-aluno-conexao">
+        <div class="bloco-aluno-conexao-titulo">Conexão Bíblica</div>
+        <p>Compare Apocalipse 12:7-9 com João 12:31, Colossenses 2:15 e Lucas 10:18. Nesses três textos, Jesus fala da derrota de Satanás como algo já acontecido ou prestes a acontecer. O que eles revelam em conjunto sobre o momento decisivo em que o poder do dragão foi quebrado?</p>
+        <div class="ref-bib">Jo 12:31 · Cl 2:15 · Lc 10:18 · Ap 12:7-9</div>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">3</span></div>
 </div>
 
@@ -272,6 +325,10 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
         <div class="bloco-ctx-titulo">A Besta do Mar — Apocalipse 13</div>
         <p>A besta que sobe do mar (Ap 13:1) recebe seu poder do dragão — é o agente terreno do poder de Satanás. Para os leitores do século I, ela representava o Império Romano, com Nero como figura típica. Mas é também o padrão de todo sistema político que exige adoração absoluta e persegue o povo de Deus. A segunda besta (Ap 13:11) — o falso profeta — é o poder religioso a serviço do poder político.</p>
     </div>
+    <div class="bloco-aluno-sabia">
+        <div class="bloco-aluno-sabia-titulo">Sabia Que?</div>
+        <p>O número 666 (Ap 13:18) corresponde, pelo sistema hebraico de <em>gematria</em> — em que cada letra tem valor numérico —, ao nome "Nero César" escrito em hebraico (<em>nrwn qsr</em>). Alguns manuscritos antigos trazem 616, que é a grafia latina do mesmo nome. Isso sugere que João escrevia para leitores que reconheceriam o código imediatamente — não uma previsão de um indivíduo futuro desconhecido, mas a identificação do padrão de poder imperial que já ameaçava as igrejas da Ásia Menor no século I.</p>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">4</span></div>
 </div>
 
@@ -290,6 +347,13 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <p>Expulso do céu, Satanás desce com "grande ira, sabendo que tem pouco tempo." Sua fúria intensificada é sinal de seu desespero, não de seu poder. O cristão que compreende isso não teme o diabo como um poder soberano — teme a Deus e enfrenta o diabo como um inimigo já derrotado que faz barulho.</p>
     <h3>"Venceram pelo sangue do Cordeiro" — 12:11</h3>
     <p>A fórmula da vitória cristã tem três elementos indissociáveis: o sangue do Cordeiro (fundamento objetivo da vitória — a cruz), a palavra do testemunho (a proclamação fiel do evangelho) e o não amar a vida até à morte (a disposição ao martírio). A vitória não é mágica — é a participação ativa na vitória de Cristo por meio da fé, do testemunho e da disposição ao sacrifício.</p>
+    <div class="bloco-aluno-pense">
+        <span class="bloco-aluno-pense-icone">✦</span>
+        <div class="bloco-aluno-pense-titulo">Pense Nisso</div>
+        <p>A fórmula de vitória de Ap 12:11 tem três elementos inseparáveis: sangue do Cordeiro, palavra do testemunho e não amar a vida até à morte. Qual dos três você mais negligencia? O que seria diferente na sua vida cristã se esse elemento estivesse mais presente?</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
+    </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">5</span></div>
 </div>
 
@@ -311,6 +375,12 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="bloco-teo">
         <div class="bloco-teo-titulo">A Resistência Cristã é Possível</div>
         <p>"E foi dada autoridade à besta sobre toda tribo, povo, língua e nação" (Ap 13:7) — parece total. Mas Apocalipse 13:8 ressalva: "todos os que habitam na terra a adorarão, cujos nomes não estão escritos no livro da vida." Os que têm seus nomes no Livro não adoram a besta. A graça que protege é a mesma que sustenta o testemunho fiel.</p>
+    </div>
+    <div class="bloco-aluno-leve">
+        <div class="bloco-aluno-leve-titulo">Leve para a Sua Vida</div>
+        <p>Satanás "acusava os irmãos diante de Deus de dia e de noite" — mas esse escritório foi fechado pela justificação em Cristo. Identifique uma acusação que você carrega sobre si mesmo. Escreva aqui a verdade da Palavra que a responde diretamente — e releia-a toda vez que a acusação voltar esta semana.</p>
+        <div class="lra"></div>
+        <div class="lra"></div>
     </div>
     <div class="rod"><span class="rt">Eschaton Vol. II · EBD Jovens Adultos</span><span class="rn">6</span></div>
 </div>
@@ -342,7 +412,7 @@ body.licao-iniciada #capaEntradaRevista{display:none;}
     <div class="wm">8</div>
     <div class="ph"><span class="phl">Lição 06 · Vol. II</span><span class="pht">A Mulher, o Dragão e a Besta</span></div>
     <h2>Conclusão</h2>
-    <p class="cap">Apocalipse 12–13 não foi escrito para aterrorizar — foi escrito para esclarecer. O que parece, na superfície da história, uma vitória do mal sobre o bem é, à luz desta visão, o estertores de um inimigo já derrotado. O dragão persegue a mulher com grande ira — "sabendo que tem pouco tempo." A Igreja que compreende isso não é paralisada pelo medo; é libertada para testemunhar.</p>
+    <p class="cap">Apocalipse 12–13 não foi escrito para aterrorizar — foi escrito para esclarecer. O que parece, na superfície da história, uma vitória do mal sobre o bem é, à luz desta visão, os estertores de um inimigo já derrotado. O dragão persegue a mulher com grande ira — "sabendo que tem pouco tempo." A Igreja que compreende isso não é paralisada pelo medo; é libertada para testemunhar.</p>
     <div class="bloco-teo">
         <div class="bloco-teo-titulo">O que esta lição nos ensinou</div>
         <p>Aprendemos que a mulher representa o povo de Deus em sua continuidade desde Israel até a Igreja. Vimos que o dragão é Satanás, já derrotado na cruz, agindo com fúria crescente por saber que seu tempo é curto. Examinamos a besta como o padrão histórico de todo poder que usurpa a lealdade devida a Deus. E contemplamos a fórmula infalível da vitória cristã: sangue do Cordeiro, palavra do testemunho e disposição ao sacrifício.</p>
